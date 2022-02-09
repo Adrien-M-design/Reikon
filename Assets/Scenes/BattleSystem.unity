@@ -802,8 +802,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04f3f60c5ffca3e4cb9c5a5077508baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waitTime: 5
-  _quickActionTime: 4
+  _waitTime: 1
+  _quickActionTime: 1
   _normalActionTime: 5
   _slowActionTime: 6
   _actions:
