@@ -6,12 +6,10 @@ using UnityEngine.UI;
 
 public class PlayerTimelineController : MonoBehaviour
 {
+    [Header("Timer")]
     private float _travelTime = 0f;
     [SerializeField] private float _waitTime = 0f;
     private float _actionTime = 0f;
-    [SerializeField] private float _quickActionTime = 0f;
-    [SerializeField] private float _normalActionTime = 0f;
-    [SerializeField] private float _slowActionTime = 0f;
     private bool _inStopTime = false;
     private bool _inAction = false;
     private float _interruptedTime = 0f;
@@ -19,15 +17,19 @@ public class PlayerTimelineController : MonoBehaviour
     private float _animationLength = 0f;
     private bool _inAnimation = false;
 
-    [SerializeField] private GameObject[] _actions = null;
+    [Header("Anim")]
     [SerializeField] private Animator _animator = null;
+    //ça viendra à changer
 
+    [Header("Cursor")]
     [SerializeField] private GameObject _cursor = null;
     [SerializeField] private Transform _startPos = null;
     [SerializeField] private Transform _actionEnterPos = null;
     [SerializeField] private Transform _interruptPos = null;
     [SerializeField] private Transform _endPos = null;
 
+
+    [Header("Ennemy Timeline")]
     [SerializeField] private EnnemyTimelineController _ennemyTimeline = null;
 
     private List<DatabaseManager.EAttackTypes> _inputArray = new List<DatabaseManager.EAttackTypes>();
@@ -35,6 +37,9 @@ public class PlayerTimelineController : MonoBehaviour
     private AttackData _currentAttackData = null;
 
     private event Action _onExec = null;
+
+    [Header("Combat Controller")]
+    [SerializeField] private CombatController _combatController = null;
 
     public event Action OnExec
     {
@@ -86,7 +91,7 @@ public class PlayerTimelineController : MonoBehaviour
             }
         }
 
-        /* if (_waitInput)
+         if (_waitInput)
          {
              if (Input.GetButtonDown("FIRE"))
              {
@@ -105,13 +110,21 @@ public class PlayerTimelineController : MonoBehaviour
 
              if (Input.GetButtonDown("VALIDATE") && _inputArray.Count >= 3)
              {
-                 _waitInput = false;
-                 _currentAttackData = DatabaseManager.Instance.GetAttackByCombo(_inputArray);
-                 _actionTime = _currentAttackData.ActionTime;
-                 _inStopTime = false;
-                 Time.timeScale = 1;
+                _currentAttackData = DatabaseManager.Instance.GetAttackByCombo(_inputArray);
+                if(_currentAttackData != null)
+                {
+                    _waitInput = false;
+                    _actionTime = _currentAttackData.ActionTime;
+                    _inStopTime = false;
+                    Time.timeScale = 1;
+                }
+                else
+                {
+                    _inputArray.Clear();
+                }
+
              }
-         }*/
+         }
     }
 
     void FixedUpdate()
@@ -127,11 +140,7 @@ public class PlayerTimelineController : MonoBehaviour
                 _inAction = true;
                 _inStopTime = true;
                 Time.timeScale = 0;
-                for (int i = 0; i < _actions.Length; i++)
-                {
-                    _actions[i].SetActive(true);
-                }
-                //_waitInput = true;
+                _waitInput = true;
 
             }
         }
@@ -152,53 +161,13 @@ public class PlayerTimelineController : MonoBehaviour
         }
     }
 
-    #region A changer
-    //A changer pour le système de combos
-    public void QuickAttack()
-    {
-        _actionTime = _quickActionTime;
-        for (int i = 0; i < _actions.Length; i++)
-        {
-            _actions[i].SetActive(false);
-        }
-
-        _inStopTime = false;
-        Time.timeScale = 1;
-    }
-
-    public void NormalAttack()
-    {
-        _actionTime = _normalActionTime;
-        for (int i = 0; i < _actions.Length; i++)
-        {
-            _actions[i].SetActive(false);
-        }
-
-        _inStopTime = false;
-        Time.timeScale = 1;
-    }
-
-    public void SlowAttack()
-    {
-        _actionTime = _slowActionTime;
-        for (int i = 0; i < _actions.Length; i++)
-        {
-            _actions[i].SetActive(false);
-        }
-
-        _inStopTime = false;
-        Time.timeScale = 1;
-    }
-    #endregion A changer
-
     private void PlayerAttack(AttackData attdat)
     {
         _inStopTime = true;
         Time.timeScale = 0;
         _animator.SetTrigger("New Trigger");
         _inAnimation = true;
-        Ennemy.Instance.HP -= (int) attdat.Damage;
-        //Debug.Log("Ennemy HP : " + Ennemy.Instance.HP);
+        _combatController.MobTakeDamage(attdat.Damage);
     }
 
     private void Interrupt()

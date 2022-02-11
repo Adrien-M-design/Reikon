@@ -6,7 +6,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class CharacterController : MonoBehaviour
 {
-    #region properties
+    #region Attributs
 
     private NavMeshAgent myNavMeshAgent;
     private float inputSqrMagnitude = 0;
@@ -17,14 +17,16 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private float _turnSmoothTime = 0.1f;
     private float _turnSmoothVelocity = 0.1f;
 
-
-    #endregion properties
-
-    #region SerializeField
-
     [SerializeField] private float agentSpeed = 0;
+    [SerializeField] private Transform _focusPoint = null;
 
-    #endregion SerializeField
+    #endregion Attributs
+
+    #region Properties
+
+    public Transform FocusPoint => _focusPoint;
+
+    #endregion Properties
 
     // Start is called before the first frame update
     private void Start()
@@ -32,6 +34,7 @@ public class CharacterController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         myNavMeshAgent = GetComponent<NavMeshAgent>();
         myNavMeshAgent.speed = agentSpeed;
+        _cam = Camera.main.transform;
     }
 
     // Update is called once per frame

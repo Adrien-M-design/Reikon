@@ -802,14 +802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04f3f60c5ffca3e4cb9c5a5077508baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waitTime: 1
-  _quickActionTime: 1
-  _normalActionTime: 5
-  _slowActionTime: 6
-  _actions:
-  - {fileID: 1261303963}
-  - {fileID: 625559034}
-  - {fileID: 528254608}
+  _waitTime: 6
   _animator: {fileID: 1629232228}
   _cursor: {fileID: 41087803}
   _startPos: {fileID: 1984035796}
@@ -817,6 +810,7 @@ MonoBehaviour:
   _interruptPos: {fileID: 1532254278}
   _endPos: {fileID: 621386829}
   _ennemyTimeline: {fileID: 478164474}
+  _combatController: {fileID: 1386520856}
 --- !u!114 &478164474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -840,6 +834,7 @@ MonoBehaviour:
   _interruptPos: {fileID: 627834307}
   _endPos: {fileID: 284556682}
   _playerTimeline: {fileID: 478164473}
+  _combatController: {fileID: 1386520856}
 --- !u!1 &512723186
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,6 +970,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1047,6 +1043,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &558953142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,9 +1198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a7740dbf542d2c4e977a710e94e7c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _travelTime: 6
-  _hp: 10
-  _damage: 3
+  _character: {fileID: 0}
+  _charHp: 100
 --- !u!1 &621386828
 GameObject:
   m_ObjectHideFlags: 0
@@ -2518,6 +2545,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363451779}
   m_CullTransparentMesh: 1
+--- !u!1 &1386520855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1386520857}
+  - component: {fileID: 1386520856}
+  m_Layer: 0
+  m_Name: CombatController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1386520856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386520855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d534c84ecefe1854faa75e4afc25b151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1386520857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386520855}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1468335408
 GameObject:
   m_ObjectHideFlags: 0

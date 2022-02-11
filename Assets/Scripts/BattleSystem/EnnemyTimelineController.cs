@@ -32,6 +32,11 @@ public class EnnemyTimelineController : MonoBehaviour
 
     private event Action _onExec = null;
 
+    private AttackData _currentAttack = null;
+
+    [Header("Combat Controller")]
+    [SerializeField] private CombatController _combatController = null;
+
     public event Action OnExec
     {
         add
@@ -94,7 +99,8 @@ public class EnnemyTimelineController : MonoBehaviour
             {
                 _travelTime = 0f;
                 _inAction = true;
-                AttackSelct();
+               _currentAttack = _combatController.AttackSelct();
+                _actionTime = _currentAttack.ActionTime;
             }
         }
 
@@ -119,27 +125,10 @@ public class EnnemyTimelineController : MonoBehaviour
         Time.timeScale = 0;
         _animator.SetTrigger("New Trigger");
         _inAnimation = true;
-        Player.Instance.HP -= Ennemy.Instance.Damage;
-        //Debug.Log("Player HP : " + Player.Instance.HP);
+        _combatController.CharTakeDamage(_currentAttack.Damage);
     }
 
-    private void AttackSelct()
-    {
-        int rand = UnityEngine.Random.Range(1, 4);
-        switch (rand)
-        {
-            case 3:
-                _actionTime = _normalActionTime;
-                break; 
-            case 2:
-                _actionTime = _quickActionTime;
-                break;
-            case 1:
-                _actionTime = _slowActionTime;
-                break;
-        }
-        _inStopTime = false;      
-    }
+
 
     private void Interrupt()
     {
