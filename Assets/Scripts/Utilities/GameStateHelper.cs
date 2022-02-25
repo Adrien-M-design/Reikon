@@ -22,7 +22,7 @@ public static class GameStateHelper
                 sceneName = "Game";
                 break;
             case EGameState.BATTLE:
-                sceneName = "BattleScene";
+                sceneName = "BattleSystem";
                 break;
         }
         return sceneName;

@@ -8,7 +8,7 @@ public class CharacterController : MonoBehaviour
 {
     #region Attributs
 
-    private NavMeshAgent myNavMeshAgent;
+    private NavMeshAgent _navMeshAgent;
     private float inputSqrMagnitude = 0;
     private Vector3 inputValue = Vector3.zero;
     private Vector3 forward = Vector3.zero;
@@ -32,9 +32,10 @@ public class CharacterController : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        myNavMeshAgent = GetComponent<NavMeshAgent>();
-        myNavMeshAgent.speed = agentSpeed;
+        _navMeshAgent = GetComponent<NavMeshAgent>();
+        //myNavMeshAgent.speed = agentSpeed;
         _cam = Camera.main.transform;
+        _navMeshAgent.autoBraking = false;
     }
 
     // Update is called once per frame
@@ -43,7 +44,6 @@ public class CharacterController : MonoBehaviour
         inputValue.z = Input.GetAxis("Vertical");
         inputValue.x = Input.GetAxis("Horizontal");
         Step();
-
         /* Ancien systéme de déplacement nul
 
         if (Input.GetButton("Vertical"))

@@ -10,10 +10,9 @@ public class CharacterGenerator : MonoBehaviour
     private int _counter = 0;
 
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         CharacterManager.Instance.CreateCharacter(_spawns[CharacterManager.Instance.SpawnCount]);
-        //Debug.Log("Nique la police");
     }
 
     // Update is called once per frame

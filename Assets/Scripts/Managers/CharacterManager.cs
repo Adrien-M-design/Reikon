@@ -24,7 +24,7 @@ public class CharacterManager : Singleton<CharacterManager>
     }
 
     // Start is called before the first frame update
-    protected override void Start()
+    public void Initialize()
     {
         
     }
@@ -37,6 +37,10 @@ public class CharacterManager : Singleton<CharacterManager>
 
     public void CreateCharacter (Transform spawnpos)
     {
-        _currentCharacter = Instantiate(_character, spawnpos.position, spawnpos.rotation);
+        if(_currentCharacter == null)
+        {
+            _currentCharacter = Instantiate(_character, spawnpos.position, spawnpos.rotation);
+        }
     }
+        
 }
