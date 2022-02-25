@@ -13,6 +13,7 @@ public class CharacterGenerator : MonoBehaviour
     void Awake()
     {
         CharacterManager.Instance.CreateCharacter(_spawns[CharacterManager.Instance.SpawnCount]);
+        //Debug.Log("Nique la police");
     }
 
     // Update is called once per frame
