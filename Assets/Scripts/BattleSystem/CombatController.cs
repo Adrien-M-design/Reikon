@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CombatController : MonoBehaviour
 {
+    [SerializeField] private Transform _playerTransform = null;
+    [SerializeField] private Transform _ennemyTransform = null;
+    [SerializeField] private GameObject _floattingTextPrefab = null;
     private CombatData _combatData = null;
 
     private int _charHp = 100;
@@ -29,6 +33,7 @@ public class CombatController : MonoBehaviour
 
     public void CharTakeDamage(int dmg)
     {
+        ShowDamage(dmg.ToString(), _playerTransform);
         _charHp -= dmg;
         //faut clamper la vie couillon
         //if _charHp >= 0 : c'est perdu
@@ -37,6 +42,7 @@ public class CombatController : MonoBehaviour
 
     public void MobTakeDamage(int dmg)
     {
+        ShowDamage(dmg.ToString(), _ennemyTransform);
         _mobHp -= dmg;
         //faut clamper la vie couillon
         //if _mobHp >= 0 : c'est gagné 
@@ -53,9 +59,17 @@ public class CombatController : MonoBehaviour
         _mobHp += heal;
     }
 
+    public void ShowDamage(string text, Transform target)
+    {
+        GameObject prefab = Instantiate(_floattingTextPrefab, target.position, Quaternion.identity);
+        prefab.GetComponentInChildren<TextMeshPro>().text = text;
+    }
+
     public AttackData AttackSelct()
     {
         int rand = UnityEngine.Random.Range(0, _combatData.Attacks.Length);
         return _combatData.Attacks[rand];
     }
+
+    
 }

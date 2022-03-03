@@ -99,7 +99,7 @@ public class EnnemyTimelineController : MonoBehaviour
             {
                 _travelTime = 0f;
                 _inAction = true;
-               _currentAttack = _combatController.AttackSelct();
+                _currentAttack = _combatController.AttackSelct();
                 _actionTime = _currentAttack.ActionTime;
             }
         }

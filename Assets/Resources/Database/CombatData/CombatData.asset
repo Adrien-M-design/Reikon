@@ -17,4 +17,5 @@ MonoBehaviour:
   _mob: {fileID: 0}
   _travelTime: 5
   _attacks:
-  - {fileID: 11400000, guid: 0bc75a7e478c10a4eb4cc02981dae0de, type: 2}
+  - {fileID: 11400000, guid: 31ed76da355a58a4ab202422ec93f228, type: 2}
+  - {fileID: 11400000, guid: fdcc45941c9ee9d4b84a4924be9bab9b, type: 2}
