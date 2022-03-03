@@ -36,6 +36,7 @@ public class EnnemyTimelineController : MonoBehaviour
 
     [Header("Combat Controller")]
     [SerializeField] private CombatController _combatController = null;
+    private AttackData _attData = null;
 
     public event Action OnExec
     {
@@ -81,6 +82,7 @@ public class EnnemyTimelineController : MonoBehaviour
             if(_animationLength <= 0)
             {
                 Time.timeScale = 1;
+                _combatController.CharTakeDamage(_currentAttack.Damage);
                 _inStopTime = false;
                 _inAnimation = false;
                 _animationLength = _clip.length;
@@ -125,7 +127,6 @@ public class EnnemyTimelineController : MonoBehaviour
         Time.timeScale = 0;
         _animator.SetTrigger("New Trigger");
         _inAnimation = true;
-        _combatController.CharTakeDamage(_currentAttack.Damage);
     }
 
 

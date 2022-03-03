@@ -40,6 +40,7 @@ public class PlayerTimelineController : MonoBehaviour
 
     [Header("Combat Controller")]
     [SerializeField] private CombatController _combatController = null;
+    private AttackData _attData = null;
 
     public event Action OnExec
     {
@@ -86,6 +87,7 @@ public class PlayerTimelineController : MonoBehaviour
             {
                 _inStopTime = false;
                 Time.timeScale = 1;
+                _combatController.MobTakeDamage(_attData.Damage);
                 _inAnimation = false;
                 _animationLength = _clip.length;
             }
@@ -163,11 +165,11 @@ public class PlayerTimelineController : MonoBehaviour
 
     private void PlayerAttack(AttackData attdat)
     {
+        _attData = attdat;
         _inStopTime = true;
         Time.timeScale = 0;
         _animator.SetTrigger("New Trigger");
         _inAnimation = true;
-        _combatController.MobTakeDamage(attdat.Damage);
     }
 
     private void Interrupt()
