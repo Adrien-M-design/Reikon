@@ -31,10 +31,12 @@ public class DatabaseManager : Singleton<DatabaseManager>
     [SerializeField] private AttackData[] _mobAttData = null;
     [SerializeField] private AttackData[] _charAttData = null;
     [SerializeField] private CombatData[] _combatData = null;
+    [SerializeField] private DialData[] _dialData = null;
 
     private Dictionary<string, AttackData> _charAttacks = null;
     private Dictionary<string, AttackData> _mobAttacks = null;
     private Dictionary<string, CombatData> _combats = null;
+    private Dictionary<string, DialData> _dialogues = null;
     private string _currentCombat = string.Empty;
     #endregion Fields
 
@@ -42,6 +44,7 @@ public class DatabaseManager : Singleton<DatabaseManager>
     public Dictionary<string, AttackData> MobAttacks => _mobAttacks;
     public Dictionary<string, AttackData> CharAttacks => _charAttacks;
     public Dictionary<string, CombatData> Combats => _combats;
+    public Dictionary<string, DialData> Dialogues => _dialogues;
     public CombatData CurrentCombat => _combats[_currentCombat];
     #endregion Properties
 
@@ -54,6 +57,7 @@ public class DatabaseManager : Singleton<DatabaseManager>
         _charAttacks = new Dictionary<string, AttackData>();
         _mobAttacks = new Dictionary<string, AttackData>();
         _combats = new Dictionary<string, CombatData>();
+        _dialogues = new Dictionary<string, DialData>();
 
         for (int i = 0; i < _mobAttData.Length; i++)
         {
@@ -68,6 +72,11 @@ public class DatabaseManager : Singleton<DatabaseManager>
         for (int i = 0; i < _combatData.Length; i++)
         {
             _combats.Add(_combatData[i].MobName, _combatData[i]);
+        }
+
+        for (int i = 0; i < _dialData.Length; i++)
+        {
+            _dialogues.Add(_dialData[i].ID, _dialData[i]);
         }
     }
 

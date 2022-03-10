@@ -6,7 +6,7 @@ using UnityEngine;
 public class BFMODManager : Singleton<BFMODManager>
 {
     #region Fields
-    [SerializeField] private float _stepSoundDelay = 0.4f;
+    //[SerializeField] private float _stepSoundDelay = 0.4f;
     
     // Events Wrapper
     private FMODEventWrapper _music = null;

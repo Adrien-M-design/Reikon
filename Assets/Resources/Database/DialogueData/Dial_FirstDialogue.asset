@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a9f5d744e4703440ac1e78284ffe74f, type: 3}
   m_Name: Dial_FirstDialogue
   m_EditorClassIdentifier: 
-  _id: DIAL_ID
-  _promptData: []
-  _speakers: []
+  _id: DIAL_FirstDial
+  _promptData:
+  - {fileID: 11400000, guid: 0cd39bd9773167d4692805980b7f2c37, type: 2}
+  _speakers:
+  - {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
+  - {fileID: 11400000, guid: f7b714c8880c82045b086252256636a9, type: 2}

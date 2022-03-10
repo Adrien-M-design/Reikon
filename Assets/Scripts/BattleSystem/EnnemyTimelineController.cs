@@ -9,9 +9,6 @@ public class EnnemyTimelineController : MonoBehaviour
     private float _travelTime = 0f;
     [SerializeField] private float _waitTime = 0f;
     private float _actionTime = 0f;
-    [SerializeField] private float _quickActionTime = 0f;
-    [SerializeField] private float _normalActionTime = 0f;
-    [SerializeField] private float _slowActionTime = 0f;
     private bool _inStopTime = false;
     private bool _inAction = false;
     private float _interruptedTime = 0f;
@@ -36,7 +33,6 @@ public class EnnemyTimelineController : MonoBehaviour
 
     [Header("Combat Controller")]
     [SerializeField] private CombatController _combatController = null;
-    private AttackData _attData = null;
 
     public event Action OnExec
     {
