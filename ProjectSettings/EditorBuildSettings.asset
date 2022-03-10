@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 5c97ff4a7b181ff4bb2c16e8f47c1914
   - enabled: 1
+    path: "Assets/Scenes/BlockingSch\xE9ma.unity"
+    guid: 716b7595585967e45ba74fccf3b191be
+  - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: ab853d6cca99f1e4880c981dabf2c9db
   - enabled: 1

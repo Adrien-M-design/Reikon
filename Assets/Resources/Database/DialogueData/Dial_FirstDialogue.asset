@@ -15,6 +15,9 @@ MonoBehaviour:
   _id: DIAL_FirstDial
   _promptData:
   - {fileID: 11400000, guid: 0cd39bd9773167d4692805980b7f2c37, type: 2}
+  - {fileID: 11400000, guid: 0daaa4149b6bbb0499d7f213c7e267d7, type: 2}
+  - {fileID: 11400000, guid: a982ddb9c1ef32c45a839f73b3c9482c, type: 2}
+  - {fileID: 11400000, guid: 91d1d7c9e311ead4ab88c6b9ee07a6f3, type: 2}
   _speakers:
   - {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   - {fileID: 11400000, guid: f7b714c8880c82045b086252256636a9, type: 2}

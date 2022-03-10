@@ -217,6 +217,7 @@ MonoBehaviour:
   _inputManager: {fileID: 908372484}
   _gameStateManager: {fileID: 1108843258}
   _characterManager: {fileID: 2005535125}
+  _firstState: 3
 --- !u!4 &838798336
 Transform:
   m_ObjectHideFlags: 0
@@ -352,6 +353,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0bc75a7e478c10a4eb4cc02981dae0de, type: 2}
   _combatData:
   - {fileID: 11400000, guid: 65ec30e73da071144a8a274c3c2fce08, type: 2}
+  _dialData:
+  - {fileID: 11400000, guid: 82f1ea35f34bfc648a121aa158bca183, type: 2}
 --- !u!4 &1231116697
 Transform:
   m_ObjectHideFlags: 0
@@ -397,7 +400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _character: {fileID: 3686277357803223066, guid: efe2f805eaec3474fbe992aaa82bea6a,
     type: 3}
-  _charHp: 100
+  _charHp: 50
 --- !u!4 &2005535126
 Transform:
   m_ObjectHideFlags: 0

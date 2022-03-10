@@ -10,7 +10,12 @@ public class CharacterManager : Singleton<CharacterManager>
     private CharacterController _currentCharacter = null;
     private int _spawnCount = 0;
 
-    public CharacterController Character => _currentCharacter;
+    public CharacterController Character
+    {
+        get => _currentCharacter;
+        set => _currentCharacter = value;
+    }
+
     public int SpawnCount
     {
         get => _spawnCount;
@@ -35,11 +40,12 @@ public class CharacterManager : Singleton<CharacterManager>
         
     }
 
-    public void CreateCharacter (Transform spawnpos)
+    public void CreateCharacter(Transform spawnpos, Transform parent)
     {
         if(_currentCharacter == null)
         {
-            _currentCharacter = Instantiate(_character, spawnpos.position, spawnpos.rotation);
+            Debug.Log(spawnpos.position);
+            _currentCharacter = Instantiate(_character, spawnpos.position, spawnpos.rotation, parent);
         }
     }
         

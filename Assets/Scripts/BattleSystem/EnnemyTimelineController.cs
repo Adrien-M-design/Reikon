@@ -34,6 +34,8 @@ public class EnnemyTimelineController : MonoBehaviour
     [Header("Combat Controller")]
     [SerializeField] private CombatController _combatController = null;
 
+    public bool GlobalInStopTime => _inStopTime || _playerTimeline.InStopTime;
+    public bool InStopTime => _inStopTime;
     public event Action OnExec
     {
         add
@@ -61,15 +63,8 @@ public class EnnemyTimelineController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (_inStopTime == false)
-        {
+        if (!GlobalInStopTime)
             _travelTime += Time.deltaTime;
-        }
-
-        if (_inAction == true)
-        {
-            _travelTime += Time.deltaTime;
-        }
 
         if (_inAnimation == true)
         {
@@ -102,7 +97,7 @@ public class EnnemyTimelineController : MonoBehaviour
             }
         }
 
-        if(_inAction == true && _inStopTime == false)
+        if(_inAction == true && GlobalInStopTime == false)
         {
             float t = _travelTime / _actionTime;
             _cursor.transform.position = Vector3.Lerp(_actionEnterPos.position, _endPos.position, t);

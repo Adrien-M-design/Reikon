@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FIRE_ATT
   m_EditorClassIdentifier: 
   _attackID: FIRE_ATT
-  _damage: 10
+  _damage: 50
   _actionTime: 1
   _attackType: 0
   _combatEffect: 4

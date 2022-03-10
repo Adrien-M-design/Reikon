@@ -42,6 +42,9 @@ public class PlayerTimelineController : MonoBehaviour
     [SerializeField] private CombatController _combatController = null;
     private AttackData _attData = null;
 
+    public bool GlobalInStopTime => _inStopTime || _ennemyTimeline.InStopTime;
+    public bool InStopTime => _inStopTime;
+
     public event Action OnExec
     {
         add
@@ -69,16 +72,8 @@ public class PlayerTimelineController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (_inStopTime == false)
-        {
+        if (!GlobalInStopTime)
             _travelTime += Time.deltaTime;
-        }
-
-        if(_inAction == true)
-        {
-            _travelTime += Time.deltaTime;
-        }
-
         if (_inAnimation == true)
         {
             _animationLength -= Time.unscaledDeltaTime;
@@ -86,7 +81,6 @@ public class PlayerTimelineController : MonoBehaviour
             if(_animationLength <= 0)
             {
                 _inStopTime = false;
-                Time.timeScale = 1;
                 _combatController.MobTakeDamage(_attData.Damage);
                 _inAnimation = false;
                 _animationLength = _clip.length;
@@ -118,7 +112,6 @@ public class PlayerTimelineController : MonoBehaviour
                     _waitInput = false;
                     _actionTime = _currentAttackData.ActionTime;
                     _inStopTime = false;
-                    Time.timeScale = 1;
                 }
                 else
                 {
@@ -141,13 +134,12 @@ public class PlayerTimelineController : MonoBehaviour
                 _travelTime = 0f;
                 _inAction = true;
                 _inStopTime = true;
-                Time.timeScale = 0;
                 _waitInput = true;
 
             }
         }
 
-        if(_inAction == true && _inStopTime == false)
+        if(_inAction == true && GlobalInStopTime == false)
         {
             float t = _travelTime / _actionTime;
             _cursor.transform.position = Vector3.Lerp(_actionEnterPos.position, _endPos.position, t);
@@ -167,7 +159,6 @@ public class PlayerTimelineController : MonoBehaviour
     {
         _attData = attdat;
         _inStopTime = true;
-        Time.timeScale = 0;
         _animator.SetTrigger("New Trigger");
         _inAnimation = true;
     }

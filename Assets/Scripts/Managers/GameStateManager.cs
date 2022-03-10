@@ -65,6 +65,7 @@ public class GameStateManager : Singleton<GameStateManager>
 
     public void LaunchTransition(EGameState newState)
     {
+        Debug.Log(newState);
         _previousState = _currentState;
         _nextState = newState;
         ChangeState(EGameState.LOADING);

@@ -13,9 +13,31 @@ public class CombatController : MonoBehaviour
     private int _charHp = 100;
     private int _mobHp = 100;
 
-    public int CharHp => _charHp;
-    public int MobHp => _mobHp;
+    public int CharHp
+    {
+        get
+        {
+            return _charHp;
+        }
+        set
+        {
+            _charHp = value;
+            _charHp = Mathf.Clamp(_charHp, 0, CharacterManager.Instance.CharHp);
+        }
+    }
 
+    public int MobHp
+    {
+        get
+        {
+            return _mobHp;
+        }
+        set
+        {
+            _mobHp = value;
+            _mobHp = Mathf.Clamp(_mobHp, 0, _combatData.MobHp);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -34,29 +56,35 @@ public class CombatController : MonoBehaviour
     public void CharTakeDamage(int dmg)
     {
         ShowDamage(dmg.ToString(), _playerTransform);
-        _charHp -= dmg;
+        CharHp -= dmg;
         //faut clamper la vie couillon
         //if _charHp >= 0 : c'est perdu
-        Debug.Log(_charHp);
+        Debug.Log(CharHp);
     }
 
     public void MobTakeDamage(int dmg)
     {
         ShowDamage(dmg.ToString(), _ennemyTransform);
-        _mobHp -= dmg;
+        MobHp -= dmg;
         //faut clamper la vie couillon
+        Debug.Log(MobHp);
         //if _mobHp >= 0 : c'est gagné 
-        Debug.Log(_mobHp);
+        if (MobHp <= 0)
+        {
+            GameStateManager.Instance.LaunchTransition(EGameState.GAME);
+        }
+        
+
     }
 
     public void CharHeal(int heal)
     {
-        _charHp += heal;
+        CharHp += heal;
     }
 
     public void MobHeal(int heal)
     {
-        _mobHp += heal;
+        MobHp += heal;
     }
 
     public void ShowDamage(string text, Transform target)

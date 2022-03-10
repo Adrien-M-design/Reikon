@@ -24,6 +24,12 @@ public class CharacterController : MonoBehaviour
 
     #region Properties
 
+    public Transform Cam
+    {
+        get => _cam;
+        set => _cam = value;
+    }
+
     public Transform FocusPoint => _focusPoint;
 
     #endregion Properties
@@ -34,7 +40,7 @@ public class CharacterController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         _navMeshAgent = GetComponent<NavMeshAgent>();
         //myNavMeshAgent.speed = agentSpeed;
-        _cam = Camera.main.transform;
+        //_cam = Camera.main.transform;
         _navMeshAgent.autoBraking = false;
     }
 

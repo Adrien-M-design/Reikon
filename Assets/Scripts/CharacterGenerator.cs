@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterGenerator : MonoBehaviour
 {
+    [SerializeField] private Transform _parent = null;
     [SerializeField] private Transform[] _spawns = null;
     [SerializeField] private Transform _firstPos = null;
 
@@ -12,7 +13,8 @@ public class CharacterGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CharacterManager.Instance.CreateCharacter(_spawns[CharacterManager.Instance.SpawnCount]);
+        Debug.Log(CharacterManager.Instance.SpawnCount);
+        CharacterManager.Instance.CreateCharacter(_spawns[CharacterManager.Instance.SpawnCount], _parent);
     }
 
     // Update is called once per frame

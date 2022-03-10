@@ -24,6 +24,8 @@ public class BattleState : AGameState
     public override void ExitState()
     {
         CharacterManager.Instance.SpawnCount++;
+        CharacterManager.Instance.Character = null;
+        Debug.Log(CharacterManager.Instance.SpawnCount);
     }
     #endregion Methods
 }
