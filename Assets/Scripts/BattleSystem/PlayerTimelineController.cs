@@ -20,6 +20,7 @@ public class PlayerTimelineController : MonoBehaviour
     [Header("Anim")]
     [SerializeField] private Animator _animator = null;
     //ça viendra à changer
+    [SerializeField] private Animator _comboAnimator = null;
 
     [Header("Cursor")]
     [SerializeField] private GameObject _cursor = null;
@@ -34,6 +35,8 @@ public class PlayerTimelineController : MonoBehaviour
 
     private List<DatabaseManager.EAttackTypes> _inputArray = new List<DatabaseManager.EAttackTypes>();
     private bool _waitInput = false;
+    private bool _antiSpam = false;
+    private float _wait = 0f;
     private AttackData _currentAttackData = null;
 
     private event Action _onExec = null;
@@ -87,22 +90,35 @@ public class PlayerTimelineController : MonoBehaviour
             }
         }
 
-         if (_waitInput)
+         if (_waitInput && _antiSpam == false)
          {
              if (Input.GetButtonDown("FIRE"))
              {
-                 _inputArray.Add(DatabaseManager.EAttackTypes.FIRE);
-             }
+                _comboAnimator.SetTrigger("Trigger_Fire");
+                _inputArray.Add(DatabaseManager.EAttackTypes.FIRE);
+                _antiSpam = true;
+                _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
+                Debug.Log(_wait);
+            }
 
              if (Input.GetButtonDown("WATER"))
              {
-                 _inputArray.Add(DatabaseManager.EAttackTypes.WATER);
-             }
+                _comboAnimator.SetTrigger("Trigger_Water");
+                _inputArray.Add(DatabaseManager.EAttackTypes.WATER);
+                _antiSpam = true;
+                _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
+                Debug.Log(_wait);
+            }
 
              if (Input.GetButtonDown("WOOD"))
              {
-                 _inputArray.Add(DatabaseManager.EAttackTypes.WOOD);
-             }
+                _comboAnimator.SetTrigger("Trigger_Wood");
+                _inputArray.Add(DatabaseManager.EAttackTypes.WOOD);
+                _antiSpam = true;
+                _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
+
+                Debug.Log(_wait);
+            }
 
              if (Input.GetButtonDown("VALIDATE") && _inputArray.Count >= 3)
              {
@@ -120,6 +136,15 @@ public class PlayerTimelineController : MonoBehaviour
 
              }
          }
+
+        if (_antiSpam)
+        {
+            _wait -= Time.deltaTime * 1;
+            if(_wait <= 0)
+            {
+                _antiSpam = false;
+            }
+        }
     }
 
     void FixedUpdate()

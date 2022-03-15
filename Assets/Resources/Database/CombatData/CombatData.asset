@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a987f0987812bc498eb9955183ce09d, type: 3}
   m_Name: CombatData
   m_EditorClassIdentifier: 
-  _mobHp: 20
+  _mobHp: 100
   _mobName: Test
   _mob: {fileID: 0}
   _travelTime: 5

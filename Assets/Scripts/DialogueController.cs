@@ -18,6 +18,7 @@ public class DialogueController : MonoBehaviour
     private DialData _currentDialogue = null;
     private int _index = 0;
     private Color _notTalking = Color.black;
+    private AnimationClip _clip = null;
 
     public void Initialize(string id)
     {
@@ -29,6 +30,7 @@ public class DialogueController : MonoBehaviour
         _lSpeakerName.text = _currentDialogue.PromptData[1].Speaker.CharName;
         _rSpeaker.GetComponent<Animator>().Play(0);
         _lSpeaker.GetComponent<Animator>().Play(0);
+        _dialogue.GetComponent<Animator>().Play(0);
         SetUpSpeaker(0);
         _dialogue.SetActive(true);
     }
@@ -40,12 +42,16 @@ public class DialogueController : MonoBehaviour
             _rSpeakerNameBg.SetActive(false);
             _lSpeakerNameBg.SetActive(true);
             //right speaker not speaking
+            _rSpeaker.color = Color.grey;
+            _lSpeaker.color = Color.white;
         }
         else
         {
             _rSpeakerNameBg.SetActive(true);
             _lSpeakerNameBg.SetActive(false);
             //ayumu not speaking
+            _rSpeaker.color = Color.white;
+            _lSpeaker.color = Color.grey;
         }
     }
 
@@ -63,6 +69,8 @@ public class DialogueController : MonoBehaviour
         if(_index > _currentDialogue.PromptData.Length)
         {
             _index = 0;
+            _rSpeaker.color = Color.white;
+            _lSpeaker.color = Color.white;
             _dialogue.SetActive(false);
         }
     }

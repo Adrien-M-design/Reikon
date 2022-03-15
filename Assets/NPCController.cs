@@ -8,29 +8,33 @@ public class NPCController : MonoBehaviour
     [SerializeField] private DialogueController _dialogueController = null;
     [SerializeField] private GameObject _interact = null;
 
-    private bool _isInteracting = false;
+    private bool _isInBox = false;
 
     void Update()
     {
-        if (Input.GetButtonDown("Interact") && _isInteracting == false)
+        if (Input.GetButtonDown("Interact") && _isInBox == true)
         {
             _interact.SetActive(false);
-            _isInteracting = true;
             _dialogueController.Initialize(_dialogueID);
+            _isInBox = false;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player" && _isInteracting == false)
+        if(other.tag == "Player")
         {
             _interact.SetActive(true);
+            _isInBox = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        _interact.SetActive(false);
-        _isInteracting = false;
+        if(other.tag == "Player")
+        {
+            _interact.SetActive(false);
+            _isInBox = false;
+        }
     }
 }
