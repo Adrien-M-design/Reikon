@@ -43,6 +43,7 @@ public class PlayerTimelineController : MonoBehaviour
 
     [Header("Combat Controller")]
     [SerializeField] private CombatController _combatController = null;
+    [SerializeField] private GameObject _combo = null;
     private AttackData _attData = null;
 
     public bool GlobalInStopTime => _inStopTime || _ennemyTimeline.InStopTime;
@@ -98,7 +99,6 @@ public class PlayerTimelineController : MonoBehaviour
                 _inputArray.Add(DatabaseManager.EAttackTypes.FIRE);
                 _antiSpam = true;
                 _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
-                Debug.Log(_wait);
             }
 
              if (Input.GetButtonDown("WATER"))
@@ -107,7 +107,6 @@ public class PlayerTimelineController : MonoBehaviour
                 _inputArray.Add(DatabaseManager.EAttackTypes.WATER);
                 _antiSpam = true;
                 _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
-                Debug.Log(_wait);
             }
 
              if (Input.GetButtonDown("WOOD"))
@@ -116,16 +115,16 @@ public class PlayerTimelineController : MonoBehaviour
                 _inputArray.Add(DatabaseManager.EAttackTypes.WOOD);
                 _antiSpam = true;
                 _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
-
-                Debug.Log(_wait);
             }
 
              if (Input.GetButtonDown("VALIDATE") && _inputArray.Count >= 3)
              {
+                _comboAnimator.SetTrigger("Trigger_Validate");
                 _currentAttackData = DatabaseManager.Instance.GetAttackByCombo(_inputArray);
                 if(_currentAttackData != null)
                 {
                     _waitInput = false;
+                    _combo.SetActive(false);
                     _actionTime = _currentAttackData.ActionTime;
                     _inStopTime = false;
                 }
@@ -160,6 +159,7 @@ public class PlayerTimelineController : MonoBehaviour
                 _inAction = true;
                 _inStopTime = true;
                 _waitInput = true;
+                _combo.SetActive(true);
 
             }
         }

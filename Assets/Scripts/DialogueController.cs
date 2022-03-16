@@ -26,8 +26,6 @@ public class DialogueController : MonoBehaviour
         _rSpeaker.sprite = _currentDialogue.Speakers[1].CharacterSprite;
         _lSpeaker.sprite = _currentDialogue.Speakers[0].CharacterSprite;
         _dialBox.text = _currentDialogue.PromptData[0].Text;
-        _rSpeakerName.text = _currentDialogue.PromptData[0].Speaker.CharName;
-        _lSpeakerName.text = _currentDialogue.PromptData[1].Speaker.CharName;
         _rSpeaker.GetComponent<Animator>().Play(0);
         _lSpeaker.GetComponent<Animator>().Play(0);
         _dialogue.GetComponent<Animator>().Play(0);
@@ -39,6 +37,7 @@ public class DialogueController : MonoBehaviour
     {
         if (_currentDialogue.PromptData[index].Speaker.CharName == "Ayumu")
         {
+            _lSpeakerName.text = _currentDialogue.PromptData[index].Speaker.CharName;
             _rSpeakerNameBg.SetActive(false);
             _lSpeakerNameBg.SetActive(true);
             //right speaker not speaking
@@ -47,6 +46,7 @@ public class DialogueController : MonoBehaviour
         }
         else
         {
+            _rSpeakerName.text = _currentDialogue.PromptData[index].Speaker.CharName;
             _rSpeakerNameBg.SetActive(true);
             _lSpeakerNameBg.SetActive(false);
             //ayumu not speaking
@@ -61,7 +61,6 @@ public class DialogueController : MonoBehaviour
         {
             _dialBox.text = _currentDialogue.PromptData[_index].Text;
             SetUpSpeaker(_index);
-            //_speakerName.text = _currentDialogue.PromptData[_index].Speaker.CharName;
         }
         
         _index++;

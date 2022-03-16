@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class CombatController : MonoBehaviour
 {
     [SerializeField] private Transform _playerTransform = null;
     [SerializeField] private Transform _ennemyTransform = null;
     [SerializeField] private GameObject _floattingTextPrefab = null;
+    [SerializeField] private Slider _playerSlider = null;
     private CombatData _combatData = null;
 
     private int _charHp = 100;
@@ -45,6 +47,9 @@ public class CombatController : MonoBehaviour
         _combatData = DatabaseManager.Instance.Combats["Test"];
         _charHp = CharacterManager.Instance.CharHp;
         _mobHp = _combatData.MobHp;
+
+        _playerSlider.maxValue = CharHp;
+        _playerSlider.value = CharHp;
     }
 
     // Update is called once per frame
@@ -57,6 +62,7 @@ public class CombatController : MonoBehaviour
     {
         ShowDamage(dmg.ToString(), _playerTransform);
         CharHp -= dmg;
+        _playerSlider.value = CharHp;
         //faut clamper la vie couillon
         //if _charHp >= 0 : c'est perdu
         Debug.Log(CharHp);

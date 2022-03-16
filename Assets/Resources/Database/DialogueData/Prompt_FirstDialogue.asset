@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa60add2be699847add38db58a09297, type: 3}
   m_Name: Prompt_FirstDialogue
   m_EditorClassIdentifier: 
-  _speaker: {fileID: 11400000, guid: f7b714c8880c82045b086252256636a9, type: 2}
-  _text: Hello ! This is a test
+  _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
+  _text: Vous pouvez me lire ?
