@@ -1,2 +1,2 @@
-Assets/Scenes/DebugPersistantManager.unity
 Assets/Scenes/BlockingSchéma.unity
+Assets/Scenes/PersistentManagers.unity

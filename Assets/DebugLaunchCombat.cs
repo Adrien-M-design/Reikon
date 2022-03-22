@@ -29,7 +29,6 @@ public class DebugLaunchCombat : MonoBehaviour
 
     public void LaunchBattle()
     {
-        _battleButton.SetActive(false);
         GameStateManager.Instance.LaunchTransition(EGameState.BATTLE);
     }
 }

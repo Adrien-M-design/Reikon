@@ -17,7 +17,7 @@ public class DebugGameLoader : MonoBehaviour
         _inputManager.Initialize();
         _gameStateManager.Initialize();
         _characterManager.Initialize();
-        GameStateManager.Instance.ChangeState(_firstState);
+        //GameStateManager.Instance.ChangeState(_firstState);
     }
 
     // Update is called once per frame
