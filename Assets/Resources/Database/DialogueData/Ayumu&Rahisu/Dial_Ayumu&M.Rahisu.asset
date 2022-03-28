@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9f5d744e4703440ac1e78284ffe74f, type: 3}
+  m_Name: Dial_Ayumu&M.Rahisu
+  m_EditorClassIdentifier: 
+  _id: DIAL_A&R
+  _promptData:
+  - {fileID: 11400000, guid: ae2d80598f9f02545b1aed095bffca70, type: 2}
+  - {fileID: 11400000, guid: 232cac635d0613645a34d3ff01196944, type: 2}
+  - {fileID: 11400000, guid: b6ff5a1cef89d55469bcd538665e57cf, type: 2}
+  - {fileID: 11400000, guid: 6def6f8a2da91594ea7bc4275030c5cb, type: 2}
+  - {fileID: 11400000, guid: b8e6dcd6f963b5346ad51b7eef253f35, type: 2}
+  - {fileID: 11400000, guid: a08d20aaf4aa0ab40b4c96cc8d0109b6, type: 2}
+  - {fileID: 11400000, guid: a72041494b19ac1438a0556aed16ce10, type: 2}
+  - {fileID: 11400000, guid: 5dee445a20a3b0f4b9767449a054708a, type: 2}
+  - {fileID: 11400000, guid: 2e7925b7f625a6f4b8276246ea683111, type: 2}
+  - {fileID: 11400000, guid: 9fc64a131ac7726469d66a0b363f8ac5, type: 2}
+  - {fileID: 11400000, guid: 083e8548b5fc0864f945e1f6c7ebaea4, type: 2}
+  - {fileID: 11400000, guid: afd6e4be191ceb547a84161d36055e55, type: 2}
+  _speakers:
+  - {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
+  - {fileID: 11400000, guid: 676f01c19859a91408316e00e0a3addf, type: 2}
