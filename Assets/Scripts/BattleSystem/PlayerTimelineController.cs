@@ -48,6 +48,7 @@ public class PlayerTimelineController : MonoBehaviour
 
     public bool GlobalInStopTime => _inStopTime || _ennemyTimeline.InStopTime;
     public bool InStopTime => _inStopTime;
+    public List<DatabaseManager.EAttackTypes> InputArray => _inputArray;
 
     public event Action OnExec
     {
@@ -144,6 +145,7 @@ public class PlayerTimelineController : MonoBehaviour
                 _antiSpam = false;
             }
         }
+            
     }
 
     void FixedUpdate()
@@ -197,4 +199,5 @@ public class PlayerTimelineController : MonoBehaviour
             _travelTime = _waitTime / 2;
         }
     }
+
 }

@@ -351,10 +351,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0bc75a7e478c10a4eb4cc02981dae0de, type: 2}
   _charAttData:
   - {fileID: 11400000, guid: 0bc75a7e478c10a4eb4cc02981dae0de, type: 2}
+  - {fileID: 11400000, guid: 15e385b31c8f6024399e35a4e50546bb, type: 2}
   _combatData:
   - {fileID: 11400000, guid: 65ec30e73da071144a8a274c3c2fce08, type: 2}
   _dialData:
   - {fileID: 11400000, guid: 82f1ea35f34bfc648a121aa158bca183, type: 2}
+  _spriteList:
+  - {fileID: 11400000, guid: fe2f6204ea94856489630ef3ea797066, type: 2}
+  - {fileID: 11400000, guid: 14472805c48b1774ebb927ded244cf97, type: 2}
+  - {fileID: 11400000, guid: 03a331dbb2958864ca2b7f2450c6dab3, type: 2}
 --- !u!4 &1231116697
 Transform:
   m_ObjectHideFlags: 0

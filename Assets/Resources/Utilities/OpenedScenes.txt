@@ -1,2 +1,1 @@
-Assets/Scenes/BlockingSchéma.unity
-Assets/Scenes/PersistentManagers.unity
+Assets/Scenes/BattleSystem.unity
