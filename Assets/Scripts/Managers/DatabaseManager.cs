@@ -32,7 +32,7 @@ public class DatabaseManager : Singleton<DatabaseManager>
     [SerializeField] private AttackData[] _charAttData = null;
     [SerializeField] private CombatData[] _combatData = null;
     [SerializeField] private DialData[] _dialData = null;
-    [SerializeField] private SpriteData[] _spriteList = null;
+    [SerializeField] private SpriteData[] _spriteData = null;
    
 
     private Dictionary<string, AttackData> _charAttacks = null;
@@ -62,6 +62,7 @@ public class DatabaseManager : Singleton<DatabaseManager>
         _mobAttacks = new Dictionary<string, AttackData>();
         _combats = new Dictionary<string, CombatData>();
         _dialogues = new Dictionary<string, DialData>();
+        _sprites = new Dictionary<EAttackTypes, Sprite>();
 
         for (int i = 0; i < _mobAttData.Length; i++)
         {
@@ -83,9 +84,9 @@ public class DatabaseManager : Singleton<DatabaseManager>
             _dialogues.Add(_dialData[i].ID, _dialData[i]);
         }
 
-        for (int i = 0; i < _spriteList.Length; i++)
+        for (int i = 0; i < _spriteData.Length; i++)
         {
-            _sprites.Add(_spriteList[i].AttackType, _spriteList[i].Sprite);
+            _sprites.Add(_spriteData[i].AttackType, _spriteData[i].Sprite);
         }
     }
 
@@ -123,6 +124,11 @@ public class DatabaseManager : Singleton<DatabaseManager>
     public int GetMobAttackDamage(string attackID)
     {
         return _mobAttacks[attackID].Damage;
+    }
+
+    public Sprite GetSpriteByType(EAttackTypes type)
+    {
+        return _sprites[type];
     }
 
     public AttackData GetAttackByCombo(List<EAttackTypes> combo)

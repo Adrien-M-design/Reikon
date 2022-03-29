@@ -17,22 +17,42 @@ public class FeedbackController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        UIUpdate();
     }
 
     public void UIUpdate()
     {
-        switch (_playerTimeline.InputArray[_playerTimeline.InputArray.Count])
+        if (Input.anyKeyDown)
         {
-            case DatabaseManager.EAttackTypes.FIRE:
-                _sprites[_playerTimeline.InputArray.Count].sprite = DatabaseManager.Instance.Sprites[DatabaseManager.EAttackTypes.FIRE];
-                break;
-            case DatabaseManager.EAttackTypes.WATER:
-                _sprites[_playerTimeline.InputArray.Count].sprite = DatabaseManager.Instance.Sprites[DatabaseManager.EAttackTypes.WATER];
-                break;
-            case DatabaseManager.EAttackTypes.WOOD:
-                _sprites[_playerTimeline.InputArray.Count].sprite = DatabaseManager.Instance.Sprites[DatabaseManager.EAttackTypes.WOOD];
-                break;
+
+            switch (_playerTimeline.InputArray.Count)
+            {
+                case 1:
+                case 2:
+                case 3:
+                    int index = _playerTimeline.InputArray.Count - 1;
+                    _sprites[index].gameObject.SetActive(true);
+                    _sprites[index].sprite = DatabaseManager.Instance.GetSpriteByType(_playerTimeline.InputArray[index]);
+                    break;
+                default:
+                    for(int i = 0; _sprites.Length > i; i++)
+                    {
+                        _sprites[i].gameObject.SetActive(false);
+                    }
+                    break;
+            }
+
+            
+            
         }
+
+        if (_playerTimeline.InputArray.Count == 0)
+        {
+            for (int i = 0; _sprites.Length > i; i++)
+            {
+                _sprites[i].gameObject.SetActive(false);
+            }
+        }
+
     }
 }

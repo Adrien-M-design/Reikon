@@ -120,6 +120,9 @@ public class PlayerTimelineController : MonoBehaviour
 
              if (Input.GetButtonDown("VALIDATE") && _inputArray.Count >= 3)
              {
+                Debug.Log(_inputArray[0]);
+                Debug.Log(_inputArray[1]);
+                Debug.Log(_inputArray[2]);
                 _comboAnimator.SetTrigger("Trigger_Validate");
                 _currentAttackData = DatabaseManager.Instance.GetAttackByCombo(_inputArray);
                 if(_currentAttackData != null)
@@ -194,6 +197,7 @@ public class PlayerTimelineController : MonoBehaviour
     {
         if (_inAction)
         {
+            _inputArray.Clear();
             _cursor.transform.position = _interruptPos.position;
             _inAction = false;
             _travelTime = _waitTime / 2;

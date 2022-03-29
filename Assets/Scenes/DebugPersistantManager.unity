@@ -217,7 +217,7 @@ MonoBehaviour:
   _inputManager: {fileID: 908372484}
   _gameStateManager: {fileID: 1108843258}
   _characterManager: {fileID: 2005535125}
-  _firstState: 3
+  _firstState: 4
 --- !u!4 &838798336
 Transform:
   m_ObjectHideFlags: 0
@@ -356,10 +356,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 65ec30e73da071144a8a274c3c2fce08, type: 2}
   _dialData:
   - {fileID: 11400000, guid: 82f1ea35f34bfc648a121aa158bca183, type: 2}
-  _spriteList:
+  _spriteData:
+  - {fileID: 11400000, guid: 03a331dbb2958864ca2b7f2450c6dab3, type: 2}
   - {fileID: 11400000, guid: fe2f6204ea94856489630ef3ea797066, type: 2}
   - {fileID: 11400000, guid: 14472805c48b1774ebb927ded244cf97, type: 2}
-  - {fileID: 11400000, guid: 03a331dbb2958864ca2b7f2450c6dab3, type: 2}
 --- !u!4 &1231116697
 Transform:
   m_ObjectHideFlags: 0
