@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa60add2be699847add38db58a09297, type: 3}
+  m_Name: Prompt_A&PB_3
+  m_EditorClassIdentifier: 
+  _speaker: {fileID: 11400000, guid: 146ec90c031eebe4c99d6824ae39e3ef, type: 2}
+  _text: "Il me semble qu'il est parti de l'autre c\xF4t\xE9 du chemin principal,
+    mais je n'en suis pas certaine. Vous devriez demander au jeune homme de l'autre
+    c\xF4t\xE9, je crois que le petit l'a pouss\xE9 en courant. "
