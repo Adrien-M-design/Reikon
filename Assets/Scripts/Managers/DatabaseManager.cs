@@ -33,6 +33,7 @@ public class DatabaseManager : Singleton<DatabaseManager>
     [SerializeField] private CombatData[] _combatData = null;
     [SerializeField] private DialData[] _dialData = null;
     [SerializeField] private SpriteData[] _spriteData = null;
+    [SerializeField] private TalismanData[] _talismanData = null;
    
 
     private Dictionary<string, AttackData> _charAttacks = null;
@@ -40,6 +41,7 @@ public class DatabaseManager : Singleton<DatabaseManager>
     private Dictionary<string, CombatData> _combats = null;
     private Dictionary<string, DialData> _dialogues = null;
     private Dictionary<EAttackTypes, Sprite> _sprites = null;
+    private Dictionary<string, TalismanData> _talismans = null;
     private string _currentCombat = string.Empty;
     #endregion Fields
 
@@ -49,6 +51,7 @@ public class DatabaseManager : Singleton<DatabaseManager>
     public Dictionary<string, CombatData> Combats => _combats;
     public Dictionary<string, DialData> Dialogues => _dialogues;
     public Dictionary<EAttackTypes, Sprite> Sprites => _sprites;
+    public Dictionary<string, TalismanData> Talismans => _talismans;
     public CombatData CurrentCombat => _combats[_currentCombat];
     #endregion Properties
 
@@ -63,6 +66,7 @@ public class DatabaseManager : Singleton<DatabaseManager>
         _combats = new Dictionary<string, CombatData>();
         _dialogues = new Dictionary<string, DialData>();
         _sprites = new Dictionary<EAttackTypes, Sprite>();
+        _talismans = new Dictionary<string, TalismanData>();
 
         for (int i = 0; i < _mobAttData.Length; i++)
         {
@@ -87,6 +91,11 @@ public class DatabaseManager : Singleton<DatabaseManager>
         for (int i = 0; i < _spriteData.Length; i++)
         {
             _sprites.Add(_spriteData[i].AttackType, _spriteData[i].Sprite);
+        }
+
+        for (int i = 0; i < _talismanData.Length; i++)
+        {
+            _talismans.Add(_talismanData[i].TalismanID, _talismanData[i]);
         }
     }
 
