@@ -7,16 +7,62 @@ public class InGameMenuController : MonoBehaviour
     [SerializeField] private Canvas _UICanvas = null;
     [SerializeField] private GameObject _glossary = null;
     [SerializeField] private GameObject _talismans = null;
+    private GameObject _uIType = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        _UICanvas.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(_UICanvas.enabled == false)
+        {
+            if (Input.GetButtonDown("Glossary"))
+            {
+                _UICanvas.enabled = true;
+                OpenMenu(_glossary);
+            }
+            else if (Input.GetButtonDown("Talismans"))
+            {
+                _UICanvas.enabled = true;
+                OpenMenu(_talismans);
+            }
+        }
+
+        if(_UICanvas.enabled == true)
+        {
+            if (_uIType == _glossary && Input.GetButtonDown("Talismans"))
+            {
+                SwitchMenu(_talismans);
+            }
+
+            if (_uIType == _talismans && Input.GetButtonDown("Glossary"))
+            {
+                SwitchMenu(_glossary);
+            }            
+        }
+
+        if (_UICanvas.enabled == true && Input.GetButtonDown("Escape"))
+        {
+            _UICanvas.enabled = false;
+            _uIType.SetActive(false);
+        }
+
+    }
+
+    public void OpenMenu(GameObject uIType)
+    {
+        _uIType = uIType;
+        _uIType.SetActive(true);
+    }
+
+    public void SwitchMenu(GameObject uISwitch)
+    {
+        _uIType.SetActive(false);
+        _uIType = uISwitch;
+        _uIType.SetActive(true);
     }
 }
