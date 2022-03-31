@@ -9,13 +9,13 @@ public class InGameMenuController : MonoBehaviour
     [SerializeField] private GameObject _talismans = null;
     private GameObject _uIType = null;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         _UICanvas.enabled = false;
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
         if(_UICanvas.enabled == false)
@@ -50,7 +50,6 @@ public class InGameMenuController : MonoBehaviour
             _UICanvas.enabled = false;
             _uIType.SetActive(false);
         }
-
     }
 
     public void OpenMenu(GameObject uIType)
