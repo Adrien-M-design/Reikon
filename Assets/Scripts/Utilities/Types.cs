@@ -10,3 +10,13 @@ public enum EGameState
     NONE
 
 }
+
+public enum ECharacterState
+{
+    IDLE,
+    WALKING,
+    RUNNING,
+    DIALOGUE,
+    MENU,
+    NONE
+}
