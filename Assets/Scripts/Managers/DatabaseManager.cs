@@ -105,10 +105,6 @@ public class DatabaseManager : Singleton<DatabaseManager>
     **/
 
 
-    public EAttackTypes GetCharAttackType(string attackID)
-    {
-        return _charAttacks[attackID].AttackType;
-    }
 
     public ECombatEffects GetCharAttackCombatEffect(string attackID)
     {
@@ -118,11 +114,6 @@ public class DatabaseManager : Singleton<DatabaseManager>
     public int GetCharAttackDamage(string attackID)
     {
         return _charAttacks[attackID].Damage;
-    }
-
-    public EAttackTypes GetMobAttackType(string attackID)
-    {
-        return _mobAttacks[attackID].AttackType;
     }
 
     public ECombatEffects GetMobAttackCombatEffect(string attackID)
@@ -160,7 +151,7 @@ public class DatabaseManager : Singleton<DatabaseManager>
                     }
                 }
             }
-
+            counter = 0;
         }
         Debug.LogError("Combo Not Found : " + combo);
         return null;

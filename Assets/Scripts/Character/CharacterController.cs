@@ -49,7 +49,8 @@ public class CharacterController : MonoBehaviour
     {
         inputValue.z = Input.GetAxis("Vertical");
         inputValue.x = Input.GetAxis("Horizontal");
-        Step();
+        if (CharacterManager.Instance.CanMove)
+            Step();
         /* Ancien systéme de déplacement nul
 
         if (Input.GetButton("Vertical"))

@@ -11,6 +11,7 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        CharacterManager.Instance.OnMoveToggle += CameraLock;
     }
 
     // Update is called once per frame
@@ -24,5 +25,15 @@ public class CameraController : MonoBehaviour
             _isInit = true;
         }
         
+    }
+
+    private void CameraLock(bool toggle)
+    {
+        _cam.enabled = toggle;
+    }
+
+    private void OnDestroy()
+    {
+        CharacterManager.Instance.OnMoveToggle -= CameraLock;
     }
 }

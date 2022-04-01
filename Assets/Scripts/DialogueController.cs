@@ -30,6 +30,7 @@ public class DialogueController : MonoBehaviour
         _lSpeaker.GetComponent<Animator>().Play(0);
         _dialogue.GetComponent<Animator>().Play(0);
         SetUpSpeaker(0);
+        CharacterManager.Instance.CanMove = false;
         _dialogue.SetActive(true);
     }
 
@@ -70,6 +71,7 @@ public class DialogueController : MonoBehaviour
             _index = 0;
             _rSpeaker.color = Color.white;
             _lSpeaker.color = Color.white;
+            CharacterManager.Instance.CanMove = true;
             _dialogue.SetActive(false);
         }
     }
