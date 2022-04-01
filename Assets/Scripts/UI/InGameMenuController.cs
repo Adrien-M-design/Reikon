@@ -52,13 +52,13 @@ public class InGameMenuController : MonoBehaviour
         }
     }
 
-    public void OpenMenu(GameObject uIType)
+    private void OpenMenu(GameObject uIType)
     {
         _uIType = uIType;
         _uIType.SetActive(true);
     }
 
-    public void SwitchMenu(GameObject uISwitch)
+    private void SwitchMenu(GameObject uISwitch)
     {
         _uIType.SetActive(false);
         _uIType = uISwitch;

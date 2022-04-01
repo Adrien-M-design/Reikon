@@ -1517,7 +1517,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _leftPageImage: {fileID: 1172317049}
   _rightPageImage: {fileID: 2098634207}
-  _spToChangeTo: {fileID: 21300000, guid: 782a712707ac2074c8e082d7cc0aa341, type: 3}
+  _spToChangeTo:
+  - {fileID: 21300000, guid: e03043cff8cac9941b6530fcd92849e1, type: 3}
+  - {fileID: 21300000, guid: 00cb61698f81174489d2c9aed5d6f72d, type: 3}
+  - {fileID: 21300000, guid: cb91fc34c992efb4c9359cc410cfcae9, type: 3}
+  - {fileID: 21300000, guid: acc61c31cd6c51a489e9834bae9c97fd, type: 3}
+  - {fileID: 21300000, guid: f5f359793a759384a83f2b9eb105580c, type: 3}
+  - {fileID: 21300000, guid: a736ab46c2e06c14d8d5491f086299f7, type: 3}
+  - {fileID: 21300000, guid: 3d9fd5da63d6c3541b2a5ad9d7ee3af4, type: 3}
+  - {fileID: 21300000, guid: e97658cba27d5cb4582db8f4e3bb83a1, type: 3}
+  - {fileID: 21300000, guid: 64fabfb8a42ded14bb0f109d80203cfc, type: 3}
+  - {fileID: 21300000, guid: e333ae8cf984a9e4793020f2c2df612e, type: 3}
+  - {fileID: 21300000, guid: 782a712707ac2074c8e082d7cc0aa341, type: 3}
+  - {fileID: 0}
 --- !u!1 &1377803723
 GameObject:
   m_ObjectHideFlags: 0
