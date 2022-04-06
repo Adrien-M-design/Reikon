@@ -55,7 +55,7 @@ public class GlossaryController : MonoBehaviour
         _leftPageIndex = _leftPageIndex + _arrayMovement;
         _rightPageIndex = _rightPageIndex + _arrayMovement;
 
-        //[Here should be the command to play tha animation if animation there is]
+        //[Here should be the command to play the animation if animation there is]
         //[And here should be the sound Effect]
         _leftPageImage.sprite = _spToChangeTo[_leftPageIndex];
         _rightPageImage.sprite = _spToChangeTo[_rightPageIndex];       
