@@ -2814,8 +2814,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9fc4568739f11748b726eae6011113e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _talismanA: {fileID: 0}
-  _talismanB: {fileID: 0}
+  _talismanA: {fileID: 572612722}
+  _talismanB: {fileID: 1609525623}
+  _effectDesc: {fileID: 2104237127}
+  _tWeightImage: {fileID: 1244264796}
+  _tPickedUp: 0
 --- !u!1 &1172317047
 GameObject:
   m_ObjectHideFlags: 0
