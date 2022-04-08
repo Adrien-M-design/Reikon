@@ -45,10 +45,12 @@ public class PlayerTimelineController : MonoBehaviour
     [SerializeField] private CombatController _combatController = null;
     [SerializeField] private GameObject _combo = null;
     private AttackData _attData = null;
+    private bool _onStart = false;
 
     public bool GlobalInStopTime => _inStopTime || _ennemyTimeline.InStopTime;
     public bool InStopTime => _inStopTime;
     public List<DatabaseManager.EAttackTypes> InputArray => _inputArray;
+    public bool InAction => _inAction;
 
     public event Action OnExec
     {
@@ -86,7 +88,7 @@ public class PlayerTimelineController : MonoBehaviour
             if(_animationLength <= 0)
             {
                 _inStopTime = false;
-                _combatController.MobTakeDamage(_attData.Damage);
+                _combatController.MobTakeDamage(_attData, _attData.CombatEffect);
                 _inAnimation = false;
                 _animationLength = _clip.length;
             }
@@ -135,6 +137,12 @@ public class PlayerTimelineController : MonoBehaviour
                 }
 
              }
+
+             if(_inputArray.Count > 3)
+            {
+                Debug.LogError("Combo out of array, retry");
+                _inputArray.Clear();
+            }
          }
 
         if (_antiSpam)
@@ -150,6 +158,11 @@ public class PlayerTimelineController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (_onStart)
+        {
+            //_combatController.ApplyEffect()
+            _onStart = false;
+        }
         if(_inAction == false)
         {
             float t = _travelTime / _waitTime;

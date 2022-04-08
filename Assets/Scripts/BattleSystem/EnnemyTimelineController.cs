@@ -73,7 +73,7 @@ public class EnnemyTimelineController : MonoBehaviour
             if(_animationLength <= 0)
             {
                 Time.timeScale = 1;
-                _combatController.CharTakeDamage(_currentAttack.Damage);
+                _combatController.CharTakeDamage(_currentAttack, _currentAttack.CombatEffect);
                 _inStopTime = false;
                 _inAnimation = false;
                 _animationLength = _clip.length;

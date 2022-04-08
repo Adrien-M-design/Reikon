@@ -8,12 +8,16 @@ public class CombatController : MonoBehaviour
 {
     [SerializeField] private Transform _playerTransform = null;
     [SerializeField] private Transform _ennemyTransform = null;
+    [SerializeField] private PlayerTimelineController _playerTimeline = null;
     [SerializeField] private GameObject _floattingTextPrefab = null;
     [SerializeField] private Slider _playerSlider = null;
     private CombatData _combatData = null;
 
     private int _charHp = 100;
     private int _mobHp = 100;
+
+    private Dictionary<DatabaseManager.ECombatEffects, int> _characterEffects;
+    private Dictionary<DatabaseManager.ECombatEffects, int> _ennemyEffects;
 
     public int CharHp
     {
@@ -50,33 +54,42 @@ public class CombatController : MonoBehaviour
 
         _playerSlider.maxValue = CharHp;
         _playerSlider.value = CharHp;
+
+        _characterEffects = new Dictionary<DatabaseManager.ECombatEffects, int>();
+        _ennemyEffects = new Dictionary<DatabaseManager.ECombatEffects, int>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void CharTakeDamage(int dmg)
+    public void CharTakeDamage(AttackData attData, DatabaseManager.ECombatEffects effect)
     {
-        ShowDamage(dmg.ToString(), _playerTransform);
-        CharHp -= dmg;
+        if(effect != DatabaseManager.ECombatEffects.NONE && !_characterEffects.ContainsKey(effect))
+        {
+            AddEffect(effect, attData.EffectCooldown,  true);
+        }
+        ShowDamage(attData.Damage.ToString(), _playerTransform);
+        CharHp -= attData.Damage;
         _playerSlider.value = CharHp;
-        //faut clamper la vie couillon
         //if _charHp >= 0 : c'est perdu
         Debug.Log(CharHp);
     }
 
-    public void MobTakeDamage(int dmg)
+    public void MobTakeDamage(AttackData attData, DatabaseManager.ECombatEffects effect)
     {
-        ShowDamage(dmg.ToString(), _ennemyTransform);
-        MobHp -= dmg;
-        //faut clamper la vie couillon
+        if (effect != DatabaseManager.ECombatEffects.NONE && !_characterEffects.ContainsKey(effect))
+        {
+            AddEffect(effect, attData.EffectCooldown, false);
+        }
+        ShowDamage(attData.Damage.ToString(), _ennemyTransform);
+        MobHp -= attData.Damage;
         Debug.Log(MobHp);
-        //if _mobHp >= 0 : c'est gagné 
         if (MobHp <= 0)
         {
+            //Ajouter transition Combat -> Monde
             GameStateManager.Instance.LaunchTransition(EGameState.GAME);
         }
         
@@ -105,5 +118,68 @@ public class CombatController : MonoBehaviour
         return _combatData.Attacks[rand];
     }
 
-    
+    public void ApplyEffect(Dictionary<DatabaseManager.ECombatEffects, int> effects, bool onSelf)
+    {
+        foreach(KeyValuePair< DatabaseManager.ECombatEffects, int> pair in effects)
+        {
+            switch (pair.Key)
+            {
+                case DatabaseManager.ECombatEffects.SHIELDED:
+                    break;
+                case DatabaseManager.ECombatEffects.DOT:
+                    DamageOverTime(onSelf);
+                    break;
+                case DatabaseManager.ECombatEffects.DOWNSPEED:
+                    break;
+                case DatabaseManager.ECombatEffects.UPSPEED:
+                    break;
+            }
+
+            if (onSelf)
+            {
+                _characterEffects[pair.Key] = pair.Value - 1;
+                if(_characterEffects[pair.Key] <= 0)
+                {
+                    _characterEffects.Remove(pair.Key);
+                }
+            }
+            else
+            {
+                _ennemyEffects[pair.Key] = pair.Value - 1;
+                if (_ennemyEffects[pair.Key] <= 0)
+                {
+                    _ennemyEffects.Remove(pair.Key);
+                }
+            }
+        }
+    }
+
+    public void AddEffect(DatabaseManager.ECombatEffects effect, int cooldown, bool onSelf)
+    {
+        if (onSelf)
+        {
+            _characterEffects.Add(effect, cooldown);
+        }
+        else
+        {
+            _ennemyEffects.Add(effect, cooldown);
+        }
+    }
+
+    public void DamageOverTime(bool onSelf)
+    {
+        if (onSelf)
+        {
+            CharHp -= 2;
+            ShowDamage("2", _playerTransform);
+        }
+        else
+        {
+            MobHp -= 2;
+            ShowDamage("2", _ennemyTransform);
+        }
+    }
+
+
+
 }

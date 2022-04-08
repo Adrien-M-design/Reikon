@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.62968385, g: 0.61681265, b: 0.6062981, a: 1}
+  m_IndirectSpecularColor: {r: 0.44824797, g: 0.49827397, b: 0.5755831, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -26796,6 +26796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerTransform: {fileID: 2066905822}
   _ennemyTransform: {fileID: 2060945175}
+  _playerTimeline: {fileID: 478164473}
   _floattingTextPrefab: {fileID: 8855906688271775840, guid: f8eca3e8ffd5a174cbe21b4226853e62,
     type: 3}
   _playerSlider: {fileID: 1616654265}
