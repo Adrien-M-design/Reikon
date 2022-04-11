@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Mob_WATER_STREAM_ATT 1
   m_EditorClassIdentifier: 
   _attackID: Mob_WATER_STREAM_ATT
+  _attackName: Water Stream
   _damage: 10
   _actionTime: 2
-  _attackType: 2
+  _onSelf: 0
+  _effectCooldown: 0
+  _effectDamage: 0
   _combatEffect: 4
   _elementalCombatEffect: 4
   _combo: 

@@ -15,7 +15,7 @@ MonoBehaviour:
   _attackID: CONTRE
   _attackName: Contre
   _damage: 0
-  _actionTime: 1
+  _actionTime: 0.5
   _onSelf: 1
   _effectCooldown: 0
   _effectDamage: 0

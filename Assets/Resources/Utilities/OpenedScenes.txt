@@ -1,2 +1,1 @@
-Assets/Scenes/BattleSystem.unity
-Assets/Scenes/DebugPersistantManager.unity
+Assets/Scenes/FXTest.unity

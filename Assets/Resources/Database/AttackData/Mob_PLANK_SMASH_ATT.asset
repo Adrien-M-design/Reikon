@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Mob_PLANK_SMASH_ATT
   m_EditorClassIdentifier: 
   _attackID: Mob_PLANK_SMASH_ATT
+  _attackName: Plank Smash
   _damage: 15
   _actionTime: 3
-  _attackType: 1
+  _onSelf: 0
+  _effectCooldown: 0
+  _effectDamage: 0
   _combatEffect: 4
   _elementalCombatEffect: 4
   _combo: 
