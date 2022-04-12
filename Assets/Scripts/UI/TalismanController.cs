@@ -16,6 +16,17 @@ public class TalismanController : MonoBehaviour
     private bool _isAEquipped = false;
     private bool _isBEquipped = false; 
 
+    public bool IsAEquipped
+    {
+        get => _isAEquipped;
+        //set => _isAEquipped = value;
+    }
+    public bool IsBEquipped
+    {
+        get => _isBEquipped;
+        //set => _isBEquipped = value;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
