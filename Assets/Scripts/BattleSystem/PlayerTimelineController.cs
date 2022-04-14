@@ -91,6 +91,7 @@ public class PlayerTimelineController : MonoBehaviour
                 _combatController.MobTakeDamage(_attData, _attData.CombatEffect);
                 _inAnimation = false;
                 _animationLength = _clip.length;
+                _onStart = true;
             }
         }
 
@@ -160,7 +161,7 @@ public class PlayerTimelineController : MonoBehaviour
     {
         if (_onStart)
         {
-            //_combatController.ApplyEffect()
+            //_combatController.ApplyEffect(_combatController.CharacterEffects, true);
             _onStart = false;
         }
         if(_inAction == false)

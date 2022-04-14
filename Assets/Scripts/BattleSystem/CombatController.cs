@@ -8,7 +8,6 @@ public class CombatController : MonoBehaviour
 {
     [SerializeField] private Transform _playerTransform = null;
     [SerializeField] private Transform _ennemyTransform = null;
-    [SerializeField] private PlayerTimelineController _playerTimeline = null;
     [SerializeField] private GameObject _floattingTextPrefab = null;
     [SerializeField] private Slider _playerSlider = null;
     private CombatData _combatData = null;
@@ -44,6 +43,10 @@ public class CombatController : MonoBehaviour
             _mobHp = Mathf.Clamp(_mobHp, 0, _combatData.MobHp);
         }
     }
+
+    public Dictionary<DatabaseManager.ECombatEffects, int> CharacterEffects;
+    public Dictionary<DatabaseManager.ECombatEffects, int> EnnemyEffects;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -92,8 +95,6 @@ public class CombatController : MonoBehaviour
             //Ajouter transition Combat -> Monde
             GameStateManager.Instance.LaunchTransition(EGameState.GAME);
         }
-        
-
     }
 
     public void CharHeal(int heal)
