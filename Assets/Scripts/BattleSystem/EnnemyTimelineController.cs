@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class EnnemyTimelineController : MonoBehaviour
 {
     private float _travelTime = 0f;
+    private bool _onStart = false;
     [SerializeField] private float _waitTime = 0f;
     private float _actionTime = 0f;
     private bool _inStopTime = false;
@@ -63,6 +64,12 @@ public class EnnemyTimelineController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (_onStart)
+        {
+            _combatController.ApplyEffect(_combatController.EnnemyEffects, false);
+            _onStart = false;
+        }
+
         if (!GlobalInStopTime)
             _travelTime += Time.deltaTime;
 
@@ -77,13 +84,14 @@ public class EnnemyTimelineController : MonoBehaviour
                 _inStopTime = false;
                 _inAnimation = false;
                 _animationLength = _clip.length;
+                _onStart = true;
             }
         }
     }
 
     void FixedUpdate()
     {
-        if(_inAction == false)
+        if (_inAction == false)
         {
             float t = _travelTime / _waitTime;
             _cursor.transform.position = Vector3.Lerp(_startPos.position, _actionEnterPos.position, t);
