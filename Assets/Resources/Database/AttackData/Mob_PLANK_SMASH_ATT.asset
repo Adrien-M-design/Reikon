@@ -15,7 +15,7 @@ MonoBehaviour:
   _attackID: Mob_PLANK_SMASH_ATT
   _attackName: Plank Smash
   _damage: 15
-  _actionTime: 3
+  _actionTime: 1
   _onSelf: 0
   _effectCooldown: 0
   _effectDamage: 0

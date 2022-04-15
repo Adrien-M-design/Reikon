@@ -44,8 +44,8 @@ public class CombatController : MonoBehaviour
         }
     }
 
-    public Dictionary<DatabaseManager.ECombatEffects, int> CharacterEffects;
-    public Dictionary<DatabaseManager.ECombatEffects, int> EnnemyEffects;
+    public Dictionary<DatabaseManager.ECombatEffects, int> CharacterEffects => _characterEffects;
+    public Dictionary<DatabaseManager.ECombatEffects, int> EnnemyEffects => _ennemyEffects;
 
     // Start is called before the first frame update
     void Start()
@@ -121,7 +121,15 @@ public class CombatController : MonoBehaviour
 
     public void ApplyEffect(Dictionary<DatabaseManager.ECombatEffects, int> effects, bool onSelf)
     {
-        foreach(KeyValuePair< DatabaseManager.ECombatEffects, int> pair in effects)
+        List<DatabaseManager.ECombatEffects> _toRemoveList = new List<DatabaseManager.ECombatEffects>();
+
+        Dictionary<DatabaseManager.ECombatEffects, int> tmpEffects = new Dictionary<DatabaseManager.ECombatEffects, int>();
+        foreach (KeyValuePair<DatabaseManager.ECombatEffects, int> pair in effects)
+        {
+            tmpEffects.Add(pair.Key, pair.Value);
+        }
+
+        foreach (KeyValuePair< DatabaseManager.ECombatEffects, int> pair in effects)
         {
             switch (pair.Key)
             {
@@ -138,32 +146,46 @@ public class CombatController : MonoBehaviour
 
             if (onSelf)
             {
-                _characterEffects[pair.Key] = pair.Value - 1;
-                if(_characterEffects[pair.Key] <= 0)
+                tmpEffects[pair.Key] = pair.Value - 1;
+                if(tmpEffects[pair.Key] < 0)
                 {
-                    _characterEffects.Remove(pair.Key);
+                    _toRemoveList.Add(pair.Key);
                 }
             }
             else
             {
-                _ennemyEffects[pair.Key] = pair.Value - 1;
-                if (_ennemyEffects[pair.Key] <= 0)
+                tmpEffects[pair.Key] = pair.Value - 1;
+                if (tmpEffects[pair.Key] <= 0)
                 {
-                    _ennemyEffects.Remove(pair.Key);
+                    _toRemoveList.Add(pair.Key);
                 }
             }
         }
+
+        for (int i = 0; i < _toRemoveList.Count; i++)
+        {
+            tmpEffects.Remove(_toRemoveList[i]);
+        }
+
+        _toRemoveList.Clear();
+        effects = tmpEffects;
     }
 
     public void AddEffect(DatabaseManager.ECombatEffects effect, int cooldown, bool onSelf)
     {
         if (onSelf)
         {
-            _characterEffects.Add(effect, cooldown);
+            if (!_characterEffects.ContainsKey(effect))
+                _characterEffects.Add(effect, cooldown);
+            else
+                _characterEffects[effect] += cooldown;
         }
         else
         {
-            _ennemyEffects.Add(effect, cooldown);
+            if (!_ennemyEffects.ContainsKey(effect))
+                _ennemyEffects.Add(effect, cooldown);
+            else
+                _ennemyEffects[effect] += cooldown;
         }
     }
 

@@ -15,7 +15,7 @@ MonoBehaviour:
   _attackID: Mob_WATER_STREAM_ATT
   _attackName: Water Stream
   _damage: 10
-  _actionTime: 2
+  _actionTime: 1
   _onSelf: 0
   _effectCooldown: 0
   _effectDamage: 0
