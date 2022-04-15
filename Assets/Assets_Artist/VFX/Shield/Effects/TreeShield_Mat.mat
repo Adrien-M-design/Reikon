@@ -106,7 +106,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _Disolve: 0.617
+    - _Disolve: 0.66
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
@@ -130,10 +130,11 @@ Material:
     - Color_825dca437ec24ae092033f96cdb86099: {r: 0.003921579, g: 0.7294118, b: 0.113071136,
         a: 0}
     - Vector2_6136b93d51e740b1967940273bb42483: {r: 0.49, g: 1.59, b: 0, a: 0}
-    - Vector3_9ecbd3a1f6ca46738dc2bd467ea64efd: {r: 7.693, g: 1.043, b: -3.736, a: 0}
+    - Vector3_9ecbd3a1f6ca46738dc2bd467ea64efd: {r: 9.046927, g: 4.55, b: -7.131,
+        a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ObjectScreenPosition: {r: 7.693, g: 1.043, b: -3.736, a: 0}
+    - _ObjectScreenPosition: {r: 9.046927, g: 4.55, b: -7.131, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
