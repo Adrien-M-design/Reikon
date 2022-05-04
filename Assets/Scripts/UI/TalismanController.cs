@@ -10,13 +10,24 @@ public class TalismanController : MonoBehaviour
     [SerializeField] private GameObject _talismanB = null;
     [SerializeField] private TextMeshProUGUI _effectDesc = null;
     [SerializeField] private Image _tWeightImage = null;
-    [SerializeField] private TextMeshProUGUI _equippedTextA = null;
-    [SerializeField] private TextMeshProUGUI _equippedTextB = null;
+
+    [SerializeField] private Image _tImage1 = null;
+    [SerializeField] private Image _tImage2 = null;
+    [SerializeField] private Image _tImage3 = null;
+
+    [SerializeField] private Sprite _spriteA = null;
+    [SerializeField] private Sprite _spriteB = null;
+    
+
+    //[SerializeField] private GameObject _equippedTextA = null;
+    //[SerializeField] private GameObject _equippedTextB = null;
 
     [SerializeField] private bool _tPickedUp = false;
 
     private bool _isAEquipped = false;
-    private bool _isBEquipped = false; 
+    private bool _isBEquipped = false;
+
+    private GameObject _equippedText = null;
 
     public bool IsAEquipped
     {
@@ -36,7 +47,8 @@ public class TalismanController : MonoBehaviour
 
         Button AButton = _talismanA.GetComponent<Button>();
         Button BButton = _talismanB.GetComponent<Button>();
-        
+
+        //AButton.onClick.OnAClicked(_equippedTextA);
     }
 
     // Update is called once per frame
@@ -47,5 +59,44 @@ public class TalismanController : MonoBehaviour
             _talismanB.SetActive(true);
         } 
 
+        if (_isAEquipped)
+        {
+            _tImage1.sprite = _spriteA;
+        }
+        else { _tImage1.sprite = null; }
+
+        if (_isBEquipped)
+        {
+            _tImage2.sprite = _spriteB;
+            _tImage3.sprite = _spriteB;
+        }
+        else 
+        {
+            _tImage2.sprite = null;
+            _tImage3.sprite = null;
+        }
+
+    }
+
+    public void OnButtonAClicked(GameObject textToAppear)
+    {
+        _equippedText = textToAppear;
+
+        _isAEquipped = !_isAEquipped;
+
+        _equippedText.SetActive(_isAEquipped);
+
+        Debug.Log(_isAEquipped);
+    }
+
+    public void OnButtonBClicked(GameObject textToAppear)
+    {
+        _equippedText = textToAppear;
+
+        _isBEquipped = !_isBEquipped;
+
+        _equippedText.SetActive(_isBEquipped);
+
+        Debug.Log(_isBEquipped);
     }
 }
