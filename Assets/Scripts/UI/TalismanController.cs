@@ -10,6 +10,8 @@ public class TalismanController : MonoBehaviour
     [SerializeField] private GameObject _talismanB = null;
     [SerializeField] private TextMeshProUGUI _effectDesc = null;
     [SerializeField] private Image _tWeightImage = null;
+    [SerializeField] private TextMeshProUGUI _equippedTextA = null;
+    [SerializeField] private TextMeshProUGUI _equippedTextB = null;
 
     [SerializeField] private bool _tPickedUp = false;
 
@@ -30,7 +32,11 @@ public class TalismanController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _talismanB.SetActive(false);        
+        _talismanB.SetActive(false);
+
+        Button AButton = _talismanA.GetComponent<Button>();
+        Button BButton = _talismanB.GetComponent<Button>();
+        
     }
 
     // Update is called once per frame
@@ -39,8 +45,7 @@ public class TalismanController : MonoBehaviour
         if (_tPickedUp == true)
         {
             _talismanB.SetActive(true);
-        }
-
+        } 
 
     }
 }
