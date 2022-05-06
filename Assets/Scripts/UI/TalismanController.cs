@@ -13,7 +13,6 @@ public class TalismanController : MonoBehaviour
 
     [SerializeField] private Image _tImage1 = null;
     [SerializeField] private Image _tImage2 = null;
-    [SerializeField] private Image _tImage3 = null;
 
     [SerializeField] private Sprite _spriteA = null;
     [SerializeField] private Sprite _spriteB = null;
@@ -28,6 +27,7 @@ public class TalismanController : MonoBehaviour
     private bool _isBEquipped = false;
 
     private GameObject _equippedText = null;
+    private GameObject _unequipText = null;
 
     public bool IsAEquipped
     {
@@ -63,40 +63,46 @@ public class TalismanController : MonoBehaviour
         {
             _tImage1.sprite = _spriteA;
         }
-        else { _tImage1.sprite = null; }
-
-        if (_isBEquipped)
+        else if (_isBEquipped)
         {
+            _tImage1.sprite = _spriteB;
             _tImage2.sprite = _spriteB;
-            _tImage3.sprite = _spriteB;
         }
         else 
         {
+            _tImage1.sprite = null;
             _tImage2.sprite = null;
-            _tImage3.sprite = null;
         }
 
     }
 
     public void OnButtonAClicked(GameObject textToAppear)
     {
-        _equippedText = textToAppear;
+        if(_isBEquipped == false)
+        {
+            _equippedText = textToAppear;
 
-        _isAEquipped = !_isAEquipped;
+            _isAEquipped = !_isAEquipped;
 
-        _equippedText.SetActive(_isAEquipped);
+            _equippedText.SetActive(_isAEquipped);
 
-        Debug.Log(_isAEquipped);
+            Debug.Log(_isAEquipped);
+        }
+        else { Debug.Log("Unequip first, dispsh#t!"); }
     }
 
     public void OnButtonBClicked(GameObject textToAppear)
     {
-        _equippedText = textToAppear;
+        if(_isAEquipped == false)
+        {
+            _equippedText = textToAppear;
 
-        _isBEquipped = !_isBEquipped;
+            _isBEquipped = !_isBEquipped;
 
-        _equippedText.SetActive(_isBEquipped);
+            _equippedText.SetActive(_isBEquipped);
 
-        Debug.Log(_isBEquipped);
+            Debug.Log(_isBEquipped);
+        }
+        else { Debug.Log("Unequip first, dispsh#t!"); }
     }
 }
