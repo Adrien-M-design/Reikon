@@ -1,1 +1,2 @@
-Assets/Scenes/DialogueTest.unity
+Assets/Scenes/BattleSystem.unity
+Assets/Scenes/PersistentManagers.unity

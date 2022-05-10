@@ -1399,7 +1399,7 @@ PrefabInstance:
     - target: {fileID: 2948834213707584862, guid: 45918a0a16f5482479b2d754cc3f3805,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.42
+      value: -1.5265149
       objectReference: {fileID: 0}
     - target: {fileID: 2948834213707584862, guid: 45918a0a16f5482479b2d754cc3f3805,
         type: 3}
@@ -1469,7 +1469,7 @@ PrefabInstance:
     - target: {fileID: 3076532268465225948, guid: 45918a0a16f5482479b2d754cc3f3805,
         type: 3}
       propertyPath: ColorModule.gradient.maxGradient.atime0
-      value: 44525
+      value: 3759
       objectReference: {fileID: 0}
     - target: {fileID: 3076532268465225948, guid: 45918a0a16f5482479b2d754cc3f3805,
         type: 3}
@@ -1484,7 +1484,7 @@ PrefabInstance:
     - target: {fileID: 3076532268465225948, guid: 45918a0a16f5482479b2d754cc3f3805,
         type: 3}
       propertyPath: ColorModule.gradient.maxGradient.ctime0
-      value: 45104
+      value: 44943
       objectReference: {fileID: 0}
     - target: {fileID: 3076532268465225948, guid: 45918a0a16f5482479b2d754cc3f3805,
         type: 3}
@@ -26796,7 +26796,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerTransform: {fileID: 2066905822}
   _ennemyTransform: {fileID: 2060945175}
-  _playerTimeline: {fileID: 478164473}
   _floattingTextPrefab: {fileID: 8855906688271775840, guid: f8eca3e8ffd5a174cbe21b4226853e62,
     type: 3}
   _playerSlider: {fileID: 1616654265}

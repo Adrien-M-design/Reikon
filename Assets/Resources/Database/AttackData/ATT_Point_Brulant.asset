@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackID: POINTBRULANT
   _attackName: Point Brulant
-  _damage: 15
-  _actionTime: 1
+  _damage: 10
+  _actionTime: 1.5
   _onSelf: 0
   _effectCooldown: 3
   _effectDamage: 0
