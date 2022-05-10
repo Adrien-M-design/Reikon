@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3492816724237819714}
   - component: {fileID: 564957504211128551}
   - component: {fileID: 2320434158761075757}
-  - component: {fileID: 7440400083736500122}
+  - component: {fileID: 8665952770682087047}
   m_Layer: 0
   m_Name: P_MurDroitPlatClean
   m_TagString: Untagged
@@ -82,7 +82,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7440400083736500122
+--- !u!64 &8665952770682087047
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,4 +95,4 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 3432786227210709701, guid: fd909c3d759bcf740aac45df5b5c8fc3, type: 3}
+  m_Mesh: {fileID: 3432786227210709701, guid: eb9d96601561ff544af294f215bd9c14, type: 3}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5873074335096980430}
   - component: {fileID: 7362965827959934059}
   - component: {fileID: 4740730342471940257}
-  - component: {fileID: 891638192184512168}
+  - component: {fileID: -4540026308309152748}
   m_Layer: 0
   m_Name: P_MurDiagFenetreClean
   m_TagString: Untagged
@@ -82,7 +82,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &891638192184512168
+--- !u!64 &-4540026308309152748
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -532,63 +532,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3986931542672881564}
     m_Modifications:
-    - target: {fileID: 2780987223835317105, guid: f5855fbfb5145bf4c80e643e4ff920c1,
-        type: 3}
+    - target: {fileID: 2780987223835317105, guid: f5855fbfb5145bf4c80e643e4ff920c1, type: 3}
       propertyPath: m_Name
       value: P_SupportMaison
       objectReference: {fileID: 0}
-    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1,
-        type: 3}
+    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1, type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1,
-        type: 3}
+    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.15
       objectReference: {fileID: 0}
-    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1,
-        type: 3}
+    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.98
       objectReference: {fileID: 0}
-    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1,
-        type: 3}
+    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.51
       objectReference: {fileID: 0}
-    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1,
-        type: 3}
+    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1,
-        type: 3}
+    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1,
-        type: 3}
+    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1,
-        type: 3}
+    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1,
-        type: 3}
+    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1,
-        type: 3}
+    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1,
-        type: 3}
+    - target: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
@@ -596,7 +584,6 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: f5855fbfb5145bf4c80e643e4ff920c1, type: 3}
 --- !u!4 &8515670950748251879 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 4841302646295721522, guid: f5855fbfb5145bf4c80e643e4ff920c1, type: 3}
   m_PrefabInstance: {fileID: 3819754555905347797}
   m_PrefabAsset: {fileID: 0}
