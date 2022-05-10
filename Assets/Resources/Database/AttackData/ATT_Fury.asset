@@ -22,3 +22,5 @@ MonoBehaviour:
   _combatEffect: 4
   _elementalCombatEffect: 4
   _combo: 000000000100000000000000
+  _fxObject: {fileID: 7997493997459007891, guid: 4cdbdaa60e05d284686463f3aca736c9,
+    type: 3}
