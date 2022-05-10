@@ -25,7 +25,7 @@ public class GlossaryController : MonoBehaviour
     void Update()
     {
 
-        if(Input.GetKeyDown("d"))
+        if(Input.GetButtonDown("GlossaryNextPage"))
         {
             if(_leftPageIndex < _spToChangeTo.Length-2) //2 because f#ck array logic
             {
@@ -36,7 +36,7 @@ public class GlossaryController : MonoBehaviour
             else { Debug.Log("Not Allowed"); }
         }
 
-        if(Input.GetKeyDown("q"))
+        if(Input.GetButtonDown("GlossaryPreviousPage"))
         {
             if(_leftPageIndex > 0)
             {

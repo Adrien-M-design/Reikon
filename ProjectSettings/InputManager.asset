@@ -694,6 +694,38 @@ InputManager:
     axis: 1
     joyNum: 0
   - serializedVersion: 3
+    m_Name: GlossaryNextPage
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: d
+    altNegativeButton: 
+    altPositiveButton: joystick button 5
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 1
+    joyNum: 0
+  - serializedVersion: 3
+    m_Name: GlossaryPreviousPage
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: q
+    altNegativeButton: 
+    altPositiveButton: joystick button 4
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 1
+    joyNum: 0
+  - serializedVersion: 3
     m_Name: Escape
     descriptiveName: 
     descriptiveNegativeName: 

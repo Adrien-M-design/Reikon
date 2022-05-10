@@ -475,7 +475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &206493530
 RectTransform:
   m_ObjectHideFlags: 0
@@ -688,7 +688,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &254987224
 RectTransform:
   m_ObjectHideFlags: 0
@@ -763,7 +763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &255106743
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1122,7 +1122,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &397713618
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1197,7 +1197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &407739548
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1611,7 +1611,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 572612724}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1135333861}
+        m_TargetAssemblyTypeName: TalismanController, Assembly-CSharp
+        m_MethodName: OnButtonAClicked
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1900986978}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &583348471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1744,7 +1756,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: acc61c31cd6c51a489e9834bae9c97fd, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1779,7 +1791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &651048613
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2099,7 +2111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &787079921
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2902,7 +2914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1113202312
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3072,6 +3084,10 @@ MonoBehaviour:
   _talismanB: {fileID: 1609525623}
   _effectDesc: {fileID: 2104237127}
   _tWeightImage: {fileID: 1244264796}
+  _tImage1: {fileID: 609499052}
+  _tImage2: {fileID: 276476472}
+  _spriteA: {fileID: 21300000, guid: e333ae8cf984a9e4793020f2c2df612e, type: 3}
+  _spriteB: {fileID: 21300000, guid: 64fabfb8a42ded14bb0f109d80203cfc, type: 3}
   _tPickedUp: 1
 --- !u!1 &1172317047
 GameObject:
@@ -3499,7 +3515,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1392610171
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3901,7 +3917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1511463746
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3976,7 +3992,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1534779884
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4290,7 +4306,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1609525625}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1135333861}
+        m_TargetAssemblyTypeName: TalismanController, Assembly-CSharp
+        m_MethodName: OnButtonBClicked
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1113202311}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1753545745
 GameObject:
   m_ObjectHideFlags: 0
@@ -4602,7 +4630,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1900986979
 RectTransform:
   m_ObjectHideFlags: 0
