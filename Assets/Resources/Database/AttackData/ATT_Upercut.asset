@@ -15,7 +15,7 @@ MonoBehaviour:
   _attackID: UPERCUT
   _attackName: Upercut
   _damage: 8
-  _actionTime: 1
+  _actionTime: 1.5
   _onSelf: 0
   _effectCooldown: 0
   _effectDamage: 0

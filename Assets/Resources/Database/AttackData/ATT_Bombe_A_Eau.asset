@@ -15,7 +15,7 @@ MonoBehaviour:
   _attackID: BOMBE_A_EAU
   _attackName: "Bombe \xE0 Eau"
   _damage: 10
-  _actionTime: 1
+  _actionTime: 1.5
   _onSelf: 0
   _effectCooldown: 0
   _effectDamage: 0

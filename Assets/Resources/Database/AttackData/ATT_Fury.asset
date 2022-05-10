@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackID: FURY
   _attackName: Fury
-  _damage: 15
-  _actionTime: 1
+  _damage: 20
+  _actionTime: 2
   _onSelf: 0
   _effectCooldown: 0
   _effectDamage: 0
   _combatEffect: 4
   _elementalCombatEffect: 4
   _combo: 000000000100000000000000
+  _fxObject: {fileID: 7997493997459007891, guid: 4cdbdaa60e05d284686463f3aca736c9,
+    type: 3}
