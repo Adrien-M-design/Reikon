@@ -1501,6 +1501,7 @@ GameObject:
   - component: {fileID: 572612725}
   - component: {fileID: 572612724}
   - component: {fileID: 572612726}
+  - component: {fileID: 572612727}
   m_Layer: 5
   m_Name: TalismanA
   m_TagString: Untagged
@@ -1624,6 +1625,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &572612727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572612722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b71de70a804fbe347b2fdbb9f9d7b21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectDesc: {fileID: 2104237127}
+  _talismanDesc: This is the 1st Taliman the player uses
 --- !u!1 &583348471
 GameObject:
   m_ObjectHideFlags: 0
@@ -3088,6 +3103,8 @@ MonoBehaviour:
   _tImage2: {fileID: 276476472}
   _spriteA: {fileID: 21300000, guid: e333ae8cf984a9e4793020f2c2df612e, type: 3}
   _spriteB: {fileID: 21300000, guid: 64fabfb8a42ded14bb0f109d80203cfc, type: 3}
+  _talisman1Desc: This is the 1st Talisman the player can use
+  _talisman2Desc: This is a secret talisman that you got there!
   _tPickedUp: 1
 --- !u!1 &1172317047
 GameObject:
@@ -4196,6 +4213,7 @@ GameObject:
   - component: {fileID: 1609525626}
   - component: {fileID: 1609525625}
   - component: {fileID: 1609525627}
+  - component: {fileID: 1609525628}
   m_Layer: 5
   m_Name: TalismanB
   m_TagString: Untagged
@@ -4319,6 +4337,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1609525628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609525623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b71de70a804fbe347b2fdbb9f9d7b21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _effectDesc: {fileID: 2104237127}
+  _talismanDesc: This is a secret Talisman
 --- !u!1 &1753545745
 GameObject:
   m_ObjectHideFlags: 0

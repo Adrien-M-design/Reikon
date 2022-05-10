@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using TMPro;
 
 public class TalismanController : MonoBehaviour
@@ -16,7 +17,9 @@ public class TalismanController : MonoBehaviour
 
     [SerializeField] private Sprite _spriteA = null;
     [SerializeField] private Sprite _spriteB = null;
-    
+
+    [SerializeField] private string _talisman1Desc = null;
+    [SerializeField] private string _talisman2Desc = null;
 
     //[SerializeField] private GameObject _equippedTextA = null;
     //[SerializeField] private GameObject _equippedTextB = null;
@@ -48,7 +51,6 @@ public class TalismanController : MonoBehaviour
         Button AButton = _talismanA.GetComponent<Button>();
         Button BButton = _talismanB.GetComponent<Button>();
 
-        //AButton.onClick.OnAClicked(_equippedTextA);
     }
 
     // Update is called once per frame
@@ -57,7 +59,7 @@ public class TalismanController : MonoBehaviour
         if (_tPickedUp == true)
         {
             _talismanB.SetActive(true);
-        } 
+        }
 
         if (_isAEquipped)
         {
@@ -68,7 +70,7 @@ public class TalismanController : MonoBehaviour
             _tImage1.sprite = _spriteB;
             _tImage2.sprite = _spriteB;
         }
-        else 
+        else
         {
             _tImage1.sprite = null;
             _tImage2.sprite = null;
@@ -78,7 +80,7 @@ public class TalismanController : MonoBehaviour
 
     public void OnButtonAClicked(GameObject textToAppear)
     {
-        if(_isBEquipped == false)
+        if (_isBEquipped == false)
         {
             _equippedText = textToAppear;
 
@@ -93,7 +95,7 @@ public class TalismanController : MonoBehaviour
 
     public void OnButtonBClicked(GameObject textToAppear)
     {
-        if(_isAEquipped == false)
+        if (_isAEquipped == false)
         {
             _equippedText = textToAppear;
 
