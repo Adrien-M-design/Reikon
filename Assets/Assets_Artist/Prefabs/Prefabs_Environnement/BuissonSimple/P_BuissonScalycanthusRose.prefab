@@ -1,0 +1,1103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6227148792633638122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6741246008531973045}
+  m_Layer: 0
+  m_Name: P_BuissonScalycanthusRose
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6741246008531973045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6227148792633638122}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8242807339008921115}
+  - {fileID: 8274284474229356582}
+  - {fileID: 2529762064456045366}
+  - {fileID: 8237678630646129978}
+  - {fileID: 6256371059701403127}
+  - {fileID: 5094241466128319530}
+  - {fileID: 5915611354497187010}
+  - {fileID: 8294021359888452362}
+  - {fileID: 4757092226650544751}
+  - {fileID: 5502494198215485543}
+  - {fileID: 6447011857662972590}
+  - {fileID: 4351831925213876291}
+  - {fileID: 4759124409311893198}
+  - {fileID: 644181366550123443}
+  - {fileID: 5233887089170425987}
+  - {fileID: 2639709318246976227}
+  - {fileID: 2053636043170480393}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &145412849767175032
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.211
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.698
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.09265423
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.026142413
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.80932033
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.57942426
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -68.913
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -210.069
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 24.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &4759124409311893198 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 145412849767175032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &147427420004966361
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.341
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.416
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8778349
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.31645498
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.3022192
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19474529
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -42.322
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 33.431
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 11.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &4757092226650544751 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 147427420004966361}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &485601266335973788
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.681
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.211
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.134
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6606852
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.37628254
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.59643376
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.257242
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -53.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -89.484
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 10.558
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &5094241466128319530 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 485601266335973788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &625387696122686773
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.378
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.688
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.1912535
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0004270054
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.71842974
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.66879046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -73.971
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -263.286
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 67.552
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &5233887089170425987 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 625387696122686773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &888224017792855505
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.572
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.356
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.6883353
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.18360509
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.64400953
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.27881074
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -37.725
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -277.488
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 10.736
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &5502494198215485543 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 888224017792855505}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1303558408805890420
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.751377
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.59101266
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.15297787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.25046837
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -74.748
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 14.569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -48.024
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &5915611354497187010 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 1303558408805890420}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1647272982839691329
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.206
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.182
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.595
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.82303536
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5281045
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.19767652
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.068136215
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -63.668
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -34.842
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 12.582
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &6256371059701403127 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 1647272982839691329}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1834989766461937432
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.318
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.455
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.29800546
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.028459525
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8942853
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.33262083
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -37.725
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -220.537
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 10.736
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &6447011857662972590 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 1834989766461937432}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3629144053233639564
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.007
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.519
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.935489
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.33170205
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.11581892
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.03768578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -37.725
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -17.793
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 10.736
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &8237678630646129978 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 3629144053233639564}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3633006055741934509
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.047
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.541
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.182
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99380696
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.11112068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -12.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &8242807339008921115 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 3633006055741934509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3680877010913857212
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.73468226
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.61248535
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.11384709
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.2685938
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -73.971
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -35.855
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 67.552
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &8294021359888452362 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 3680877010913857212}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5085219352128794407
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 3608851131948178676, guid: 5e2fb349e2632364491490458afe4da2, type: 3}
+      propertyPath: m_Name
+      value: P_BuissonSimple
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766836595344037633, guid: 5e2fb349e2632364491490458afe4da2, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766836595344037633, guid: 5e2fb349e2632364491490458afe4da2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766836595344037633, guid: 5e2fb349e2632364491490458afe4da2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766836595344037633, guid: 5e2fb349e2632364491490458afe4da2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766836595344037633, guid: 5e2fb349e2632364491490458afe4da2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766836595344037633, guid: 5e2fb349e2632364491490458afe4da2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766836595344037633, guid: 5e2fb349e2632364491490458afe4da2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766836595344037633, guid: 5e2fb349e2632364491490458afe4da2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766836595344037633, guid: 5e2fb349e2632364491490458afe4da2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766836595344037633, guid: 5e2fb349e2632364491490458afe4da2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766836595344037633, guid: 5e2fb349e2632364491490458afe4da2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e2fb349e2632364491490458afe4da2, type: 3}
+--- !u!4 &8274284474229356582 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3766836595344037633, guid: 5e2fb349e2632364491490458afe4da2, type: 3}
+  m_PrefabInstance: {fileID: 5085219352128794407}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5260140396313187845
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.382
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.667
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.26084983
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.09409097
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7210595
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.6349626
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -74.748
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -102.639
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -48.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &644181366550123443 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 5260140396313187845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6661009949173662911
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.583
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.243
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7415421
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.37922135
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.52166134
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.1848677
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -49.051
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 75.136
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -10.682
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &2053636043170480393 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 6661009949173662911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7139568158899312256
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.378
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.303
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7670924
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.30954012
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.54783505
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.12502421
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -37.725
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -74.744
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 10.736
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &2529762064456045366 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 7139568158899312256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7254582099769626453
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.397
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.322
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.123193786
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.12852307
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.92019224
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.3486421
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -42.322
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -169.313
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 11.755
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &2639709318246976227 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 7254582099769626453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8965402746716460533
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6741246008531973045}
+    m_Modifications:
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.488
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.182
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.411
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.35608238
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.17093037
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.76789904
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.50430083
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -63.667
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -237.586
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 12.582
+      objectReference: {fileID: 0}
+    - target: {fileID: 7954609228022834523, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+      propertyPath: m_Name
+      value: P_CalycanthusAphroditeRose (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+--- !u!4 &4351831925213876291 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4615998681438176694, guid: 527ffbb351cec8c4ea570f9c83a21686, type: 3}
+  m_PrefabInstance: {fileID: 8965402746716460533}
+  m_PrefabAsset: {fileID: 0}
