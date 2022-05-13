@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8464702803495877467}
-  - component: {fileID: 5001165262516032941}
   m_Layer: 0
   m_Name: P_BarriereLanterne
   m_TagString: Untagged
@@ -33,19 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5001165262516032941
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281210658754075696}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.46259683, y: 1, z: 2.8811815}
-  m_Center: {x: 0.010210186, y: 0, z: -0.022585511}
 --- !u!1001 &5682926841438293728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53,6 +39,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8464702803495877467}
     m_Modifications:
+    - target: {fileID: 3502967977723960202, guid: f0cd2ab2d84576d45bb0d88a9caabe29,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6206483987258584115, guid: f0cd2ab2d84576d45bb0d88a9caabe29,
         type: 3}
       propertyPath: m_RootOrder

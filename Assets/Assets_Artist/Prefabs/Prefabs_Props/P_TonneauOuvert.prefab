@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6867071064934966899}
-  - component: {fileID: 6719414227948185082}
   m_Layer: 0
   m_Name: P_TonneauOuvert
   m_TagString: Untagged
@@ -32,20 +31,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &6719414227948185082
+--- !u!136 &8624651681422757566
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764854790118772902}
+  m_GameObject: {fileID: 7908613046907144198}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.55928934
-  m_Height: 2.6598647
+  m_Radius: 0.53064287
+  m_Height: 2.3205547
   m_Direction: 1
-  m_Center: {x: 0, y: -0.32497633, z: 0.016884089}
+  m_Center: {x: 0, y: -0.123486996, z: 0}
 --- !u!1001 &6989692707285677399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -120,6 +119,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5e164b08f998e4684d14426114b7e9, type: 3}
+--- !u!1 &7908613046907144198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5c5e164b08f998e4684d14426114b7e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 6989692707285677399}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7388956760668361404 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5c5e164b08f998e4684d14426114b7e9,

@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7251049881413551841}
-  - component: {fileID: 8698349204066661119}
   m_Layer: 0
   m_Name: P_PierreAMoudre
   m_TagString: Untagged
@@ -32,18 +31,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &8698349204066661119
+--- !u!136 &7288414465847813947
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612131514854333994}
+  m_GameObject: {fileID: 2517648971903467835}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.75
-  m_Height: 3.5
+  m_Radius: 1.6719592
+  m_Height: 1.910461
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &3328465477396741226
@@ -120,6 +119,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3272eec325ff9b49910804f4213fe0e, type: 3}
+--- !u!1 &2517648971903467835 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d3272eec325ff9b49910804f4213fe0e,
+    type: 3}
+  m_PrefabInstance: {fileID: 3328465477396741226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3007187159881833345 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d3272eec325ff9b49910804f4213fe0e,

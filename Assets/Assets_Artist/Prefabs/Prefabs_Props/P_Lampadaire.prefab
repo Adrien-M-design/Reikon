@@ -234,6 +234,19 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!65 &8954175808198883906
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8949041471163660689}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0802829, y: 4.1910257, z: 0.96510845}
+  m_Center: {x: -0.021378517, y: 0, z: 0}
 --- !u!1001 &6196468640511582403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -316,6 +329,12 @@ PrefabInstance:
 --- !u!4 &5941653189810390824 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2d27f2371e24db749952da145593ff00,
+    type: 3}
+  m_PrefabInstance: {fileID: 6196468640511582403}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8949041471163660689 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3012669179325618514, guid: 2d27f2371e24db749952da145593ff00,
     type: 3}
   m_PrefabInstance: {fileID: 6196468640511582403}
   m_PrefabAsset: {fileID: 0}

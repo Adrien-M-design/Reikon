@@ -1833,6 +1833,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4672870598661113433}
+  - component: {fileID: 5310753124712960738}
   m_Layer: 0
   m_Name: P_Maison_Petite1
   m_TagString: Untagged
@@ -1872,6 +1873,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5310753124712960738
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6496462333743757472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.0927107, y: 3.276506, z: 4.778018}
+  m_Center: {x: 1.0463554, y: -1.138253, z: -4.2073}
 --- !u!1 &6511827765079384325
 GameObject:
   m_ObjectHideFlags: 0
@@ -2201,6 +2215,7 @@ GameObject:
   - component: {fileID: 1527945406084418247}
   - component: {fileID: 4217368698540589232}
   - component: {fileID: 3210133878434759845}
+  - component: {fileID: 7617808486882187821}
   m_Layer: 0
   m_Name: GrandeColonne
   m_TagString: Untagged
@@ -2271,3 +2286,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7617808486882187821
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9111671696113055482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19840059, y: 6.534045, z: 0.19538645}
+  m_Center: {x: 0, y: 0.04208815, z: 0.000000007450581}
