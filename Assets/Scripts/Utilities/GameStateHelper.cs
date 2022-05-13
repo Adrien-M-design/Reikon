@@ -19,7 +19,7 @@ public static class GameStateHelper
                 sceneName = "MainMenu";
                 break;
             case EGameState.GAME:
-                sceneName = "BlockingSchéma";
+                sceneName = "Reikon";
                 break;
             case EGameState.BATTLE:
                 sceneName = "BattleSystem";
