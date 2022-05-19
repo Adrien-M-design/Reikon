@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 792077341512864912}
   - component: {fileID: 3625163649436036076}
   - component: {fileID: 2593741120403142453}
+  - component: {fileID: 3010005351963333279}
   m_Layer: 0
   m_Name: PetiteColonne
   m_TagString: Untagged
@@ -81,6 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3010005351963333279
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18489635833676141}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26126587, y: 3.2373223, z: 0.24477248}
+  m_Center: {x: 0.0000076293945, y: 0, z: 0.0000019073486}
 --- !u!1 &25607696081380103
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,6 +249,7 @@ GameObject:
   - component: {fileID: 6589725443581100978}
   - component: {fileID: 2232251358413153282}
   - component: {fileID: 6046415073314339685}
+  - component: {fileID: 4454070668361991600}
   m_Layer: 0
   m_Name: Jardiniere
   m_TagString: Untagged
@@ -305,6 +320,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4454070668361991600
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699179210996352272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5855746, y: 0.7431232, z: 0.5066713}
+  m_Center: {x: -0.0000019073486, y: 0, z: 0}
 --- !u!1 &949670886229246752
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,6 +506,7 @@ GameObject:
   - component: {fileID: 630410185086930945}
   - component: {fileID: 6789078037950655310}
   - component: {fileID: 1291388617709490239}
+  - component: {fileID: 7355808653814424704}
   m_Layer: 0
   m_Name: MurDroitPlat
   m_TagString: Untagged
@@ -548,6 +577,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7355808653814424704
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179044851736387366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3714483, y: 2.6662025, z: 0.1274237}
+  m_Center: {x: 0, y: 0, z: 0.000005722046}
 --- !u!1 &1863559780214798265
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,6 +601,7 @@ GameObject:
   - component: {fileID: 4816486006981456082}
   - component: {fileID: 6623085156752330151}
   - component: {fileID: 8867321698216387529}
+  - component: {fileID: 8989176103183322317}
   m_Layer: 0
   m_Name: MurDiagFenetre
   m_TagString: Untagged
@@ -629,6 +672,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8989176103183322317
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863559780214798265}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.21409622, y: 3.2193506, z: 4.35206}
+  m_Center: {x: 0, y: 0, z: -0.0000019073486}
 --- !u!1 &1955021077214166877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,6 +1330,7 @@ GameObject:
   - component: {fileID: 3964169607262315819}
   - component: {fileID: 3586457704541693464}
   - component: {fileID: 7131804033316707570}
+  - component: {fileID: 4081738908009221731}
   m_Layer: 0
   m_Name: PorteMaison
   m_TagString: Untagged
@@ -1344,6 +1401,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4081738908009221731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3559757029644027625}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.153266, y: 3.2293456, z: 0.32278755}
+  m_Center: {x: 0, y: 0, z: 0.0000019073486}
 --- !u!1 &3801309390595305967
 GameObject:
   m_ObjectHideFlags: 0
@@ -1355,6 +1425,7 @@ GameObject:
   - component: {fileID: 5716915866287051658}
   - component: {fileID: 8002905497628248418}
   - component: {fileID: 7390346953843167230}
+  - component: {fileID: 7333206449145543407}
   m_Layer: 0
   m_Name: MurDiagFenetre
   m_TagString: Untagged
@@ -1425,6 +1496,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7333206449145543407
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801309390595305967}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.21409622, y: 3.2193506, z: 4.35206}
+  m_Center: {x: 0.0000076293945, y: 0, z: 0.0000019073486}
 --- !u!1 &3855659832647404736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,6 +1520,7 @@ GameObject:
   - component: {fileID: 6010128115455670616}
   - component: {fileID: 3820414693971839552}
   - component: {fileID: 3007159754337712075}
+  - component: {fileID: 7941773642545424433}
   m_Layer: 0
   m_Name: PetiteColonne
   m_TagString: Untagged
@@ -1506,6 +1591,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7941773642545424433
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3855659832647404736}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26126587, y: 3.2373223, z: 0.24477248}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4577477007537682287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,6 +1709,7 @@ GameObject:
   - component: {fileID: 1011221241124642699}
   - component: {fileID: 1601489187210032758}
   - component: {fileID: 695982304693373582}
+  - component: {fileID: 2994790486065597153}
   m_Layer: 0
   m_Name: PetiteColonne
   m_TagString: Untagged
@@ -1681,6 +1780,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2994790486065597153
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5739113190292816302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26126587, y: 3.2373223, z: 0.2447725}
+  m_Center: {x: 0, y: 0, z: 0.0000019073486}
 --- !u!1 &5766422195249554068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,7 +1945,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4672870598661113433}
-  - component: {fileID: 5310753124712960738}
   m_Layer: 0
   m_Name: P_Maison_Petite1
   m_TagString: Untagged
@@ -1873,19 +1984,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5310753124712960738
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6496462333743757472}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.0927107, y: 3.276506, z: 4.778018}
-  m_Center: {x: 1.0463554, y: -1.138253, z: -4.2073}
 --- !u!1 &6511827765079384325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,6 +1995,7 @@ GameObject:
   - component: {fileID: 4283219109974645810}
   - component: {fileID: 7350839607256118625}
   - component: {fileID: 1474318794993798673}
+  - component: {fileID: 5391879407961198427}
   m_Layer: 0
   m_Name: PetiteColonne
   m_TagString: Untagged
@@ -1967,6 +2066,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5391879407961198427
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6511827765079384325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26126587, y: 3.2373223, z: 0.2447725}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6874845505673114626
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,6 +2246,7 @@ GameObject:
   - component: {fileID: 958512206808935353}
   - component: {fileID: 6487847078787300539}
   - component: {fileID: 3425153654131610738}
+  - component: {fileID: 5588067886995033862}
   m_Layer: 0
   m_Name: Jardiniere
   m_TagString: Untagged
@@ -2204,6 +2317,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5588067886995033862
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9071674880872898199}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5855746, y: 0.7431232, z: 0.5066713}
+  m_Center: {x: 0.0000019073486, y: 0, z: 0}
 --- !u!1 &9111671696113055482
 GameObject:
   m_ObjectHideFlags: 0
@@ -2216,6 +2342,7 @@ GameObject:
   - component: {fileID: 4217368698540589232}
   - component: {fileID: 3210133878434759845}
   - component: {fileID: 7617808486882187821}
+  - component: {fileID: 5601421585438125042}
   m_Layer: 0
   m_Name: GrandeColonne
   m_TagString: Untagged
@@ -2287,6 +2414,19 @@ MeshRenderer:
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &7617808486882187821
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9111671696113055482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19840059, y: 6.534045, z: 0.19538645}
+  m_Center: {x: 0, y: 0.04208815, z: 0.000000007450581}
+--- !u!65 &5601421585438125042
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
