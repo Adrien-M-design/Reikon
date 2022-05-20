@@ -10,6 +10,7 @@ public class CombatController : MonoBehaviour
     [SerializeField] private Transform _ennemyTransform = null;
     [SerializeField] private GameObject _floattingTextPrefab = null;
     [SerializeField] private Slider _playerSlider = null;
+    [SerializeField] private Slider _ennemySlider = null;
     private CombatData _combatData = null;
 
     private int _charHp = 100;
@@ -57,6 +58,8 @@ public class CombatController : MonoBehaviour
 
         _playerSlider.maxValue = CharHp;
         _playerSlider.value = CharHp;
+        _ennemySlider.maxValue = MobHp;
+        _ennemySlider.value = MobHp;
 
         _characterEffects = new Dictionary<DatabaseManager.ECombatEffects, int>();
         _ennemyEffects = new Dictionary<DatabaseManager.ECombatEffects, int>();
@@ -89,6 +92,7 @@ public class CombatController : MonoBehaviour
         }
         ShowDamage(attData.Damage.ToString(), _ennemyTransform);
         MobHp -= attData.Damage;
+        _ennemySlider.value = MobHp;
         Debug.Log(MobHp);
         if (MobHp <= 0)
         {
@@ -199,6 +203,7 @@ public class CombatController : MonoBehaviour
         else
         {
             MobHp -= 2;
+            _ennemySlider.value = MobHp;
             ShowDamage("2", _ennemyTransform);
         }
     }
