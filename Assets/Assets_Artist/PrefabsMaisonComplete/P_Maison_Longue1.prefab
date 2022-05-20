@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 1308513760412084973}
   - component: {fileID: 9062860433609708139}
   - component: {fileID: 5688509323793152998}
+  - component: {fileID: 6172075365628587770}
   m_Layer: 0
   m_Name: PetiteColonne
   m_TagString: Untagged
@@ -205,6 +206,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6172075365628587770
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728691364306419616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26126584, y: 3.237322, z: 0.24477246}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1014531859202956211
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,6 +292,7 @@ GameObject:
   - component: {fileID: 709725784018432610}
   - component: {fileID: 7916803896074393309}
   - component: {fileID: 1149758756305025345}
+  - component: {fileID: 1764478030117924656}
   m_Layer: 0
   m_Name: Jardiniere
   m_TagString: Untagged
@@ -348,6 +363,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1764478030117924656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246379153703763763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5855746, y: 0.7431232, z: 0.5066713}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1389272411587648493
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,6 +387,7 @@ GameObject:
   - component: {fileID: 6326146300676420296}
   - component: {fileID: 2805334329572936310}
   - component: {fileID: 2182508132816575718}
+  - component: {fileID: 1378738068016136466}
   m_Layer: 0
   m_Name: PetiteColonne
   m_TagString: Untagged
@@ -429,6 +458,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1378738068016136466
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389272411587648493}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26126587, y: 3.2373223, z: 0.24477248}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1394635064693502086
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +482,7 @@ GameObject:
   - component: {fileID: 583250033779999208}
   - component: {fileID: 55326498054952886}
   - component: {fileID: 8006594331302281557}
+  - component: {fileID: 6693654637070940013}
   m_Layer: 0
   m_Name: GrandeColonne
   m_TagString: Untagged
@@ -510,6 +553,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6693654637070940013
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394635064693502086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19840059, y: 6.534045, z: 0.19538645}
+  m_Center: {x: 0, y: 0.04208815, z: 0.000000007450581}
 --- !u!1 &1898782862318104921
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,6 +882,7 @@ GameObject:
   - component: {fileID: 1191673343247076366}
   - component: {fileID: 3051365270904409097}
   - component: {fileID: 5875073315297667342}
+  - component: {fileID: 3840761567609156133}
   m_Layer: 0
   m_Name: PetiteColonne
   m_TagString: Untagged
@@ -896,6 +953,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3840761567609156133
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3013317306433103777}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26126587, y: 3.2373223, z: 0.24477248}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3126474896530005214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,6 +1244,7 @@ GameObject:
   - component: {fileID: 1135675494850929711}
   - component: {fileID: 2274602497865012719}
   - component: {fileID: 4106067916720038383}
+  - component: {fileID: 4899385210869788383}
   m_Layer: 0
   m_Name: Jardiniere
   m_TagString: Untagged
@@ -1244,6 +1315,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4899385210869788383
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3948373134053365115}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5855746, y: 0.7431232, z: 0.5066713}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4316241142907907232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1286,6 +1370,7 @@ GameObject:
   - component: {fileID: 2615850848645073738}
   - component: {fileID: 375323415253471009}
   - component: {fileID: 1468671151284941820}
+  - component: {fileID: 1093065959930758717}
   m_Layer: 0
   m_Name: PetiteColonne
   m_TagString: Untagged
@@ -1356,6 +1441,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1093065959930758717
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4336515745506416369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26126587, y: 3.2373223, z: 0.24477248}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4403124986546726232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,6 +1496,7 @@ GameObject:
   - component: {fileID: 3048988229444707478}
   - component: {fileID: 4037591442870309485}
   - component: {fileID: 6917264552589050507}
+  - component: {fileID: 6516512139783678541}
   m_Layer: 0
   m_Name: MurDroitFenetre
   m_TagString: Untagged
@@ -1468,6 +1567,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6516512139783678541
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4945251923196397746}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3714483, y: 2.6662025, z: 0.12742554}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4974537237783465702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,6 +1591,7 @@ GameObject:
   - component: {fileID: 501056078507225501}
   - component: {fileID: 5667746782510577895}
   - component: {fileID: 6263117167375726968}
+  - component: {fileID: 7434635941077279071}
   m_Layer: 0
   m_Name: MurDiagFenetre
   m_TagString: Untagged
@@ -1549,6 +1662,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7434635941077279071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4974537237783465702}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.21409622, y: 3.2193506, z: 4.35206}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4975426423485082843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,6 +1686,7 @@ GameObject:
   - component: {fileID: 2247621435111365261}
   - component: {fileID: 5361895299173889983}
   - component: {fileID: 2342366426000260853}
+  - component: {fileID: 7279329148076894212}
   m_Layer: 0
   m_Name: PorteMaison
   m_TagString: Untagged
@@ -1630,6 +1757,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7279329148076894212
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4975426423485082843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.153266, y: 3.2293456, z: 0.32278755}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5209950358174497863
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,6 +2171,7 @@ GameObject:
   - component: {fileID: 7448972413990101721}
   - component: {fileID: 1889087070293933565}
   - component: {fileID: 1812502313111609879}
+  - component: {fileID: 1252559925843520213}
   m_Layer: 0
   m_Name: MurDiagVide
   m_TagString: Untagged
@@ -2101,6 +2242,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1252559925843520213
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6430795965840572605}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12742339, y: 2.4864225, z: 3.153266}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6435908111553857772
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,6 +2360,7 @@ GameObject:
   - component: {fileID: 4864682781682134871}
   - component: {fileID: 7405006118923676088}
   - component: {fileID: 4270613274436952525}
+  - component: {fileID: 7379504255484375977}
   m_Layer: 0
   m_Name: MurDiagFenetre
   m_TagString: Untagged
@@ -2276,6 +2431,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7379504255484375977
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7000727787359817997}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.21409622, y: 3.2193506, z: 4.35206}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7046956501806962100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2480,6 +2648,7 @@ GameObject:
   - component: {fileID: 3077672587491556832}
   - component: {fileID: 8245642490950562819}
   - component: {fileID: 2009444959165898282}
+  - component: {fileID: 503591672764715178}
   m_Layer: 0
   m_Name: PetiteColonne
   m_TagString: Untagged
@@ -2550,6 +2719,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &503591672764715178
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7589538961258854096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26126584, y: 3.237322, z: 0.24477246}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7782824014079243385
 GameObject:
   m_ObjectHideFlags: 0
@@ -2592,6 +2774,7 @@ GameObject:
   - component: {fileID: 1432589803666204712}
   - component: {fileID: 284110350355741395}
   - component: {fileID: 2499302764116700490}
+  - component: {fileID: 8310475084381583590}
   m_Layer: 0
   m_Name: MurDiagVide
   m_TagString: Untagged
@@ -2662,6 +2845,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8310475084381583590
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7984669892551478840}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12742339, y: 2.4864225, z: 3.153266}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8293169229321289428
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,6 +2963,7 @@ GameObject:
   - component: {fileID: 1061252001204735436}
   - component: {fileID: 4137992433892235547}
   - component: {fileID: 943612865436290020}
+  - component: {fileID: 4142905709768601362}
   m_Layer: 0
   m_Name: PetiteColonne
   m_TagString: Untagged
@@ -2837,6 +3034,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4142905709768601362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8631531651645073248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26126587, y: 3.2373223, z: 0.24477248}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8642102551331537435
 GameObject:
   m_ObjectHideFlags: 0

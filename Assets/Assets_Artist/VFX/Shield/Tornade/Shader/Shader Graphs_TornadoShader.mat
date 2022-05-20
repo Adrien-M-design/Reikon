@@ -34,9 +34,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Dissolve_: 0.75
-    - TwirlAmount_: 8.93
+    - TwirlAmount_: 6.5
     - Vector1_2d52511d76d94405bbbcecd77c2493c9: 35.4
     - Vector1_3253e2d0bb8a46fcbcb1811dadecba23: 0.83
+    - Vector1_aadc6c8721404bdeb2aaebaad05ae2e3: 0.72
     m_Colors:
     - Color_: {r: 1, g: 0.58965707, b: 0.32549024, a: 1}
     - Color_95f27a15e4794372bd5b04ebe2deefd5: {r: 346.46457, g: 69.69561, b: 14.708395,
