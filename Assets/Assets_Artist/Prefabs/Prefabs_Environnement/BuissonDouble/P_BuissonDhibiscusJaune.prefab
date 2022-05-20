@@ -9,8 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3413683202363696315}
-  - component: {fileID: 9142299656290217226}
-  - component: {fileID: 7152745694823297817}
   m_Layer: 0
   m_Name: P_BuissonDhibiscusJaune
   m_TagString: Untagged
@@ -34,32 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &9142299656290217226
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8609676132028600026}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.7558861
-  m_Center: {x: -0.52094245, y: 0, z: 0}
---- !u!135 &7152745694823297817
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8609676132028600026}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.7679485
-  m_Center: {x: 0.52141464, y: 0, z: 0}
 --- !u!1001 &4931974953984662837
 PrefabInstance:
   m_ObjectHideFlags: 0
