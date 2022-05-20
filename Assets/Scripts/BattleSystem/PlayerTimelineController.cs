@@ -82,7 +82,7 @@ public class PlayerTimelineController : MonoBehaviour
             _travelTime += Time.deltaTime;
         if (_inAnimation == true)
         {
-            Instantiate(_currentAttackData.FxObject, _playerPos.position, _playerPos.rotation);
+            //Instantiate(_currentAttackData.FxObject, _playerPos.position, _playerPos.rotation);
             _animationLength -= Time.unscaledDeltaTime;
 
             if(_animationLength <= 0)
