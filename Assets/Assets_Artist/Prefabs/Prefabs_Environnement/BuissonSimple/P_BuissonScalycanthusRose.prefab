@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!135 &8489245720317472119
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675875316510947558}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.7106364
+  m_Center: {x: 0.000000029802322, y: -0.000000029802322, z: -0.000000029802322}
 --- !u!1 &6227148792633638122
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,7 +22,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6741246008531973045}
-  - component: {fileID: -5340912701868922358}
   m_Layer: 0
   m_Name: P_BuissonScalycanthusRose
   m_TagString: Untagged
@@ -48,19 +60,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &-5340912701868922358
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6227148792633638122}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.74089813
-  m_Center: {x: 0.014356613, y: 0, z: 0}
 --- !u!1001 &145412849767175032
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -958,6 +957,12 @@ PrefabInstance:
 --- !u!4 &8274284474229356582 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3766836595344037633, guid: 5e2fb349e2632364491490458afe4da2,
+    type: 3}
+  m_PrefabInstance: {fileID: 5085219352128794407}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &675875316510947558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5761059442389080001, guid: 5e2fb349e2632364491490458afe4da2,
     type: 3}
   m_PrefabInstance: {fileID: 5085219352128794407}
   m_PrefabAsset: {fileID: 0}
