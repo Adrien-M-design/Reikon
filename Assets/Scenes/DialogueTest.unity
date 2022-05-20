@@ -1638,6 +1638,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _effectDesc: {fileID: 2104237127}
+  _weightImage: {fileID: 1244264796}
+  _weightSprite: {fileID: 21300000, guid: a736ab46c2e06c14d8d5491f086299f7, type: 3}
   _talismanDesc: This is the 1st Taliman the player uses
 --- !u!1 &583348471
 GameObject:
@@ -4350,6 +4352,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _effectDesc: {fileID: 2104237127}
+  _weightImage: {fileID: 1244264796}
+  _weightSprite: {fileID: 21300000, guid: 64fabfb8a42ded14bb0f109d80203cfc, type: 3}
   _talismanDesc: This is a secret Talisman
 --- !u!1 &1753545745
 GameObject:
