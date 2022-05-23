@@ -47,12 +47,18 @@ public class PlayerTimelineController : MonoBehaviour
     [SerializeField] private GameObject _combo = null;
     private AttackData _attData = null;
     private bool _onStart = false;
+    private bool _inBattle = true;
 
     public bool GlobalInStopTime => _inStopTime || _ennemyTimeline.InStopTime;
     public bool InStopTime => _inStopTime;
+    public bool InBattle
+    {
+        get => _inBattle;
+        set => _inBattle = value;
+    }
     public List<DatabaseManager.EAttackTypes> InputArray => _inputArray;
-    public bool InAction => _inAction;
 
+    public bool InAction => _inAction;
     public event Action OnExec
     {
         add
@@ -70,6 +76,7 @@ public class PlayerTimelineController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _inBattle = true;
         _cursor.transform.position = _startPos.position;
         _interruptedTime = _waitTime / 2;
         _ennemyTimeline.OnExec += Interrupt;
@@ -78,11 +85,10 @@ public class PlayerTimelineController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (!GlobalInStopTime)
+        if (!GlobalInStopTime && _inBattle)
             _travelTime += Time.deltaTime;
         if (_inAnimation == true)
         {
-            //Instantiate(_currentAttackData.FxObject, _playerPos.position, _playerPos.rotation);
             _animationLength -= Time.unscaledDeltaTime;
 
             if(_animationLength <= 0)
@@ -193,8 +199,6 @@ public class PlayerTimelineController : MonoBehaviour
                 _inAction = false;
                 _onExec();
                 PlayerAttack(_currentAttackData);
-                _inputArray.Clear();
-                _currentAttackData = null;
             }
         }
     }
@@ -203,8 +207,12 @@ public class PlayerTimelineController : MonoBehaviour
     {
         _attData = attdat;
         _inStopTime = true;
-        _animator.SetTrigger("Attack");
+        GameObject fxObj = Instantiate(attdat.FxObject, _playerPos.position, _playerPos.rotation);
+        fxObj.GetComponent<Animator>().Play(0);
+        //_animator.SetTrigger("Attack");
         _inAnimation = true;
+        _inputArray.Clear();
+        _currentAttackData = null;
     }
 
     private void Interrupt()

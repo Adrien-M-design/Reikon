@@ -8,9 +8,13 @@ public class CombatController : MonoBehaviour
 {
     [SerializeField] private Transform _playerTransform = null;
     [SerializeField] private Transform _ennemyTransform = null;
+    [SerializeField] private PlayerTimelineController _playerTimeline = null;
+    [SerializeField] private EnnemyTimelineController _ennemyTimeline = null;
     [SerializeField] private GameObject _floattingTextPrefab = null;
     [SerializeField] private Slider _playerSlider = null;
     [SerializeField] private Slider _ennemySlider = null;
+    [SerializeField] private GameObject _victoryScreen = null;
+    [SerializeField] private GameObject _defeatScreen = null;
     private CombatData _combatData = null;
 
     private int _charHp = 100;
@@ -68,6 +72,16 @@ public class CombatController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(_victoryScreen.activeInHierarchy == true || _defeatScreen.activeInHierarchy == true)
+        {
+            if (Input.anyKeyDown)
+            {
+                _victoryScreen.SetActive(false);
+                _defeatScreen.SetActive(false);
+                //Ajouter transition Combat -> Monde
+                GameStateManager.Instance.LaunchTransition(EGameState.GAME);
+            }
+        }
 
     }
 
@@ -80,7 +94,12 @@ public class CombatController : MonoBehaviour
         ShowDamage(attData.Damage.ToString(), _playerTransform);
         CharHp -= attData.Damage;
         _playerSlider.value = CharHp;
-        //if _charHp >= 0 : c'est perdu
+        if (MobHp <= 0)
+        {
+            _playerTimeline.InBattle = false;
+            _ennemyTimeline.InBattle = false;
+            _defeatScreen.SetActive(true);
+        }
         Debug.Log(CharHp);
     }
 
@@ -96,8 +115,9 @@ public class CombatController : MonoBehaviour
         Debug.Log(MobHp);
         if (MobHp <= 0)
         {
-            //Ajouter transition Combat -> Monde
-            GameStateManager.Instance.LaunchTransition(EGameState.GAME);
+            _playerTimeline.InBattle = false;
+            _ennemyTimeline.InBattle = false;
+            _victoryScreen.SetActive(true);
         }
     }
 
