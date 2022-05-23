@@ -17,6 +17,7 @@ public class EnnemyTimelineController : MonoBehaviour
     private AnimationClip _clip = null;
     private float _animationLength = 0f;
     private bool _inAnimation = false;
+    private bool _inBattle = true;
 
     [SerializeField] private Animator _animator = null;
 
@@ -28,8 +29,6 @@ public class EnnemyTimelineController : MonoBehaviour
 
     [SerializeField] private PlayerTimelineController _playerTimeline = null;
 
-    private event Action _onExec = null;
-
     private AttackData _currentAttack = null;
 
     [Header("Combat Controller")]
@@ -37,6 +36,15 @@ public class EnnemyTimelineController : MonoBehaviour
 
     public bool GlobalInStopTime => _inStopTime || _playerTimeline.InStopTime;
     public bool InStopTime => _inStopTime;
+    public bool InBattle
+    {
+        get => _inBattle;
+        set => _inBattle = value;
+    }
+
+
+
+    private event Action _onExec = null;
     public event Action OnExec
     {
         add
@@ -54,6 +62,7 @@ public class EnnemyTimelineController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _inBattle = true;
         _clip = _animator.runtimeAnimatorController.animationClips[0];
         _animationLength = _clip.length;
         _cursor.transform.position = _startPos.position;
@@ -70,7 +79,7 @@ public class EnnemyTimelineController : MonoBehaviour
             _onStart = false;
         }
 
-        if (!GlobalInStopTime)
+        if (!GlobalInStopTime && _inBattle)
             _travelTime += Time.deltaTime;
 
         if (_inAnimation == true)
@@ -79,7 +88,7 @@ public class EnnemyTimelineController : MonoBehaviour
 
             if(_animationLength <= 0)
             {
-                Time.timeScale = 1;
+                //Time.timeScale = 1;
                 _combatController.CharTakeDamage(_currentAttack, _currentAttack.CombatEffect);
                 _inStopTime = false;
                 _inAnimation = false;
@@ -123,7 +132,7 @@ public class EnnemyTimelineController : MonoBehaviour
     private void EnnemyAction()
     {
         _inStopTime = true;
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
         _animator.SetTrigger("New Trigger");
         _inAnimation = true;
     }
