@@ -8,6 +8,8 @@ using TMPro;
 public class TalismanHoverScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private TextMeshProUGUI _effectDesc = null;
+    [SerializeField] private Image _weightImage = null;
+    [SerializeField] private Sprite _weightSprite = null;
     [SerializeField] private string _talismanDesc = null;
 
     // Start is called before the first frame update
@@ -25,11 +27,14 @@ public class TalismanHoverScript : MonoBehaviour, IPointerEnterHandler, IPointer
     public void OnPointerEnter(PointerEventData eventData)
     {
         _effectDesc.enabled = true;
+        _weightImage.enabled = true;
         _effectDesc.text = _talismanDesc;
+        _weightImage.sprite = _weightSprite;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         _effectDesc.enabled = false;
+        _weightImage.enabled = false;
     }
 }

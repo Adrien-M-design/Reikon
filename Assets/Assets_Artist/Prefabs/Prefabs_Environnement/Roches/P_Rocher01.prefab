@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &882741359131486630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752496013490164488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.522561, y: 0.8433578, z: 0.81386733}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7670384245163952361
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,7 +22,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5835658353039520122}
-  - component: {fileID: 3779423839039911073}
   m_Layer: 0
   m_Name: P_Rocher01
   m_TagString: Untagged
@@ -32,19 +44,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3779423839039911073
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7670384245163952361}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.5144012, y: 1, z: 0.7731806}
-  m_Center: {x: -0.024706334, y: 0, z: -0.01494354}
 --- !u!1001 &1482656276660072025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -119,6 +118,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8491f180972a18245b8375f9c1e9b928, type: 3}
+--- !u!1 &1752496013490164488 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8491f180972a18245b8375f9c1e9b928,
+    type: 3}
+  m_PrefabInstance: {fileID: 1482656276660072025}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1376357086231710130 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8491f180972a18245b8375f9c1e9b928,
