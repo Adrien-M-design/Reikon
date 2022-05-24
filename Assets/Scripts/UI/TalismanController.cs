@@ -14,6 +14,7 @@ public class TalismanController : MonoBehaviour
 
     [SerializeField] private Image _tImage1 = null;
     [SerializeField] private Image _tImage2 = null;
+    [SerializeField] private Sprite _tDefaultSprite = null;
 
     [SerializeField] private Sprite _spriteA = null;
     [SerializeField] private Sprite _spriteB = null;
@@ -72,8 +73,8 @@ public class TalismanController : MonoBehaviour
         }
         else
         {
-            _tImage1.sprite = null;
-            _tImage2.sprite = null;
+            _tImage1.sprite = _tDefaultSprite;
+            _tImage2.sprite = _tDefaultSprite;
         }
 
     }
