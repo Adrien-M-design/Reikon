@@ -15,10 +15,12 @@ public class CombatController : MonoBehaviour
     [SerializeField] private Slider _ennemySlider = null;
     [SerializeField] private GameObject _victoryScreen = null;
     [SerializeField] private GameObject _defeatScreen = null;
+    [SerializeField] private Animator _animatorKappa = null;
     private CombatData _combatData = null;
 
     private int _charHp = 100;
     private int _mobHp = 100;
+    private int _mobLower40 = 0;
 
     private Dictionary<DatabaseManager.ECombatEffects, int> _characterEffects;
     private Dictionary<DatabaseManager.ECombatEffects, int> _ennemyEffects;
@@ -59,6 +61,7 @@ public class CombatController : MonoBehaviour
         _combatData = DatabaseManager.Instance.Combats["Test"];
         _charHp = CharacterManager.Instance.CharHp;
         _mobHp = _combatData.MobHp;
+        _mobLower40 = _mobHp * (int) 0.4;
 
         _playerSlider.maxValue = CharHp;
         _playerSlider.value = CharHp;
@@ -113,6 +116,10 @@ public class CombatController : MonoBehaviour
         MobHp -= attData.Damage;
         _ennemySlider.value = MobHp;
         Debug.Log(MobHp);
+        if(MobHp <= 20)
+        {
+            _animatorKappa.SetBool("Lower40", true);
+        }
         if (MobHp <= 0)
         {
             _playerTimeline.InBattle = false;

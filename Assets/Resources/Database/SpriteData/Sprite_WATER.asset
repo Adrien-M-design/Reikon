@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Sprite_WATER
   m_EditorClassIdentifier: 
   _attackType: 2
-  _sprite: {fileID: 21300000, guid: 86afd82f3abb7f949ac3d605e7bbf877, type: 3}
+  _sprite: {fileID: 21300000, guid: e6c561d232e2a084fbc2b3a8609c4d31, type: 3}

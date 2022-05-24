@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Sprite_FIRE
   m_EditorClassIdentifier: 
   _attackType: 0
-  _sprite: {fileID: 21300000, guid: b7477033625613f4680dec8427093fa2, type: 3}
+  _sprite: {fileID: 21300000, guid: 313e800e2d2836f4ca0c7861b319311a, type: 3}
