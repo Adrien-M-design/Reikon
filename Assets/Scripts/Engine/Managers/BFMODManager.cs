@@ -11,6 +11,16 @@ public class BFMODManager : Singleton<BFMODManager>
     // Events Wrapper
     private FMODEventWrapper _music = null;
     private FMODEventWrapper _stepSound = null;
+    private FMODEventWrapper _endBattleSound = null;
+
+
+
+
+
+
+
+
+
     // Events Wrapper
     #endregion Fields
 
@@ -27,15 +37,16 @@ public class BFMODManager : Singleton<BFMODManager>
     {
         // EXEMPLE 
         //
-        _music = new FMODEventWrapper("EVENTNAME");
-        _music.StartEvent();
+        //_music = new FMODEventWrapper("EVENTNAME");
+        //_music.StartEvent();
         //
 
-        _stepSound = new FMODEventWrapper("STEP_SOUND_EVENT");
-        _stepSound.StartEvent();
+        //_stepSound = new FMODEventWrapper("STEP_SOUND_EVENT");
+
+        _endBattleSound = new FMODEventWrapper("Victoire Defaite");
 
 
-        SetMusicParameterByName("event_Name", 1);
+        //SetMusicParameterByName("event_Name", 1);
     }
 
     // EXEMPLE DE CHANGEMENT DE PARAMETRE
@@ -55,6 +66,11 @@ public class BFMODManager : Singleton<BFMODManager>
         //timer
         _stepSound.SetParameterByName("parmeter:/Surface", surface);
         FMODUnity.RuntimeManager.PlayOneShot(_stepSound.PrefixedName);
+    }
+
+    public void PlayEndBattleSound(string value)
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(_endBattleSound.PrefixedName, "Parameter 2", value);
     }
     #endregion Methods
 }

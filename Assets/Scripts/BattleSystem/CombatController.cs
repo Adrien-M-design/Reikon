@@ -126,6 +126,7 @@ public class CombatController : MonoBehaviour
             _playerTimeline.InBattle = false;
             _ennemyTimeline.InBattle = false;
             _victoryScreen.SetActive(true);
+            BFMODManager.Instance.PlayEndBattleSound("Victoire");
         }
     }
 

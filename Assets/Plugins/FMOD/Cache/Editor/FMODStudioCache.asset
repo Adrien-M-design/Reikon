@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9177582577817461914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player combat/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1944291856
+    data2: 1042946116
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Attaque
+  - "D\xE9fense"
+  - Sort de soin
+  Exists: 1
 --- !u!114 &-7905347140563307986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,10 +66,110 @@ MonoBehaviour:
   Path: FMODBank/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637874464193493296
+  lastModified: 637849433860982973
   FileSizes:
   - Name: 
     Value: 1238
+  Exists: 1
+--- !u!114 &-7453294685258312408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 'parameter:/Ambiance port/Quai '
+  m_EditorClassIdentifier: 
+  Name: 'Quai '
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 930040473
+    data2: 2379243777
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-7326365788164270241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiance/Ambiance port
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance/Ambiance port
+  Guid:
+    Data1: -1756684030
+    Data2: 1299412286
+    Data3: -2017065075
+    Data4: -687567547
+  Banks:
+  - {fileID: -6245815049809496237}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7453294685258312408}
+  - {fileID: -2018373455510789548}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6995244758639665558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMODBank/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637894342360000000
+  FileSizes:
+  - Name: 
+    Value: 1626
+  Exists: 1
+--- !u!114 &-6678977337557502569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player footsteps/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1034822838
+    data2: 929407924
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Bois
+  - Herbe
+  - "Boue rizi\xE8re"
   Exists: 1
 --- !u!114 &-6572276245533668607
 MonoBehaviour:
@@ -73,6 +200,93 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 31000
+--- !u!114 &-6559071769276319648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 'parameter:/Ambiance riziere/Quai '
+  m_EditorClassIdentifier: 
+  Name: 'Quai '
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 930040473
+    data2: 2379243777
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6249556380472759362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pages
+  m_EditorClassIdentifier: 
+  Path: event:/Pages
+  Guid:
+    Data1: -408667155
+    Data2: 1197049377
+    Data3: 313107597
+    Data4: 1383360441
+  Banks:
+  - {fileID: 2631829890638634760}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6245815049809496237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambiances.bank
+  m_EditorClassIdentifier: 
+  Path: FMODBank/Ambiances.bank
+  Name: Ambiances
+  StudioPath: bank:/Ambiances
+  lastModified: 637894342420000000
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5959909517318554584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Character.bank
+  m_EditorClassIdentifier: 
+  Path: FMODBank/Character.bank
+  Name: Character
+  StudioPath: bank:/Character
+  lastModified: 637894342420000000
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-5288190833078492671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,6 +311,114 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-5011068989132162175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Playet get hit
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Playet get hit
+  Guid:
+    Data1: 262157058
+    Data2: 1082411416
+    Data3: -404993149
+    Data4: 541680797
+  Banks:
+  - {fileID: -5959909517318554584}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &-4287613248085497896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiance/Ambiance riziere
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance/Ambiance riziere
+  Guid:
+    Data1: 1469993580
+    Data2: 1118901441
+    Data3: 1769663630
+    Data4: -742305118
+  Banks:
+  - {fileID: -6245815049809496237}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3819050285068270607}
+  - {fileID: -6559071769276319648}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3819050285068270607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambiance riziere/Pluie
+  m_EditorClassIdentifier: 
+  Name: Pluie
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1619549555
+    data2: 3941464772
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3543409638654298302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Victoire Defaite
+  m_EditorClassIdentifier: 
+  Path: event:/Victoire Defaite
+  Guid:
+    Data1: 1535003508
+    Data2: 1338994361
+    Data3: 1981286545
+    Data4: 1661651095
+  Banks:
+  - {fileID: 2631829890638634760}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -548882956593641312}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2637221695387839777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,6 +439,30 @@ MonoBehaviour:
   ID:
     data1: 2841310764
     data2: 432126718
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-2018373455510789548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambiance port/Pluie
+  m_EditorClassIdentifier: 
+  Name: Pluie
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1619549555
+    data2: 3941464772
   Type: 0
   IsGlobal: 0
   Labels: []
@@ -144,6 +490,32 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Labels: []
+  Exists: 1
+--- !u!114 &-548882956593641312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Victoire Defaite/Parameter 2
+  m_EditorClassIdentifier: 
+  Name: Parameter 2
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1171006191
+    data2: 1331265632
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Victoire
+  - Defaite
   Exists: 1
 --- !u!114 &-480955078086669516
 MonoBehaviour:
@@ -206,20 +578,28 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -7561764152493130654}
-  - {fileID: 6368664946988894366}
+  - {fileID: -6995244758639665558}
+  - {fileID: -6245815049809496237}
+  - {fileID: -5959909517318554584}
+  - {fileID: 3478930576244755237}
+  - {fileID: 2631829890638634760}
   EditorEvents:
-  - {fileID: 7505853171715322281}
-  - {fileID: 8711973152317956789}
-  - {fileID: 3164423707669715822}
-  - {fileID: -6572276245533668607}
-  - {fileID: 5519130416391212067}
+  - {fileID: -7326365788164270241}
+  - {fileID: -4287613248085497896}
+  - {fileID: -5011068989132162175}
+  - {fileID: 6946251462676747806}
+  - {fileID: 3733218894064487967}
+  - {fileID: 1073885278166770741}
+  - {fileID: 7980554388223500390}
+  - {fileID: -3543409638654298302}
+  - {fileID: 1971601092696730873}
+  - {fileID: -6249556380472759362}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 6368664946988894366}
+  - {fileID: 3478930576244755237}
   StringsBanks:
-  - {fileID: -7561764152493130654}
-  cacheTime: 637874464193493296
+  - {fileID: -6995244758639665558}
+  cacheTime: 637894342440000000
   cacheVersion: 10
 --- !u!114 &1027828640194096983
 MonoBehaviour:
@@ -245,6 +625,106 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &1073885278166770741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Choix element
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Choix element
+  Guid:
+    Data1: -1810036590
+    Data2: 1100614077
+    Data3: -1358393675
+    Data4: -1005897906
+  Banks:
+  - {fileID: -5959909517318554584}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2310554911730557382}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1971601092696730873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pinceau
+  m_EditorClassIdentifier: 
+  Path: event:/Pinceau
+  Guid:
+    Data1: -993888089
+    Data2: 1100802122
+    Data3: 1428727482
+    Data4: -2031201842
+  Banks:
+  - {fileID: 2631829890638634760}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2310554911730557382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Choix element/Elements
+  m_EditorClassIdentifier: 
+  Name: Elements
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 4022291735
+    data2: 2916613644
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Feu
+  - Terre
+  - Eau
+  Exists: 1
+--- !u!114 &2631829890638634760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/UI.bank
+  m_EditorClassIdentifier: 
+  Path: FMODBank/UI.bank
+  Name: UI
+  StudioPath: bank:/UI
+  lastModified: 637894342440000000
+  FileSizes: []
+  Exists: 1
 --- !u!114 &3164423707669715822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,6 +749,52 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3478930576244755237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMODBank/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637894342360000000
+  FileSizes: []
+  Exists: 1
+--- !u!114 &3733218894064487967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Player footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Player footsteps
+  Guid:
+    Data1: -1104884880
+    Data2: 1144264995
+    Data3: 2022178968
+    Data4: -893489505
+  Banks:
+  - {fileID: -5959909517318554584}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -6678977337557502569}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -317,7 +843,7 @@ MonoBehaviour:
   Path: FMODBank/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637874464193483323
+  lastModified: 637849433860982973
   FileSizes: []
   Exists: 1
 --- !u!114 &6530104374587030891
@@ -344,6 +870,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &6946251462676747806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Player combat
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Player combat
+  Guid:
+    Data1: 885006678
+    Data2: 1233674198
+    Data3: 1015307700
+    Data4: 619606898
+  Banks:
+  - {fileID: -5959909517318554584}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -9177582577817461914}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7159111586026961416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,6 +947,33 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: -688244154194343218}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &7980554388223500390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Clochettes
+  m_EditorClassIdentifier: 
+  Path: event:/Clochettes
+  Guid:
+    Data1: 1862981445
+    Data2: 1110026027
+    Data3: 883475106
+    Data4: -1494514756
+  Banks:
+  - {fileID: 2631829890638634760}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 0

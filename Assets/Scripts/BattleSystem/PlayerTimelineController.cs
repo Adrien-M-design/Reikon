@@ -20,6 +20,7 @@ public class PlayerTimelineController : MonoBehaviour
     [Header("Anim")]
     [SerializeField] private Animator _animator = null;
     [SerializeField] private Transform _playerPos = null;
+    [SerializeField] private GameObject _contener = null;
     //ça viendra à changer
     [SerializeField] private Animator _comboAnimator = null;
 
@@ -80,8 +81,6 @@ public class PlayerTimelineController : MonoBehaviour
         _cursor.transform.position = _startPos.position;
         _interruptedTime = _waitTime / 2;
         _ennemyTimeline.OnExec += Interrupt;
-        _clip = _animator.runtimeAnimatorController.animationClips[0];
-        _animationLength = _clip.length;
     }
 
     // Update is called once per frame
@@ -138,9 +137,9 @@ public class PlayerTimelineController : MonoBehaviour
                     _waitInput = false;
                     _combo.SetActive(false);
                     _actionTime = _currentAttackData.ActionTime;
-                    /*_animator = _currentAttackData.FxObject.GetComponent<Animator>();
+                    _animator = _currentAttackData.FxObject.GetComponent<Animator>();
                     _clip = _animator.runtimeAnimatorController.animationClips[0];
-                    _animationLength = _clip.length;*/
+                    _animationLength = _clip.length;
                     _inStopTime = false;
                 }
                 else
@@ -209,10 +208,12 @@ public class PlayerTimelineController : MonoBehaviour
     {
         _attData = attdat;
         _inStopTime = true;
-        _animator.SetTrigger("New Trigger");
-        /*GameObject fxObj = Instantiate(attdat.FxObject, _playerPos.position, _playerPos.rotation);
-        fxObj.GetComponent<Animator>().Play(0);
-        _animator.SetTrigger("Attack");*/
+        //_animator.SetTrigger("New Trigger");
+        GameObject fxObj = Instantiate(attdat.FxObject, _playerPos.position, _playerPos.rotation, _contener.transform);
+        if(fxObj == null)
+        {
+            Debug.Log("Instantiate failed !");
+        }
         _inAnimation = true;
         _inputArray.Clear();
         _currentAttackData = null;
