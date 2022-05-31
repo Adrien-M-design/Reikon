@@ -16,6 +16,7 @@ public class CombatController : MonoBehaviour
     [SerializeField] private GameObject _victoryScreen = null;
     [SerializeField] private GameObject _defeatScreen = null;
     [SerializeField] private Animator _animatorKappa = null;
+    [SerializeField] private Animator _animatorAyumu = null;
     private CombatData _combatData = null;
 
     private int _charHp = 100;

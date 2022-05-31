@@ -410,6 +410,7 @@ MonoBehaviour:
   _character: {fileID: 3686277357803223066, guid: efe2f805eaec3474fbe992aaa82bea6a,
     type: 3}
   _charHp: 50
+  _animator: {fileID: 9100000, guid: 40a2b0c2e6dce4d478fd2be39f31d9a0, type: 2}
 --- !u!4 &2005535126
 Transform:
   m_ObjectHideFlags: 0

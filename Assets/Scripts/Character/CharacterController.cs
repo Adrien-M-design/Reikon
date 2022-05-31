@@ -20,6 +20,8 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private float agentSpeed = 0;
     [SerializeField] private Transform _focusPoint = null;
 
+    [SerializeField] private Animator _ayumuAnimator = null;
+
     #endregion Attributs
 
     #region Properties
@@ -72,6 +74,8 @@ public class CharacterController : MonoBehaviour
         inputSqrMagnitude = inputValue.sqrMagnitude;
         if(inputSqrMagnitude >= .01f)
         {
+            _ayumuAnimator.SetTrigger("Run");       
+
             float targetAngle = Mathf.Atan2(inputValue.x, inputValue.z) * Mathf.Rad2Deg + _cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _turnSmoothVelocity, _turnSmoothTime);
 
@@ -101,6 +105,7 @@ public class CharacterController : MonoBehaviour
         }
         else
         {
+            _ayumuAnimator.SetTrigger("Stand");
             // Pas de input du player
         }
     }
