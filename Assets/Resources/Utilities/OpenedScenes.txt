@@ -1,2 +1,2 @@
-Assets/Scenes/PersistentManagers.unity
 Assets/Scenes/BattleSystem.unity
+Assets/Scenes/DebugPersistantManager.unity
