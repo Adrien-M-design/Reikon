@@ -1139,7 +1139,10 @@ VisualEffect:
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 20
+        m_Name: LifeTime
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -1153,7 +1156,78 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array: []
     m_AnimationCurve:
-      m_Array: []
+      m_Array:
+      - m_Value:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 0.54626185
+            value: 0.16306318
+            inSlope: 1.172954
+            outSlope: 1.172954
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.22167335
+            outWeight: 0.33333334
+          - serializedVersion: 3
+            time: 0.72375154
+            value: 0.29964563
+            inSlope: -0.82195103
+            outSlope: -0.82195103
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 1
+          - serializedVersion: 3
+            time: 0.8616934
+            value: 0.41791213
+            inSlope: -0.10076078
+            outSlope: -0.10076078
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 1
+          - serializedVersion: 3
+            time: 1.1344888
+            value: 0.6144726
+            inSlope: -0.04288092
+            outSlope: -0.04288092
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0.33333334
+            outWeight: 1
+          - serializedVersion: 3
+            time: 1.3068771
+            value: 1.5122375
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 4.2517014
+            value: 0.0031433105
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_Name: MouvementX
+        m_Overridden: 1
     m_Gradient:
       m_Array: []
     m_NamedObject:
@@ -3854,7 +3928,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2391a70c460e8af4a96c2ad13603f967,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.91
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2391a70c460e8af4a96c2ad13603f967,
         type: 3}
