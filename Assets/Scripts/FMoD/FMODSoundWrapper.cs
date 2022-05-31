@@ -76,6 +76,16 @@ public class FMODEventWrapper
         }
     }
 
+    public void SetParameterByName(string eventName, string value)
+    {
+        FMOD.RESULT result = _eventInstance.setParameterByNameWithLabel(eventName, value);
+        if (result != FMOD.RESULT.OK)
+        {
+            Debug.Log(result);
+            return;
+        }
+    }
+
     public void SetParameterById(PARAMETER_ID id, float value)
     {
         FMOD.RESULT result = _eventInstance.setParameterByID(id, value);

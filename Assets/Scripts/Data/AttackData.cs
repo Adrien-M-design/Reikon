@@ -19,7 +19,7 @@ public class AttackData : ScriptableObject
     /*
      * SerializeField -> FX (particle, sounds)
      */
-    //[SerializeField] private GameObject _fxObject = null;
+    [SerializeField] private GameObject _fxObject = null;
 
     public string AttackID => _attackID;
     public string AttackName => _attackName;
@@ -31,5 +31,5 @@ public class AttackData : ScriptableObject
     public DatabaseManager.ECombatEffects CombatEffect => _combatEffect;
     public DatabaseManager.ECombatEffects ElementalCombatEffect => _elementalCombatEffect;
     public DatabaseManager.EAttackTypes[] Combo => _combo;
-    //public GameObject FxObject => _fxObject;
+    public GameObject FxObject => _fxObject;
 }
