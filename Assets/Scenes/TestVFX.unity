@@ -1185,13 +1185,13 @@ VisualEffect:
       m_Array: []
     m_Vector3f:
       m_Array:
-      - m_Value: {x: -9.999998, y: 1, z: -9}
+      - m_Value: {x: -9.5, y: 1, z: -14.5}
         m_Name: Pos1
         m_Overridden: 1
-      - m_Value: {x: -12.999998, y: 1, z: -12}
+      - m_Value: {x: -12.499998, y: 1, z: -19.5}
         m_Name: Pos2
         m_Overridden: 1
-      - m_Value: {x: -45, y: 0.76, z: -15}
+      - m_Value: {x: -16.5, y: 0.76, z: -19.5}
         m_Name: Pos3
         m_Overridden: 1
     m_Vector4f:
@@ -1601,7 +1601,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534284624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.999998, y: 0.24000001, z: 1}
+  m_LocalPosition: {x: -3.499998, y: 0.24000001, z: -6.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 267677853}
@@ -2136,7 +2136,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878114139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36, y: 0, z: -2}
+  m_LocalPosition: {x: -7.5, y: 0, z: -6.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 267677853}
@@ -3998,7 +3998,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006291820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9999981, y: 0.24000001, z: 4}
+  m_LocalPosition: {x: -0.5, y: 0.24000001, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 267677853}
