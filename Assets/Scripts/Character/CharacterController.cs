@@ -22,6 +22,8 @@ public class CharacterController : MonoBehaviour
 
     [SerializeField] private Animator _ayumuAnimator = null;
 
+    private float _timestamp = 0f;
+
     #endregion Attributs
 
     #region Properties

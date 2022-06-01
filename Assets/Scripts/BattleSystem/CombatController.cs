@@ -98,7 +98,7 @@ public class CombatController : MonoBehaviour
         ShowDamage(attData.Damage.ToString(), _playerTransform);
         CharHp -= attData.Damage;
         _playerSlider.value = CharHp;
-        if (MobHp <= 0)
+        if (CharHp <= 0)
         {
             _playerTimeline.InBattle = false;
             _ennemyTimeline.InBattle = false;

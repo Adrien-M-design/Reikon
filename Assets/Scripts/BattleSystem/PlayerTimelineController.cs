@@ -19,6 +19,7 @@ public class PlayerTimelineController : MonoBehaviour
 
     [Header("Anim")]
     [SerializeField] private Animator _animator = null;
+    [SerializeField] private Animator _ayumuAnimator = null;
     [SerializeField] private Transform _playerPos = null;
     [SerializeField] private GameObject _contener = null;
     //ça viendra à changer
@@ -172,6 +173,7 @@ public class PlayerTimelineController : MonoBehaviour
         if (_onStart)
         {
             //_combatController.ApplyEffect(_combatController.CharacterEffects, true);
+            _ayumuAnimator.SetBool("Attack", false);
             _onStart = false;
         }
         if(_inAction == false)
@@ -206,6 +208,7 @@ public class PlayerTimelineController : MonoBehaviour
 
     private void PlayerAttack(AttackData attdat)
     {
+        _ayumuAnimator.SetBool("Attack", true);
         _attData = attdat;
         _inStopTime = true;
         //_animator.SetTrigger("New Trigger");
