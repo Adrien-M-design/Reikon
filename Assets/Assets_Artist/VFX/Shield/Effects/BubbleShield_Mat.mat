@@ -77,7 +77,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_02df2e2312064f69889e56a49a7c7a0f: 0.1
+    - Vector1_02df2e2312064f69889e56a49a7c7a0f: 0.09
     - Vector1_16972eaf801146a5a3df82f949e113c7: 0.05
     - Vector1_17fca25aff444016bfcdf16323b8821e: 0.4
     - Vector1_268c52182ae04ef991a2c8a948b47c77: 0
@@ -95,7 +95,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _Disolve: 0.01
+    - _Disolve: 0
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
