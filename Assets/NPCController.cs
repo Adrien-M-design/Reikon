@@ -20,7 +20,7 @@ public class NPCController : MonoBehaviour
             _ayumuAnimator.SetBool("Stand", false);
             _ayumuAnimator.SetBool("Talk", true);
             _interact.SetActive(false);
-            _dialogueController.Initialize(_dialogueID);
+            _dialogueController.Initialize(_dialogueID, gameObject);
             _isInBox = false;
         }
     }

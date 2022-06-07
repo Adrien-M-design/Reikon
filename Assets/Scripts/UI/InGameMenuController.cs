@@ -25,12 +25,14 @@ public class InGameMenuController : MonoBehaviour
                 _UICanvas.enabled = true;
                 OpenMenu(_glossary);
                 Cursor.lockState = CursorLockMode.None;
+                CharacterManager.Instance.CanMove = false;
             }
             else if (Input.GetButtonDown("Talismans"))
             {
                 _UICanvas.enabled = true;
                 OpenMenu(_talismans);
                 Cursor.lockState = CursorLockMode.None;
+                CharacterManager.Instance.CanMove = false;
             }
         }
 
@@ -52,6 +54,7 @@ public class InGameMenuController : MonoBehaviour
             _UICanvas.enabled = false;
             _uIType.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
+            CharacterManager.Instance.CanMove = true;
         }
     }
 
