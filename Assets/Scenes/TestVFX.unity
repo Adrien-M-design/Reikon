@@ -4192,6 +4192,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 371483624762477423, guid: 05550856dc9e22848a0543b8cd26a56f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 371483624762477423, guid: 05550856dc9e22848a0543b8cd26a56f,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1543866881994682368, guid: 05550856dc9e22848a0543b8cd26a56f,
         type: 3}
       propertyPath: m_RootOrder
@@ -4251,6 +4261,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BubbleShield
+      objectReference: {fileID: 0}
+    - target: {fileID: 2172769199640292026, guid: 05550856dc9e22848a0543b8cd26a56f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05550856dc9e22848a0543b8cd26a56f, type: 3}
