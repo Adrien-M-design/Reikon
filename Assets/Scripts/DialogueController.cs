@@ -19,8 +19,9 @@ public class DialogueController : MonoBehaviour
     private int _index = 0;
     private Color _notTalking = Color.black;
     private AnimationClip _clip = null;
+    private GameObject _npc = null;
 
-    public void Initialize(string id)
+    public void Initialize(string id, GameObject npc)
     {
         _currentDialogue = DatabaseManager.Instance.Dialogues[id];
         _rSpeaker.sprite = _currentDialogue.Speakers[1].CharacterSprite;
@@ -32,6 +33,7 @@ public class DialogueController : MonoBehaviour
         SetUpSpeaker(0);
         CharacterManager.Instance.CanMove = false;
         _dialogue.SetActive(true);
+        _npc = npc;
     }
 
     private void SetUpSpeaker(int index)
@@ -73,7 +75,22 @@ public class DialogueController : MonoBehaviour
             _lSpeaker.color = Color.white;
             CharacterManager.Instance.CanMove = true;
             _dialogue.SetActive(false);
+
+            if(_currentDialogue.IsOpponent == true)
+            {
+                LaunchBattle();
+            }
+
+            if(_currentDialogue.IsDisapearing == true)
+            {
+                _npc.SetActive(false);
+            }
         }
+    }
+
+    public void LaunchBattle()
+    {
+        GameStateManager.Instance.LaunchTransition(EGameState.BATTLE);
     }
 
     private void Update()

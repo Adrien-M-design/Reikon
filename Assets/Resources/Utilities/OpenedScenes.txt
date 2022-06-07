@@ -1,1 +1,2 @@
-Assets/Scenes/MainMenu.unity
+Assets/Scenes/DebugPersistantManager.unity
+Assets/Scenes/Reikon.unity
