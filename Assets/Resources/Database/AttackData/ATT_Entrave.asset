@@ -15,10 +15,12 @@ MonoBehaviour:
   _attackID: ENTRAVE
   _attackName: Entrave
   _damage: 5
-  _actionTime: 0.5
+  _actionTime: 1
   _onSelf: 0
   _effectCooldown: 0
   _effectDamage: 0
   _combatEffect: 4
   _elementalCombatEffect: 4
   _combo: 010000000100000002000000
+  _fxObject: {fileID: 1479643913427073722, guid: 05bedab4df4683d428f2d1495e6f688a,
+    type: 3}

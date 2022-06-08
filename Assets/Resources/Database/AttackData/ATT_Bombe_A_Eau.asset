@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ATT_Bombe_A_Eau
   m_EditorClassIdentifier: 
   _attackID: BOMBE_A_EAU
-  _attackName: "Bombe \xE0 Eau"
+  _attackName: Bombe a Eau
   _damage: 10
   _actionTime: 1.5
   _onSelf: 0
@@ -22,3 +22,5 @@ MonoBehaviour:
   _combatEffect: 1
   _elementalCombatEffect: 4
   _combo: 020000000000000000000000
+  _fxObject: {fileID: 993834162473969334, guid: 93d16248286bbc748977092e65b97bb2,
+    type: 3}

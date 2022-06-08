@@ -351,8 +351,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0bc75a7e478c10a4eb4cc02981dae0de, type: 2}
   _charAttData:
   - {fileID: 11400000, guid: 0bc75a7e478c10a4eb4cc02981dae0de, type: 2}
-  - {fileID: 11400000, guid: 15e385b31c8f6024399e35a4e50546bb, type: 2}
-  - {fileID: 11400000, guid: 22cf27c6926a604498ebaf4eeed411d6, type: 2}
+  - {fileID: 11400000, guid: 63ee53fb492e158499814c595338100d, type: 2}
   - {fileID: 11400000, guid: b96258d674749cf4bbbf718565d23166, type: 2}
   - {fileID: 11400000, guid: ca1e5f84c2a639b439bfb7dbec75820e, type: 2}
   _combatData:

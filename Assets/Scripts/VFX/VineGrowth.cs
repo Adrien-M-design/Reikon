@@ -29,18 +29,17 @@ public class VineGrowth : MonoBehaviour
                 }
             }
         }
+
+        for (int i = 0; i < growVinesMaterials.Count; i++)
+        {
+            StartCoroutine(GrowVines(growVinesMaterials[i]));
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            for(int i=0; i<growVinesMaterials.Count; i++)
-            {
-                StartCoroutine(GrowVines(growVinesMaterials[i]));
-            }
-        }
+
     }
     IEnumerator GrowVines(Material mat)
     {

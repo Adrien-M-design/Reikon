@@ -15,10 +15,12 @@ MonoBehaviour:
   _attackID: ABSORPTION
   _attackName: Absorption
   _damage: 0
-  _actionTime: 0.5
+  _actionTime: 1
   _onSelf: 1
   _effectCooldown: 0
   _effectDamage: 0
   _combatEffect: 3
   _elementalCombatEffect: 4
   _combo: 020000000200000001000000
+  _fxObject: {fileID: 379515746395241571, guid: 05550856dc9e22848a0543b8cd26a56f,
+    type: 3}
