@@ -69,6 +69,16 @@ public class CharacterController : MonoBehaviour
             myNavMeshAgent.Move(forward);
         }
         */
+
+        if(_ayumuAnimator.GetBool("Stand") == true)
+        {
+            _timestamp += Time.deltaTime;
+            if(_timestamp >= 10)
+            {
+                _ayumuAnimator.SetTrigger("Idle");
+                _timestamp = 0;
+            }
+        }
     }
 
     private void Step()
@@ -76,8 +86,7 @@ public class CharacterController : MonoBehaviour
         inputSqrMagnitude = inputValue.sqrMagnitude;
         if(inputSqrMagnitude >= .01f)
         {
-            _ayumuAnimator.SetBool("Run", true);       
-            _ayumuAnimator.SetBool("Idle", false);       
+            _ayumuAnimator.SetBool("Run", true);            
             _ayumuAnimator.SetBool("Stand", false);       
             _ayumuAnimator.SetBool("Talk", false);       
 
@@ -111,7 +120,6 @@ public class CharacterController : MonoBehaviour
         else
         {
             _ayumuAnimator.SetBool("Run", false);
-            _ayumuAnimator.SetBool("Idle", false);
             _ayumuAnimator.SetBool("Stand", true);
             _ayumuAnimator.SetBool("Talk", false);
             // Pas de input du player
