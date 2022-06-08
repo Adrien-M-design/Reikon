@@ -357,7 +357,8 @@ MonoBehaviour:
   _combatData:
   - {fileID: 11400000, guid: 65ec30e73da071144a8a274c3c2fce08, type: 2}
   _dialData:
-  - {fileID: 11400000, guid: 82f1ea35f34bfc648a121aa158bca183, type: 2}
+  - {fileID: 11400000, guid: 849a31a5bc3fb7e43aebe33f50a5aaba, type: 2}
+  - {fileID: 11400000, guid: d52556041ba12b141bb33e9054585760, type: 2}
   _spriteData:
   - {fileID: 11400000, guid: 03a331dbb2958864ca2b7f2450c6dab3, type: 2}
   - {fileID: 11400000, guid: fe2f6204ea94856489630ef3ea797066, type: 2}

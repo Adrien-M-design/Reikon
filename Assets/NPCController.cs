@@ -11,6 +11,12 @@ public class NPCController : MonoBehaviour
     private bool _isInBox = false;
     private Animator _ayumuAnimator = null;
 
+    public string DialogueID
+    {
+        get => _dialogueID;
+        set => _dialogueID = value;
+    }
+
     void Update()
     {
         if (Input.GetButtonDown("Interact") && _isInBox == true)

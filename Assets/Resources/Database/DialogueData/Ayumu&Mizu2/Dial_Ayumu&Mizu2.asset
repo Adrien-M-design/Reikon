@@ -14,21 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: DIAL_A&MZ2
   _promptData:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 990e34a5cb4c47d46a19c66517f53445, type: 2}
+  - {fileID: 11400000, guid: 0fc30b1abfeba9a4b945785472eb0de0, type: 2}
+  - {fileID: 11400000, guid: 1a45c2122b4dd794f96b32e851bad96c, type: 2}
+  - {fileID: 11400000, guid: 69e04493344ac2b44bb2f110de5d307a, type: 2}
+  - {fileID: 11400000, guid: bdb915b71ba826b4dbb8915593f47eae, type: 2}
+  - {fileID: 11400000, guid: 729a74370513c134697f67637070ea9a, type: 2}
+  - {fileID: 11400000, guid: d9a5b14991a80454884cc485bc3538c3, type: 2}
+  - {fileID: 11400000, guid: 12668cc085d992e4c9c1669f610dfb1c, type: 2}
+  - {fileID: 11400000, guid: ea29fd89fe3e3b641a1789e74228c58e, type: 2}
+  - {fileID: 11400000, guid: 19efd9b55fa42914d9bc0fbe5d99ccc5, type: 2}
+  - {fileID: 11400000, guid: 1d31accae198bd44b9f65c639803ed53, type: 2}
+  - {fileID: 11400000, guid: 6cf20aa57f535c2428f3169bba753410, type: 2}
+  - {fileID: 11400000, guid: 5c91d7cce6ca49d4d9c1dd216a71a330, type: 2}
+  - {fileID: 11400000, guid: 4cd86224311370443a011404b86d0e5a, type: 2}
+  - {fileID: 11400000, guid: ccf2afba556f0f3439ef812802d53b46, type: 2}
   _speakers:
-  - {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
   - {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
+  - {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
+  _isOpponent: 0
+  _isDisapearing: 1

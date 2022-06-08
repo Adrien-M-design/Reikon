@@ -31,3 +31,5 @@ MonoBehaviour:
   _speakers:
   - {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   - {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
+  _isOpponent: 1
+  _isDisapearing: 0
