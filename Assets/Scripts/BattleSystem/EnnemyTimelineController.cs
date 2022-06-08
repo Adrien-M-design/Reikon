@@ -20,12 +20,16 @@ public class EnnemyTimelineController : MonoBehaviour
     private bool _inBattle = true;
 
     [SerializeField] private Animator _animator = null;
+    [SerializeField] private Animator _kappaAnimator = null;
 
     [SerializeField] private GameObject _cursor = null;
     [SerializeField] private Transform _startPos = null;
     [SerializeField] private Transform _actionEnterPos = null;
     [SerializeField] private Transform _interruptPos = null;
     [SerializeField] private Transform _endPos = null;
+
+    [SerializeField] private Transform _kappaPos = null;
+    [SerializeField] private GameObject _contener = null;
 
     [SerializeField] private PlayerTimelineController _playerTimeline = null;
 
@@ -63,8 +67,6 @@ public class EnnemyTimelineController : MonoBehaviour
     void Start()
     {
         _inBattle = true;
-        _clip = _animator.runtimeAnimatorController.animationClips[0];
-        _animationLength = _clip.length;
         _cursor.transform.position = _startPos.position;
         _interruptedTime = _waitTime / 2;
         _playerTimeline.OnExec += Interrupt;
@@ -76,6 +78,8 @@ public class EnnemyTimelineController : MonoBehaviour
         if (_onStart)
         {
             _combatController.ApplyEffect(_combatController.EnnemyEffects, false);
+            _kappaAnimator.SetBool("Stand", true);
+            _kappaAnimator.SetBool("Attack", false);
             _onStart = false;
         }
 
@@ -110,6 +114,12 @@ public class EnnemyTimelineController : MonoBehaviour
                 _travelTime = 0f;
                 _inAction = true;
                 _currentAttack = _combatController.AttackSelct();
+                if(_currentAttack.FxObject != null)
+                {
+                    _animator = _currentAttack.FxObject.GetComponent<Animator>();
+                    _clip = _animator.runtimeAnimatorController.animationClips[0];
+                    _animationLength = _clip.length;
+                }
                 _actionTime = _currentAttack.ActionTime;
             }
         }
@@ -133,7 +143,11 @@ public class EnnemyTimelineController : MonoBehaviour
     {
         _inStopTime = true;
         //Time.timeScale = 0;
-        _animator.SetTrigger("New Trigger");
+        _kappaAnimator.SetBool("Degats", false);
+        _kappaAnimator.SetBool("Stand", false);
+        _kappaAnimator.SetBool("Attack", true);
+        GameObject fxObj = Instantiate(_currentAttack.FxObject, _kappaPos.position, _kappaPos.rotation, _contener.transform);
+        //_animator.SetTrigger("New Trigger");
         _inAnimation = true;
     }
 

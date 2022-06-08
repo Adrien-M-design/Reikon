@@ -138,9 +138,12 @@ public class PlayerTimelineController : MonoBehaviour
                     _waitInput = false;
                     _combo.SetActive(false);
                     _actionTime = _currentAttackData.ActionTime;
-                    _animator = _currentAttackData.FxObject.GetComponent<Animator>();
-                    _clip = _animator.runtimeAnimatorController.animationClips[0];
-                    _animationLength = _clip.length;
+                    if (_currentAttackData.FxObject != null)
+                    {
+                        _animator = _currentAttackData.FxObject.GetComponent<Animator>();
+                        _clip = _animator.runtimeAnimatorController.animationClips[0];
+                        _animationLength = _clip.length;
+                    }
                     _inStopTime = false;
                 }
                 else
@@ -173,7 +176,9 @@ public class PlayerTimelineController : MonoBehaviour
         if (_onStart)
         {
             //_combatController.ApplyEffect(_combatController.CharacterEffects, true);
+            _ayumuAnimator.SetBool("Idle", true);
             _ayumuAnimator.SetBool("Attack", false);
+            _ayumuAnimator.SetBool("DAttack", false);
             _onStart = false;
         }
         if(_inAction == false)
@@ -209,6 +214,8 @@ public class PlayerTimelineController : MonoBehaviour
     private void PlayerAttack(AttackData attdat)
     {
         _ayumuAnimator.SetBool("Attack", true);
+        _ayumuAnimator.SetBool("DAttack", false);
+        _ayumuAnimator.SetBool("Idle", false);
         _attData = attdat;
         _inStopTime = true;
         //_animator.SetTrigger("New Trigger");
