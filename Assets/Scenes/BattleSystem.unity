@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44824797, g: 0.49827397, b: 0.5755831, a: 1}
+  m_IndirectSpecularColor: {r: 0.62968385, g: 0.61681265, b: 0.6062981, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7835,11 +7835,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waitTime: 4
   _animator: {fileID: 1629232228}
+  _kappaAnimator: {fileID: 1603750790}
   _cursor: {fileID: 823102302}
   _startPos: {fileID: 803787551}
   _actionEnterPos: {fileID: 344256909}
   _interruptPos: {fileID: 627834307}
   _endPos: {fileID: 284556682}
+  _kappaPos: {fileID: 1940381134}
+  _contener: {fileID: 1575161078}
   _playerTimeline: {fileID: 478164473}
   _combatController: {fileID: 1386520856}
 --- !u!4 &479861329 stripped

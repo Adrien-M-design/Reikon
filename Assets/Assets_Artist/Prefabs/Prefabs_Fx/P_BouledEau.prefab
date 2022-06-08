@@ -139,6 +139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 993834162473969329}
   - component: {fileID: 993834162473969328}
+  - component: {fileID: 2170631735838153090}
   m_Layer: 0
   m_Name: P_BouledEau
   m_TagString: Untagged
@@ -172,7 +173,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993834162473969334}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 16d3787a823feff418cb0c76e1582d47, type: 2}
   m_CullingMode: 0
@@ -183,6 +184,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2170631735838153090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993834162473969334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a05726426a49dc4eb88c26897922551, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 993834162473969328}
 --- !u!1 &993834162477973942
 GameObject:
   m_ObjectHideFlags: 0
