@@ -76,7 +76,8 @@ public class CombatController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_victoryScreen.activeInHierarchy == true || _defeatScreen.activeInHierarchy == true)
+
+        if (_victoryScreen.activeInHierarchy == true || _defeatScreen.activeInHierarchy == true)
         {
             if (Input.anyKeyDown)
             {
@@ -95,6 +96,10 @@ public class CombatController : MonoBehaviour
         {
             AddEffect(effect, attData.EffectCooldown,  true);
         }
+        _animatorAyumu.SetTrigger("Damage");
+        _animatorAyumu.SetBool("Idle", false);
+        _animatorAyumu.SetBool("Attack", false);
+        _animatorAyumu.SetBool("DAttack", false);
         ShowDamage(attData.Damage.ToString(), _playerTransform);
         CharHp -= attData.Damage;
         _playerSlider.value = CharHp;
@@ -102,7 +107,12 @@ public class CombatController : MonoBehaviour
         {
             _playerTimeline.InBattle = false;
             _ennemyTimeline.InBattle = false;
+            _animatorAyumu.SetTrigger("Defeat");
+            _animatorAyumu.SetBool("Idle", false);
+            _animatorAyumu.SetBool("Attack", false);
+            _animatorAyumu.SetBool("DAttack", false);
             _defeatScreen.SetActive(true);
+            BFMODManager.Instance.PlayEndBattleSound("Defaite");
         }
         Debug.Log(CharHp);
     }
@@ -113,18 +123,25 @@ public class CombatController : MonoBehaviour
         {
             AddEffect(effect, attData.EffectCooldown, false);
         }
+        _animatorKappa.SetTrigger("Damage");
+        _animatorKappa.SetBool("Stand", false);
+        _animatorKappa.SetBool("Attack", false);
         ShowDamage(attData.Damage.ToString(), _ennemyTransform);
         MobHp -= attData.Damage;
         _ennemySlider.value = MobHp;
         Debug.Log(MobHp);
         if(MobHp <= 20)
         {
-            _animatorKappa.SetBool("Lower40", true);
+            _animatorKappa.SetLayerWeight(1, 1);
         }
         if (MobHp <= 0)
         {
             _playerTimeline.InBattle = false;
             _ennemyTimeline.InBattle = false;
+            _animatorAyumu.SetTrigger("Victory");
+            _animatorAyumu.SetBool("Idle", false);
+            _animatorAyumu.SetBool("Attack", false);
+            _animatorAyumu.SetBool("DAttack", false);
             _victoryScreen.SetActive(true);
             BFMODManager.Instance.PlayEndBattleSound("Victoire");
         }
