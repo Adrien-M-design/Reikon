@@ -162,9 +162,19 @@ MonoBehaviour:
   _combatData:
   - {fileID: 11400000, guid: 65ec30e73da071144a8a274c3c2fce08, type: 2}
   _dialData:
+  - {fileID: 11400000, guid: 7fbbd1633486c4c4398943ec92ec6bbf, type: 2}
   - {fileID: 11400000, guid: 849a31a5bc3fb7e43aebe33f50a5aaba, type: 2}
+  - {fileID: 11400000, guid: cfd201d834e88804fa6f3a313b8effd3, type: 2}
   - {fileID: 11400000, guid: d52556041ba12b141bb33e9054585760, type: 2}
   - {fileID: 11400000, guid: f11a94c080ad49a48bf12859a550eb0a, type: 2}
+  - {fileID: 11400000, guid: 303c241b1cc423947b1bbf2a20d226b0, type: 2}
+  - {fileID: 11400000, guid: 64160f0876ec9bf4faf05171f3f10901, type: 2}
+  - {fileID: 11400000, guid: aa99427cddad2c343bd9d2c8e0d8098d, type: 2}
+  - {fileID: 11400000, guid: 25e0da5296d597a4c9d90b34ac9a2066, type: 2}
+  - {fileID: 11400000, guid: 9a079b9878472f141a3609e4c4db8e97, type: 2}
+  - {fileID: 11400000, guid: e47a5bb66f05690489004d68697d5e5a, type: 2}
+  - {fileID: 11400000, guid: 24d80fcac3317c74faa9b777eaf51c0e, type: 2}
+  - {fileID: 11400000, guid: e6138b847a0c6f24d8bf719e7082f67a, type: 2}
   _spriteData:
   - {fileID: 11400000, guid: 03a331dbb2958864ca2b7f2450c6dab3, type: 2}
   - {fileID: 11400000, guid: fe2f6204ea94856489630ef3ea797066, type: 2}
