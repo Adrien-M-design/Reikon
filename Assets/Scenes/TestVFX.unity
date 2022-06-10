@@ -2155,7 +2155,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh144474
+  m_Name: pb_Mesh165160
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2838,6 +2838,7 @@ VFXRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -4046,12 +4047,12 @@ PrefabInstance:
     - target: {fileID: 5194492155575228807, guid: 9a5aed90d4c078c4b8335fe8642d5a5d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.693
+      value: 7.9879994
       objectReference: {fileID: 0}
     - target: {fileID: 5194492155575228807, guid: 9a5aed90d4c078c4b8335fe8642d5a5d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.043
+      value: 0.57200027
       objectReference: {fileID: 0}
     - target: {fileID: 5194492155575228807, guid: 9a5aed90d4c078c4b8335fe8642d5a5d,
         type: 3}
