@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa60add2be699847add38db58a09297, type: 3}
+  m_Name: Prompt_Fl9
+  m_EditorClassIdentifier: 
+  _speaker: {fileID: 11400000, guid: 3b1c204ab9d12df42ba4ecc5b494b1db, type: 2}
+  _text: "Faites attention o\xF9 vous mettez les pieds! Les terrains sont profonds
+    par ici. "
