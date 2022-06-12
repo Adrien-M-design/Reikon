@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Prompt_A&PB_3
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 146ec90c031eebe4c99d6824ae39e3ef, type: 2}
-  _text: "Il me semble qu'il est parti de l'autre c\xF4t\xE9 du chemin principal,
-    mais je n'en suis pas certaine. Vous devriez demander au jeune homme de l'autre
-    c\xF4t\xE9, je crois que le petit l'a pouss\xE9 en courant. "
+  _text: "Il me semble qu'il est parti de l'autre c\xF4t\xE9 de la rizi\xE8re, mais
+    je n'en suis pas certaine."

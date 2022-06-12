@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed18aae7a3208aa46bf0f9287800c238, type: 3}
   m_Name: Char_PNJC
   m_EditorClassIdentifier: 
-  _characterSprite: {fileID: 0}
+  _characterSprite: {fileID: -8544605147207431486, guid: 332ac0bcd74c5444d896f5e6c44b7290,
+    type: 3}
   _charName: Kenji
   _charColor: {r: 0, g: 0, b: 0, a: 1}

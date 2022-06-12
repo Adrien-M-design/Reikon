@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed18aae7a3208aa46bf0f9287800c238, type: 3}
   m_Name: Char_FluffPNJ
   m_EditorClassIdentifier: 
-  _characterSprite: {fileID: 0}
+  _characterSprite: {fileID: -57942736458416171, guid: ffa1f31d4902fe0428c9ad2a8f2a3a5a,
+    type: 3}
   _charName: ???
-  _charColor: {r: 0, g: 0, b: 0, a: 1}
+  _charColor: {r: 0, g: 0, b: 0, a: 0.9019608}

@@ -19,6 +19,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 63df0e949b64fd7439985638e55b36a1, type: 2}
   - {fileID: 11400000, guid: b08c8a7c971a1e74cb83976074da578e, type: 2}
   - {fileID: 11400000, guid: d723323f31f444a449d13b78af9b3ca2, type: 2}
+  - {fileID: 11400000, guid: b951fb568b4bb8349a788ee7ad727f3d, type: 2}
   _speakers:
   - {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   - {fileID: 11400000, guid: 146ec90c031eebe4c99d6824ae39e3ef, type: 2}
+  _isOpponent: 0
+  _isDisapearing: 0

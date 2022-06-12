@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed18aae7a3208aa46bf0f9287800c238, type: 3}
   m_Name: Char_Masao
   m_EditorClassIdentifier: 
-  _characterSprite: {fileID: -8544605147207431486, guid: 332ac0bcd74c5444d896f5e6c44b7290,
+  _characterSprite: {fileID: 7885512882118648190, guid: c494023b2da63d54f8100e2cbc50a0a4,
     type: 3}
   _charName: Masao
   _charColor: {r: 0, g: 0, b: 0, a: 1}

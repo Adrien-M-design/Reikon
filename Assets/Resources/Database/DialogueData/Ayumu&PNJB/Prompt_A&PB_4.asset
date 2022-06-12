@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa60add2be699847add38db58a09297, type: 3}
   m_Name: Prompt_A&PB_4
   m_EditorClassIdentifier: 
-  _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
-  _text: 'Compris. '
+  _speaker: {fileID: 11400000, guid: 146ec90c031eebe4c99d6824ae39e3ef, type: 2}
+  _text: "Vous devriez demander au jeune homme de l'autre c\xF4t\xE9, je crois que
+    le petit l'a pouss\xE9 en courant."

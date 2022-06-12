@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Prompt_A&PA_2
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 46fb996e7b6e461488a6057281c5dda7, type: 2}
-  _text: "Je viens justement de voir ce garnement mettre les voiles au sud apr\xE8s
+  _text: "Je viens justement de voir ce garnement mettre les voiles plus bas apr\xE8s
     avoir sond\xE9 le coin. "

@@ -15,6 +15,8 @@ MonoBehaviour:
   _id: DIAL_Fl1
   _promptData:
   - {fileID: 11400000, guid: 15255ada57c7c6747bc45407875e7216, type: 2}
-  _speakers: []
+  _speakers:
+  - {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
+  - {fileID: 11400000, guid: 3b1c204ab9d12df42ba4ecc5b494b1db, type: 2}
   _isOpponent: 0
   _isDisapearing: 0

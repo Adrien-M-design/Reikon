@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Prompt_Fl1
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 3b1c204ab9d12df42ba4ecc5b494b1db, type: 2}
-  _text: "Vous \xEAtes un Gardien, non? J'ai entendu dire que l'examen d'entr\xE9e
+  _text: "Vous \xEAtes un Tsukuyomi, non? J'ai entendu dire que l'examen d'entr\xE9e
     \xE9tait tr\xE8s dur! "

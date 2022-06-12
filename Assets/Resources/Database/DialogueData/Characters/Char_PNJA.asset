@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed18aae7a3208aa46bf0f9287800c238, type: 3}
   m_Name: Char_PNJA
   m_EditorClassIdentifier: 
-  _characterSprite: {fileID: 0}
+  _characterSprite: {fileID: 5036165437643896918, guid: 0759ada6947e38d4a8a978885473276b,
+    type: 3}
   _charName: Ryou
   _charColor: {r: 0, g: 0, b: 0, a: 1}
