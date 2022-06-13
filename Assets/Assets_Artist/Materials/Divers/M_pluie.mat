@@ -33,7 +33,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_169b6125fc9640a7a8351bc1668136e6:
-        m_Texture: {fileID: 2800000, guid: 56e89f326fa08f642ac96246ebe8b2f4, type: 3}
+        m_Texture: {fileID: 2800000, guid: 066292b467ef568428cdf7fb50d5ec8e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_ad24e0921cff4cfa90d43bb68906a027:
@@ -103,7 +103,7 @@ Material:
     m_Floats:
     - Boolean_8A2B8817: 1
     - Vector1_6f17cd9a8ebd4f3b8efc550d1f8dd68e: 0
-    - Vector1_a55992bae22641b3af0c5b5713acf0f0: 0.9
+    - Vector1_a55992bae22641b3af0c5b5713acf0f0: 0.66
     - _AlphaClip: 1
     - _Blend: 2
     - _BlendOp: 0
@@ -132,7 +132,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OpacityThreshold: 0.16
+    - _OpacityThreshold: 0.9
     - _Parallax: 0.005
     - _QueueOffset: -5
     - _ReceiveShadows: 1
@@ -145,7 +145,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _UseColorMap: 1
+    - _UseColorMap: 0
     - _UseEmissiveMap: 0
     - _UseMetallicMap: 0
     - _UseNormalMap: 0
@@ -156,7 +156,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorAddSubDiff: {r: -1, g: 1, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 0.49019608}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
