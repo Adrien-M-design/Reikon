@@ -1,2 +1,3 @@
 Assets/Scenes/Reikon.unity
+Assets/Scenes/DebugPersistantManager.unity
 Assets/Scenes/PersistentManagers.unity
