@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59ac68cbf3ce8b44e9113eb636341a4c, type: 3}
-  m_Name: ATT_Entrave
+  m_Name: ATT_SolDeBraise
   m_EditorClassIdentifier: 
-  _attackID: ENTRAVE
-  _attackName: Entrave
-  _damage: 5
-  _actionTime: 0.5
+  _attackID: SOL_DE_BRAISE
+  _attackName: Sol de braise
+  _damage: 10
+  _actionTime: 1
   _onSelf: 0
   _effectCooldown: 0
   _effectDamage: 0
   _combatEffect: 4
   _elementalCombatEffect: 4
-  _combo: 010000000100000002000000
-  _fxObject: {fileID: 1479643913427073722, guid: 05bedab4df4683d428f2d1495e6f688a,
+  _combo: 000000000100000001000000
+  _fxObject: {fileID: 919132149155446097, guid: cf90fc1649902ca459f6c05b4595d060,
     type: 3}
