@@ -354,6 +354,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 63ee53fb492e158499814c595338100d, type: 2}
   - {fileID: 11400000, guid: b96258d674749cf4bbbf718565d23166, type: 2}
   - {fileID: 11400000, guid: ca1e5f84c2a639b439bfb7dbec75820e, type: 2}
+  - {fileID: 11400000, guid: ea621346ecb531b43b5c13f1bdb7170e, type: 2}
   _combatData:
   - {fileID: 11400000, guid: 65ec30e73da071144a8a274c3c2fce08, type: 2}
   _dialData:

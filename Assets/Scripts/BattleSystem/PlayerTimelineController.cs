@@ -96,7 +96,10 @@ public class PlayerTimelineController : MonoBehaviour
             if(_animationLength <= 0)
             {
                 _inStopTime = false;
-                _combatController.MobTakeDamage(_attData, _attData.CombatEffect);
+                if(_attData.OnSelf == false)
+                {
+                    _combatController.MobTakeDamage(_attData, _attData.CombatEffect);
+                }
                 _inAnimation = false;
                 _animationLength = _clip.length;
                 _onStart = true;
@@ -109,6 +112,7 @@ public class PlayerTimelineController : MonoBehaviour
              {
                 _comboAnimator.SetTrigger("Trigger_Fire");
                 _inputArray.Add(DatabaseManager.EAttackTypes.FIRE);
+                //BFMODManager.Instance.PlayElementSound("Feu");
                 _antiSpam = true;
                 _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
             }
@@ -117,6 +121,7 @@ public class PlayerTimelineController : MonoBehaviour
              {
                 _comboAnimator.SetTrigger("Trigger_Water");
                 _inputArray.Add(DatabaseManager.EAttackTypes.WATER);
+                //BFMODManager.Instance.PlayElementSound("Eau");
                 _antiSpam = true;
                 _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
             }
@@ -125,6 +130,7 @@ public class PlayerTimelineController : MonoBehaviour
              {
                 _comboAnimator.SetTrigger("Trigger_Wood");
                 _inputArray.Add(DatabaseManager.EAttackTypes.WOOD);
+                //BFMODManager.Instance.PlayElementSound("Terre");
                 _antiSpam = true;
                 _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
             }
@@ -175,7 +181,7 @@ public class PlayerTimelineController : MonoBehaviour
     {
         if (_onStart)
         {
-            //_combatController.ApplyEffect(_combatController.CharacterEffects, true);
+            _combatController.ApplyEffect(_combatController.CharacterEffects, true);
             _ayumuAnimator.SetBool("Idle", true);
             _ayumuAnimator.SetBool("Attack", false);
             _ayumuAnimator.SetBool("DAttack", false);
@@ -213,9 +219,18 @@ public class PlayerTimelineController : MonoBehaviour
 
     private void PlayerAttack(AttackData attdat)
     {
-        _ayumuAnimator.SetBool("Attack", true);
-        _ayumuAnimator.SetBool("DAttack", false);
-        _ayumuAnimator.SetBool("Idle", false);
+        if(attdat.OnSelf == true)
+        {
+            _ayumuAnimator.SetBool("Attack", false);
+            _ayumuAnimator.SetBool("DAttack", true);
+            _ayumuAnimator.SetBool("Idle", false);
+        }
+        else
+        {
+            _ayumuAnimator.SetBool("Attack", true);
+            _ayumuAnimator.SetBool("DAttack", false);
+            _ayumuAnimator.SetBool("Idle", false);
+        }
         _attData = attdat;
         _inStopTime = true;
         //_animator.SetTrigger("New Trigger");
