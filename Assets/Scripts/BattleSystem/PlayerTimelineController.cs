@@ -112,7 +112,7 @@ public class PlayerTimelineController : MonoBehaviour
              {
                 _comboAnimator.SetTrigger("Trigger_Fire");
                 _inputArray.Add(DatabaseManager.EAttackTypes.FIRE);
-                BFMODManager.Instance.PlayElementSound("Feu");
+                //BFMODManager.Instance.PlayElementSound("Feu");
                 _antiSpam = true;
                 _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
             }
@@ -121,7 +121,7 @@ public class PlayerTimelineController : MonoBehaviour
              {
                 _comboAnimator.SetTrigger("Trigger_Water");
                 _inputArray.Add(DatabaseManager.EAttackTypes.WATER);
-                BFMODManager.Instance.PlayElementSound("Eau");
+                //BFMODManager.Instance.PlayElementSound("Eau");
                 _antiSpam = true;
                 _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
             }
@@ -130,7 +130,7 @@ public class PlayerTimelineController : MonoBehaviour
              {
                 _comboAnimator.SetTrigger("Trigger_Wood");
                 _inputArray.Add(DatabaseManager.EAttackTypes.WOOD);
-                BFMODManager.Instance.PlayElementSound("Terre");
+                //BFMODManager.Instance.PlayElementSound("Terre");
                 _antiSpam = true;
                 _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
             }

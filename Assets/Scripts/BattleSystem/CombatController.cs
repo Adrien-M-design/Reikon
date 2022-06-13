@@ -109,7 +109,7 @@ public class CombatController : MonoBehaviour
         {
             CharHp -= attData.Damage;
             ShowDamage(attData.Damage.ToString(), _playerTransform);
-            BFMODManager.Instance.PlayDamageSound();
+            //BFMODManager.Instance.PlayDamageSound();
         }
         _playerSlider.value = CharHp;
         if (CharHp <= 0)
