@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6068297186853939173}
   - component: {fileID: 4251007076171526094}
   - component: {fileID: 2305622464461368786}
+  - component: {fileID: 6572295788615440257}
   m_Layer: 0
   m_Name: VFX_ProtectionEau
   m_TagString: Untagged
@@ -82,6 +83,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &6572295788615440257
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379515746395241571}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2354c520eee36814a8071c4c39d612b1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6033791465712485903
 GameObject:
   m_ObjectHideFlags: 0

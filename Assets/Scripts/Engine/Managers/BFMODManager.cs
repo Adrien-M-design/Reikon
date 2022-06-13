@@ -12,6 +12,9 @@ public class BFMODManager : Singleton<BFMODManager>
     private FMODEventWrapper _music = null;
     private FMODEventWrapper _stepSound = null;
     private FMODEventWrapper _endBattleSound = null;
+    private FMODEventWrapper _takeDamage = null;
+    private FMODEventWrapper _elements = null;
+
 
 
 
@@ -44,6 +47,8 @@ public class BFMODManager : Singleton<BFMODManager>
         //_stepSound = new FMODEventWrapper("STEP_SOUND_EVENT");
 
         _endBattleSound = new FMODEventWrapper("Victoire Defaite");
+        _takeDamage = new FMODEventWrapper("Player get hit");
+        _elements = new FMODEventWrapper("Choix element");
 
 
         //SetMusicParameterByName("event_Name", 1);
@@ -71,6 +76,16 @@ public class BFMODManager : Singleton<BFMODManager>
     public void PlayEndBattleSound(string value)
     {
         FMODUnity.RuntimeManager.PlayOneShot(_endBattleSound.PrefixedName, "Parameter 2", value);
+    }
+
+    public void PlayDamageSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(_takeDamage.PrefixedName);
+    }
+
+    public void PlayElementSound(string value)
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(_elements.PrefixedName, "Parameter 1", value);
     }
     #endregion Methods
 }

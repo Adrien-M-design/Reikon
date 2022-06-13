@@ -100,8 +100,17 @@ public class CombatController : MonoBehaviour
         _animatorAyumu.SetBool("Idle", false);
         _animatorAyumu.SetBool("Attack", false);
         _animatorAyumu.SetBool("DAttack", false);
-        ShowDamage(attData.Damage.ToString(), _playerTransform);
-        CharHp -= attData.Damage;
+        if (_characterEffects.ContainsKey(DatabaseManager.ECombatEffects.SHIELDED))
+        {
+            CharHp -= attData.Damage * 0;
+            ShowDamage(attData.Damage.ToString(), _playerTransform);
+        }
+        else
+        {
+            CharHp -= attData.Damage;
+            ShowDamage(attData.Damage.ToString(), _playerTransform);
+            BFMODManager.Instance.PlayDamageSound();
+        }
         _playerSlider.value = CharHp;
         if (CharHp <= 0)
         {

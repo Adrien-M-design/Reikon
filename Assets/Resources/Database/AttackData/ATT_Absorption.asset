@@ -17,7 +17,7 @@ MonoBehaviour:
   _damage: 0
   _actionTime: 1
   _onSelf: 1
-  _effectCooldown: 0
+  _effectCooldown: 2
   _effectDamage: 0
   _combatEffect: 3
   _elementalCombatEffect: 4
