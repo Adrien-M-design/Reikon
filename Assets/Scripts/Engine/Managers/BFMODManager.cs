@@ -85,7 +85,7 @@ public class BFMODManager : Singleton<BFMODManager>
 
     public void PlayElementSound(string value)
     {
-        FMODUnity.RuntimeManager.PlayOneShot(_elements.PrefixedName, "Parameter 1", value);*/
-    }
+        FMODUnity.RuntimeManager.PlayOneShot(_elements.PrefixedName, "Parameter 1", value);
+    }*/
     #endregion Methods
 }
