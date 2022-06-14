@@ -75,7 +75,7 @@ public class DialogueController : MonoBehaviour
             _lSpeaker.color = Color.white;
             CharacterManager.Instance.CanMove = true;
             _dialogue.SetActive(false);
-            _currentDialogue.HasDialPlayed = true;
+            //_currentDialogue.HasDialPlayed = true;
 
             if(_currentDialogue.IsOpponent == true)
             {
