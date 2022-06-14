@@ -27,6 +27,7 @@ public class LoadingState : AGameState
     {
         if(_loadingOp.isDone && !_isLoadFinish)
         {
+            GameStateManager.Instance.FadeOut();
             _isLoadFinish = true;
             string sceneName = string.Empty;
             sceneName = GameStateHelper.SetSceneName(GameStateManager.Instance.NextState);
@@ -38,7 +39,8 @@ public class LoadingState : AGameState
 
         if(_nextOp != null && _prevOp != null && _isLoadFinish && !_isUnloadFinish)
         {
-            if(_prevOp.isDone && _nextOp.isDone)
+            GameStateManager.Instance.FadeIn();
+            if (_prevOp.isDone && _nextOp.isDone)
             {
                 _loadingOp = SceneManager.UnloadSceneAsync("LoadingScreen");
                 _isUnloadFinish = true;
@@ -47,6 +49,7 @@ public class LoadingState : AGameState
         
         if (_loadingOp.isDone && _isLoadFinish && _isUnloadFinish)
         {
+            GameStateManager.Instance.FadeOut();
             GameStateManager.Instance.ChangeState(GameStateManager.Instance.NextState);
         }
     }

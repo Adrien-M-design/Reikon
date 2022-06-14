@@ -17,6 +17,8 @@ public class CombatController : MonoBehaviour
     [SerializeField] private GameObject _defeatScreen = null;
     [SerializeField] private Animator _animatorKappa = null;
     [SerializeField] private Animator _animatorAyumu = null;
+    [SerializeField] private Transform _contener = null;
+    [SerializeField] private GameObject _fxFire = null;
     private CombatData _combatData = null;
 
     private int _charHp = 100;
@@ -102,14 +104,15 @@ public class CombatController : MonoBehaviour
         _animatorAyumu.SetBool("DAttack", false);
         if (_characterEffects.ContainsKey(DatabaseManager.ECombatEffects.SHIELDED))
         {
-            CharHp -= attData.Damage * 0;
-            ShowDamage(attData.Damage.ToString(), _playerTransform);
+            ShowDamage("0", _playerTransform);
+            _characterEffects.Remove(DatabaseManager.ECombatEffects.SHIELDED);
+            Destroy(_contener.GetChild(0).gameObject);
         }
         else
         {
             CharHp -= attData.Damage;
             ShowDamage(attData.Damage.ToString(), _playerTransform);
-            //BFMODManager.Instance.PlayDamageSound();
+            BFMODManager.Instance.PlayDamageSound();
         }
         _playerSlider.value = CharHp;
         if (CharHp <= 0)
@@ -131,6 +134,10 @@ public class CombatController : MonoBehaviour
         if (effect != DatabaseManager.ECombatEffects.NONE && !_characterEffects.ContainsKey(effect))
         {
             AddEffect(effect, attData.EffectCooldown, false);
+            if(effect == DatabaseManager.ECombatEffects.DOT)
+            {
+                _fxFire.SetActive(true);
+            }
         }
         _animatorKappa.SetTrigger("Damage");
         _animatorKappa.SetBool("Stand", false);
@@ -156,9 +163,12 @@ public class CombatController : MonoBehaviour
         }
     }
 
-    public void CharHeal(int heal)
+    public void CharHeal(AttackData attData, DatabaseManager.ECombatEffects effect)
     {
-        CharHp += heal;
+        CharHp += attData.Damage;
+        ShowDamage(attData.Damage.ToString(), _playerTransform, true); 
+        _playerSlider.value = CharHp;
+        Debug.Log(CharHp);
     }
 
     public void MobHeal(int heal)
@@ -166,10 +176,15 @@ public class CombatController : MonoBehaviour
         MobHp += heal;
     }
 
-    public void ShowDamage(string text, Transform target)
+    public void ShowDamage(string text, Transform target, bool isHeal = false)
     {
         GameObject prefab = Instantiate(_floattingTextPrefab, target.position, Quaternion.identity);
-        prefab.GetComponentInChildren<TextMeshPro>().text = text;
+        TextMeshPro tmp = prefab.GetComponentInChildren<TextMeshPro>();
+        tmp.text = text;
+        if (isHeal)
+        {
+            tmp.color = Color.green;
+        }
     }
 
     public AttackData AttackSelct()
@@ -206,6 +221,7 @@ public class CombatController : MonoBehaviour
             if (onSelf)
             {
                 tmpEffects[pair.Key] = pair.Value - 1;
+                Debug.Log(tmpEffects[pair.Key]);
                 if(tmpEffects[pair.Key] < 0)
                 {
                     _toRemoveList.Add(pair.Key);
@@ -214,6 +230,7 @@ public class CombatController : MonoBehaviour
             else
             {
                 tmpEffects[pair.Key] = pair.Value - 1;
+                Debug.Log(tmpEffects[pair.Key]);
                 if (tmpEffects[pair.Key] <= 0)
                 {
                     _toRemoveList.Add(pair.Key);
@@ -223,11 +240,24 @@ public class CombatController : MonoBehaviour
 
         for (int i = 0; i < _toRemoveList.Count; i++)
         {
+            if(_toRemoveList[i] == DatabaseManager.ECombatEffects.DOT)
+            {
+                _fxFire.SetActive(false);
+            }
             tmpEffects.Remove(_toRemoveList[i]);
         }
 
         _toRemoveList.Clear();
         effects = tmpEffects;
+
+        if (onSelf)
+        {
+            _characterEffects = effects;
+        }
+        else if(onSelf == false)
+        {
+            _ennemyEffects = effects;
+        }
     }
 
     public void AddEffect(DatabaseManager.ECombatEffects effect, int cooldown, bool onSelf)

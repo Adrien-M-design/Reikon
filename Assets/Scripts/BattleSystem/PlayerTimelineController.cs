@@ -100,6 +100,14 @@ public class PlayerTimelineController : MonoBehaviour
                 {
                     _combatController.MobTakeDamage(_attData, _attData.CombatEffect);
                 }
+                else
+                {
+                    _combatController.AddEffect(_attData.CombatEffect, _attData.EffectCooldown, true);
+                    if(_attData.CombatEffect == DatabaseManager.ECombatEffects.HEAL)
+                    {
+                        _combatController.CharHeal(_attData, _attData.CombatEffect);
+                    }
+                }
                 _inAnimation = false;
                 _animationLength = _clip.length;
                 _onStart = true;
@@ -112,7 +120,7 @@ public class PlayerTimelineController : MonoBehaviour
              {
                 _comboAnimator.SetTrigger("Trigger_Fire");
                 _inputArray.Add(DatabaseManager.EAttackTypes.FIRE);
-                //BFMODManager.Instance.PlayElementSound("Feu");
+                BFMODManager.Instance.PlayElementSound("Feu");
                 _antiSpam = true;
                 _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
             }
@@ -121,7 +129,7 @@ public class PlayerTimelineController : MonoBehaviour
              {
                 _comboAnimator.SetTrigger("Trigger_Water");
                 _inputArray.Add(DatabaseManager.EAttackTypes.WATER);
-                //BFMODManager.Instance.PlayElementSound("Eau");
+                BFMODManager.Instance.PlayElementSound("Eau");
                 _antiSpam = true;
                 _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
             }
@@ -130,7 +138,7 @@ public class PlayerTimelineController : MonoBehaviour
              {
                 _comboAnimator.SetTrigger("Trigger_Wood");
                 _inputArray.Add(DatabaseManager.EAttackTypes.WOOD);
-                //BFMODManager.Instance.PlayElementSound("Terre");
+                BFMODManager.Instance.PlayElementSound("Terre");
                 _antiSpam = true;
                 _wait = _comboAnimator.runtimeAnimatorController.animationClips[0].length;
             }

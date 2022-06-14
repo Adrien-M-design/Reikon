@@ -23,6 +23,7 @@ public class DatabaseManager : Singleton<DatabaseManager>
         DOWNSPEED,
         DOT,
         SHIELDED,
+        HEAL,
         NONE
     };
     #endregion Attacks

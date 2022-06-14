@@ -10,6 +10,8 @@ public class GameStateManager : Singleton<GameStateManager>
 
     private EGameState _nextState = EGameState.NONE;
     private EGameState _previousState = EGameState.NONE;
+
+    [SerializeField] private Fader _fader = null;
     #endregion Fields
 
     #region Properties
@@ -65,6 +67,24 @@ public class GameStateManager : Singleton<GameStateManager>
 
     public void LaunchTransition(EGameState newState)
     {
+        StartCoroutine(DelayTransition(newState));
+       
+    }
+
+    public void FadeIn()
+    {
+        _fader.FadeIn = true;
+    }
+
+    public void FadeOut()
+    {
+        _fader.FadeOut = true;
+    }
+
+    IEnumerator DelayTransition(EGameState newState)
+    {
+        FadeIn();
+        yield return new WaitForSeconds(1);
         Debug.Log(newState);
         _previousState = _currentState;
         _nextState = newState;

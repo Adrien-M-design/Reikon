@@ -64,6 +64,7 @@ public class FeedbackController : MonoBehaviour
             {
                 _sprites[i].gameObject.SetActive(false);
             }
+            _attackName.gameObject.SetActive(false);
         }
 
     }
