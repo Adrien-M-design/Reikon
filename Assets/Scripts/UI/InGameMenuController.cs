@@ -70,4 +70,14 @@ public class InGameMenuController : MonoBehaviour
         _uIType = uISwitch;
         _uIType.SetActive(true);
     }
+
+    public void ButtonToGlossary()
+    {
+        SwitchMenu(_glossary);
+    }
+
+    public void ButtonToTalisman()
+    {
+        SwitchMenu(_talismans);
+    }
 }
