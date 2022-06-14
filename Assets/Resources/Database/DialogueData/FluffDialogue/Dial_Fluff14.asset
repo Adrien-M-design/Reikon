@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9f5d744e4703440ac1e78284ffe74f, type: 3}
+  m_Name: Dial_Fluff14
+  m_EditorClassIdentifier: 
+  _id: DIAL_Fl14
+  _promptData:
+  - {fileID: 11400000, guid: 8a7739e2c19d9df4a9c6cbb303476b9f, type: 2}
+  _speakers:
+  - {fileID: 11400000, guid: fe3fdf88312f4ee478f08cf10eb0a93b, type: 2}
+  - {fileID: 11400000, guid: 3b1c204ab9d12df42ba4ecc5b494b1db, type: 2}
+  _isOpponent: 0
+  _isDisapearing: 0
