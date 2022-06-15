@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed18aae7a3208aa46bf0f9287800c238, type: 3}
   m_Name: Char_PNJB
   m_EditorClassIdentifier: 
-  _characterSprite: {fileID: 21300000, guid: 54c280948e631694293638ee54dcce09, type: 3}
+  _characterSprite: {fileID: 8921930623676191978, guid: b2489d916e209364783096a2fc0c1ea3,
+    type: 3}
   _charName: Chika
   _charColor: {r: 0, g: 0, b: 0, a: 1}
