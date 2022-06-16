@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 26b66161d9287b84096fcd8a1cf085d7, type: 2}
   _text: "Heureusement pour moi, vous \xEAtes arriv\xE9 au bon moment! "
+  _audio: {fileID: 8300000, guid: f2cd9738f20ed734194634e46bc75bad, type: 3}

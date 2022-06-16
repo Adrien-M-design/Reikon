@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Prompt_A&MZ2_9
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
-  _text: 'Mais vous devriez faire attention, Monsieur Ayumu! '
+  _text: Mais vous devriez rester sur vos gardes, Monsieur Ayumu.
+  _audio: {fileID: 8300000, guid: 8d2bb0bf8d5150147bafcef136de4426, type: 3}

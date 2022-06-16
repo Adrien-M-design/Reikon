@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "Finissons-\xE7a vite. "
+  _audio: {fileID: 8300000, guid: 824221e69c779964d9aaa05b98780b0d, type: 3}

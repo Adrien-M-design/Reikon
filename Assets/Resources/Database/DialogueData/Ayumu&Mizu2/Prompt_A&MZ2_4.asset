@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
   _text: Mais, on voulait juste faire une blague, mes copains et moi.
+  _audio: {fileID: 8300000, guid: 436e593225ad7d2418564ec8333a91ec, type: 3}

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 676f01c19859a91408316e00e0a3addf, type: 2}
   _text: "Merci mon gar\xE7on, tu nous rends un fier service. "
+  _audio: {fileID: 8300000, guid: c3694bee5c8059e40abab03c570145d5, type: 3}

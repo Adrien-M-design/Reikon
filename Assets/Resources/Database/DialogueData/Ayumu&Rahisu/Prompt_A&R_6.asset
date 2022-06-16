@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 676f01c19859a91408316e00e0a3addf, type: 2}
   _text: "H\xE9 bien, c'\xE9tait un homme un peu intimidant, qui ne parlait pas. "
+  _audio: {fileID: 8300000, guid: ad84851a6048cb74da1fc21f1115c2e1, type: 3}

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 26b66161d9287b84096fcd8a1cf085d7, type: 2}
   _text: "H\xE9! Excusez-moi, Monsieur! S'il vous pla\xEEt!"
+  _audio: {fileID: 8300000, guid: 640e57ea1cecd3e42a7d3af385649775, type: 3}

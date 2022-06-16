@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 676f01c19859a91408316e00e0a3addf, type: 2}
   _text: "C'est vous le sp\xE9cialiste?"
+  _audio: {fileID: 8300000, guid: d8025464e4fbfa342a27f15656274000, type: 3}

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 676f01c19859a91408316e00e0a3addf, type: 2}
   _text: "Non, d\xE9sol\xE9. "
+  _audio: {fileID: 8300000, guid: c26a0a53e0e29d2408054b9cc24b35f4, type: 3}

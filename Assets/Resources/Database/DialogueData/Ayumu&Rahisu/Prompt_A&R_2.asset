@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 676f01c19859a91408316e00e0a3addf, type: 2}
   _text: "Les blagues de ces petits sont devenues de plus en plus probl\xE9matiques
     depuis quelques temps. "
+  _audio: {fileID: 8300000, guid: 490d6bd20639f9349951658bc6c3ca17, type: 3}

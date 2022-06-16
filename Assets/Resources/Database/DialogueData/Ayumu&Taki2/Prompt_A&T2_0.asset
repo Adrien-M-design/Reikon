@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: cb2f4d4f38a1db84e892a30b5a327081, type: 2}
   _text: "Woah, z'\xEAtes trop fort! M\xEAme le Kappatriarche il devrait avoir du
     mal contre vous! "
+  _audio: {fileID: 8300000, guid: 8f3c7851ddcedf34483e734e4a3495ec, type: 3}

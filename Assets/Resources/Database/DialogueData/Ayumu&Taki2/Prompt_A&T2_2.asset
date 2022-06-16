@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: cb2f4d4f38a1db84e892a30b5a327081, type: 2}
   _text: 'Des excuses? Mais pourquoi? '
+  _audio: {fileID: 8300000, guid: 4b2ef48917c402b489f30133e87565f5, type: 3}

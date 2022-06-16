@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 26b66161d9287b84096fcd8a1cf085d7, type: 2}
   _text: 'T-tout de suite! '
+  _audio: {fileID: 8300000, guid: ad62d7ffe278bad4da23bf930eb6a528, type: 3}

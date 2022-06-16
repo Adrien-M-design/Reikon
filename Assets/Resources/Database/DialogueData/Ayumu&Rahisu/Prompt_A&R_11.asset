@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 676f01c19859a91408316e00e0a3addf, type: 2}
   _text: "Que les kami vous prot\xE8gent, mon gar\xE7on! "
+  _audio: {fileID: 8300000, guid: 3c679e7fb9cf6894b9fb4cb0f98d57a5, type: 3}

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: 'Tch! ...C''est pas grave. Je vais aller au temple dans ce cas. '
+  _audio: {fileID: 8300000, guid: f364fb8be6dfd344f96b0491a74d2e61, type: 3}

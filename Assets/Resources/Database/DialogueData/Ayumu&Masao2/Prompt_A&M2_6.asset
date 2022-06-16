@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 26b66161d9287b84096fcd8a1cf085d7, type: 2}
   _text: "C'est \xE7a. Un groupe de Kappa causent des ennuis depuis quelques temps. "
+  _audio: {fileID: 8300000, guid: e3a4a2da1c0fb644681d50c1560a2579, type: 3}

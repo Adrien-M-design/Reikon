@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "Il va falloir que t'arr\xEAtes de voler les habitants. "
+  _audio: {fileID: 8300000, guid: 75a8953f322e65e42b08117af4cd4274, type: 3}

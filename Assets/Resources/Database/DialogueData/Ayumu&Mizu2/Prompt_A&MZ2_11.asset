@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Prompt_A&MZ2_11
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
-  _text: "Je ferai attention si j'\xE9tais vous! "
+  _text: "J'ferai attention si j'\xE9tais vous! "
+  _audio: {fileID: 8300000, guid: b5b1bb1bb987bc344a4329fd7917ff54, type: 3}

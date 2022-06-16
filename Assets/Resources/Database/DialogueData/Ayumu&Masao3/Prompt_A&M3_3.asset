@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 26b66161d9287b84096fcd8a1cf085d7, type: 2}
   _text: "Mais on n'arrive pas \xE0 savoir ce qu'il cherche. "
+  _audio: {fileID: 8300000, guid: 733fc092cd5fbcf41b07d13368b20b24, type: 3}

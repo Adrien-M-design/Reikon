@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: Hey, petit. Qu'est-ce que tu fais?
+  _audio: {fileID: 8300000, guid: 0c208c1118b587643ab88ec053158e7e, type: 3}

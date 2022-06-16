@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "\xC7a ne va pas \xEAtre possible. "
+  _audio: {fileID: 8300000, guid: 777f9495dc3937f42861b9e28e75d08b, type: 3}

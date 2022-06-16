@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: cb2f4d4f38a1db84e892a30b5a327081, type: 2}
   _text: "Ouais! Et il nous a aussi dit de pas h\xE9siter \xE0 se bagarrer avec les
     humains qui veulent nous arr\xEAter! "
+  _audio: {fileID: 8300000, guid: b9cece45141c18c4bb77c922c885d5e3, type: 3}

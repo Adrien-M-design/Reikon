@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: cb2f4d4f38a1db84e892a30b5a327081, type: 2}
   _text: "Alors j'dois vous bagarrer! C'est les r\xE8gles! "
+  _audio: {fileID: 8300000, guid: 2b7dc247cb0d6c14496197572f827c7d, type: 3}

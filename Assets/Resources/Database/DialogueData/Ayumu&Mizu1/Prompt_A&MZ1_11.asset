@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Prompt_A&MZ1_11
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
-  _text: 'On va se bagarrer, Monsieur! '
+  _text: 'On va se bagarrer, M''sieur! '
+  _audio: {fileID: 8300000, guid: 3575577d581af14489f66093f1a54893, type: 3}

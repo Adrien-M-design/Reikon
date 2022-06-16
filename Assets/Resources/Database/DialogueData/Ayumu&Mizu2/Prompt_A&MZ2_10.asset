@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
   _text: "Mes copains aussi s'amusent \xE0 voler autour de l'\xEEle, et ils sont
-    dr\xF4lement forts! "
+    dr\xF4lement forts!"
+  _audio: {fileID: 8300000, guid: f62cd300b12421247ac3b65d79bc0681, type: 3}

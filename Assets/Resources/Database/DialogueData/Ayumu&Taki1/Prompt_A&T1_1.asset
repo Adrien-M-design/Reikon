@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: cb2f4d4f38a1db84e892a30b5a327081, type: 2}
   _text: "Ah zut, j'croyais vous avoir \xE9chapp\xE9! Vous \xEAtes rapide! "
+  _audio: {fileID: 8300000, guid: 5e1c0aa6398752d4a8beeda7a5d02017, type: 3}

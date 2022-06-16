@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 676f01c19859a91408316e00e0a3addf, type: 2}
   _text: "Enfin, pas vraiment \"d\xE9truit\". Il a d\xE9racin\xE9 plusieurs de nos
     plants, et n'a pas l'air de vouloir s'arr\xEAter. "
+  _audio: {fileID: 8300000, guid: 46624ead2201e744c9837f5c99e7afca, type: 3}

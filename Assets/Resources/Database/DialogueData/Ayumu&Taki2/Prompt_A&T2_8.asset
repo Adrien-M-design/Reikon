@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: cb2f4d4f38a1db84e892a30b5a327081, type: 2}
   _text: 'Bonne chance pour la suite m''sieur! '
+  _audio: {fileID: 8300000, guid: 4d61052b62573924b851d9fc6b1522b5, type: 3}
