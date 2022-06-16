@@ -22,6 +22,7 @@ public class DialogueController : MonoBehaviour
     private Color _notTalking = Color.black;
     private AnimationClip _clip = null;
     private GameObject _npc = null;
+    private bool _isChanged = false;
 
     public void Initialize(string id, GameObject npc)
     {
@@ -51,12 +52,11 @@ public class DialogueController : MonoBehaviour
         }
         else
         {
-            if (_rSpeaker.sprite  != _lSpeaker.sprite)
-            {
-                _rSpeaker.sprite = _currentDialogue.Speakers[0].CharacterSprite;
-                _rSpeaker.GetComponent<Animator>().Play(0);
-            }
             _rSpeakerName.text = _currentDialogue.PromptData[index].Speaker.CharName;
+            if (_currentDialogue.ID == "DIAL_A&M&R" &&  _rSpeakerName.text != "Masao" && _isChanged == false)
+            {
+                ChangeSpeaker();
+            }
             _rSpeakerNameBg.SetActive(true);
             _lSpeakerNameBg.SetActive(false);
             //ayumu not speaking
@@ -83,6 +83,8 @@ public class DialogueController : MonoBehaviour
             _index = 0;
             _rSpeaker.color = Color.white;
             _lSpeaker.color = Color.white;
+            _isChanged = false;
+            _source.Stop();
             CharacterManager.Instance.CanMove = true;
             _dialogue.SetActive(false);
             //_currentDialogue.HasDialPlayed = true;
@@ -102,6 +104,13 @@ public class DialogueController : MonoBehaviour
     public void LaunchBattle()
     {
         GameStateManager.Instance.LaunchTransition(EGameState.BATTLE);
+    }
+
+    public void ChangeSpeaker()
+    {
+        _rSpeaker.sprite = _currentDialogue.Speakers[2].CharacterSprite;
+        _rSpeaker.GetComponent<Animator>().Play(0);
+        _isChanged = true;
     }
 
     private void Update()

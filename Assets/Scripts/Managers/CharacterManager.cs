@@ -12,6 +12,7 @@ public class CharacterManager : Singleton<CharacterManager>
     private CharacterController _currentCharacter = null;
     private int _spawnCount = 0;
     private bool _canMove = false;
+    private bool _isVictorious = false;
 
     #endregion Fields
 
@@ -45,6 +46,12 @@ public class CharacterManager : Singleton<CharacterManager>
                 _onMoveToggle(_canMove);
         }
             
+    }
+
+    public bool IsVictorious
+    {
+        get => _isVictorious;
+        set => _isVictorious = value;
     }
     #endregion Properties
 

@@ -13,7 +13,7 @@ public class BattleState : AGameState
     #region Methods
     public override void EnterState()
     {
-
+        CharacterManager.Instance.IsVictorious = false;
     }
 
     public override void UpdateState()
