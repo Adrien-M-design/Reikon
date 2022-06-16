@@ -51,6 +51,11 @@ public class DialogueController : MonoBehaviour
         }
         else
         {
+            if (_rSpeaker.sprite  != _lSpeaker.sprite)
+            {
+                _rSpeaker.sprite = _currentDialogue.Speakers[0].CharacterSprite;
+                _rSpeaker.GetComponent<Animator>().Play(0);
+            }
             _rSpeakerName.text = _currentDialogue.PromptData[index].Speaker.CharName;
             _rSpeakerNameBg.SetActive(true);
             _lSpeakerNameBg.SetActive(false);
