@@ -124,6 +124,7 @@ public class CombatController : MonoBehaviour
             _animatorAyumu.SetBool("Attack", false);
             _animatorAyumu.SetBool("DAttack", false);
             _defeatScreen.SetActive(true);
+            CharacterManager.Instance.IsVictorious = false;
             BFMODManager.Instance.PlayEndBattleSound("Defaite");
         }
         Debug.Log(CharHp);
@@ -159,6 +160,7 @@ public class CombatController : MonoBehaviour
             _animatorAyumu.SetBool("Attack", false);
             _animatorAyumu.SetBool("DAttack", false);
             _victoryScreen.SetActive(true);
+            CharacterManager.Instance.IsVictorious = true;
             BFMODManager.Instance.PlayEndBattleSound("Victoire");
         }
     }

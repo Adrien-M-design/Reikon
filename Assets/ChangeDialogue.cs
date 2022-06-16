@@ -15,7 +15,7 @@ public class ChangeDialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(CharacterManager.Instance.SpawnCount == 1)
+        if(CharacterManager.Instance.SpawnCount == 1 && CharacterManager.Instance.IsVictorious == true)
         {
             _npc.DialogueID = "DIAL_A&MZ2";
         }

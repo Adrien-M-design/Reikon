@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Prompt_A&T2_4
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: cb2f4d4f38a1db84e892a30b5a327081, type: 2}
-  _text: "Ah... D'accord, m'sieur, j'irais m'excuser! Mais vous devriez voir notre
+  _text: "Ah. . . D'accord, m'sieur, j'irais m'excuser! Mais vous devriez voir notre
     plan super secret! \xC7a va \xEAtre super chouette! "
   _audio: {fileID: 8300000, guid: 8fb07d29113066a4fb4cc59cf7588fa2, type: 3}

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Prompt_A&M&R_10
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
-  _text: 'Allons bon... '
+  _text: Allons bon . . .
   _audio: {fileID: 8300000, guid: 36388c14940fd8a4b830cb066dd57b03, type: 3}
