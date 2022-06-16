@@ -14,6 +14,8 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private GameObject _lSpeakerNameBg = null;
     [SerializeField] private Image _rSpeaker = null;
     [SerializeField] private Image _lSpeaker = null;
+    [SerializeField] private AudioSource _source = null;
+    private AudioClip _audioClip = null;
 
     private DialData _currentDialogue = null;
     private int _index = 0;
@@ -62,7 +64,10 @@ public class DialogueController : MonoBehaviour
     {
         if(_index < _currentDialogue.PromptData.Length)
         {
+            _source.Stop();
             _dialBox.text = _currentDialogue.PromptData[_index].Text;
+            _audioClip = _currentDialogue.PromptData[_index].Audio;
+            _source.PlayOneShot(_audioClip);
             SetUpSpeaker(_index);
         }
         
