@@ -229,15 +229,27 @@ public class PlayerTimelineController : MonoBehaviour
     {
         if(attdat.OnSelf == true)
         {
-            _ayumuAnimator.SetBool("Attack", false);
-            _ayumuAnimator.SetBool("DAttack", true);
-            _ayumuAnimator.SetBool("Idle", false);
+            if(attdat.CombatEffect == DatabaseManager.ECombatEffects.HEAL)
+            {
+                _ayumuAnimator.SetBool("Attack", false);
+                _ayumuAnimator.SetBool("DAttack", true);
+                _ayumuAnimator.SetBool("Idle", false);
+                BFMODManager.Instance.PlayBattelSound("Sort de soin");
+            }
+            else
+            {
+                _ayumuAnimator.SetBool("Attack", false);
+                _ayumuAnimator.SetBool("DAttack", true);
+                _ayumuAnimator.SetBool("Idle", false);
+                BFMODManager.Instance.PlayBattelSound("Défense");
+            }
         }
         else
         {
             _ayumuAnimator.SetBool("Attack", true);
             _ayumuAnimator.SetBool("DAttack", false);
             _ayumuAnimator.SetBool("Idle", false);
+            BFMODManager.Instance.PlayBattelSound("Attaque");
         }
         _attData = attdat;
         _inStopTime = true;

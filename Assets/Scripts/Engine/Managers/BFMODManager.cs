@@ -14,6 +14,7 @@ public class BFMODManager : Singleton<BFMODManager>
     private FMODEventWrapper _endBattleSound = null;
     private FMODEventWrapper _takeDamage = null;
     private FMODEventWrapper _elements = null;
+    private FMODEventWrapper _battle = null;
 
 
 
@@ -49,6 +50,7 @@ public class BFMODManager : Singleton<BFMODManager>
         _endBattleSound = new FMODEventWrapper("Victoire Defaite");
         _takeDamage = new FMODEventWrapper("Character/Playet get hit");
         _elements = new FMODEventWrapper("Character/Choix element");
+        _battle = new FMODEventWrapper("Character/Player combat");
 
 
         //SetMusicParameterByName("event_Name", 1);
@@ -85,7 +87,12 @@ public class BFMODManager : Singleton<BFMODManager>
 
     public void PlayElementSound(string value)
     {
-        FMODUnity.RuntimeManager.PlayOneShot(_elements.PrefixedName, "Parameter 1", value);
+        FMODUnity.RuntimeManager.PlayOneShot(_elements.PrefixedName, "Elements", value);
+    }
+
+    public void PlayBattelSound(string value)
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(_battle.PrefixedName, "Parameter 1", value);
     }
     #endregion Methods
 }
