@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Prompt_A&MZ1_10
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
-  _text: 'Alors, alors..! '
+  _text: 'Alors, alors. . ! '
   _audio: {fileID: 8300000, guid: d19634c86124fc64dbaad026a7ab3772, type: 3}

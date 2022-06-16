@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Prompt_A&PC_3
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 30f661c850251b846b9f8c8dd051f383, type: 2}
-  _text: "Je... on m'a pouss\xE9, et je ne crois pas que c'\xE9tait un humain, mais- "
+  _text: "Je. . . on m'a pouss\xE9, et je ne crois pas que c'\xE9tait un humain,
+    mais- "
+  _audio: {fileID: 0}

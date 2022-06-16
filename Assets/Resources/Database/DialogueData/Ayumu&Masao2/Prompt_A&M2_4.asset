@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Prompt_A&M2_4
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 26b66161d9287b84096fcd8a1cf085d7, type: 2}
-  _text: "Pour \xEAtre honn\xEAte, on aurait bien besoin de l'aide de quelqu'un...comme
-    vous."
+  _text: "Pour \xEAtre honn\xEAte, on aurait bien besoin de l'aide de quelqu'un .
+    . . comme vous."
   _audio: {fileID: 8300000, guid: 77943782dfe485342a5ce50a62e4d347, type: 3}
