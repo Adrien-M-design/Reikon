@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: 'Tu devrais savoir que c''est interdit, non? Et les gens n''aiment pas qu''on
     les ennuie. '
+  _audio: {fileID: 8300000, guid: e2928b6ce2fb1ee45b77bb0f8bb81ffd, type: 3}

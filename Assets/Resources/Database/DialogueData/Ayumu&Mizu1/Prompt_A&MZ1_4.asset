@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "Il para\xEEt que tu causes des probl\xE8mes? "
+  _audio: {fileID: 8300000, guid: 508dbcfdbd68cdb4185f07a0c7bf89f8, type: 3}

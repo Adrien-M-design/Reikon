@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: cb2f4d4f38a1db84e892a30b5a327081, type: 2}
   _text: Un plan super secret qu'on fait avec mes copains et le Kappatriarche!
+  _audio: {fileID: 8300000, guid: b566b96c5a1ea8842a505e7caeb2b0c6, type: 3}

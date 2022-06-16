@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "C'est r\xE9gl\xE9. "
+  _audio: {fileID: 8300000, guid: f84e68a7a0ad83643b252bc36d9663f7, type: 3}

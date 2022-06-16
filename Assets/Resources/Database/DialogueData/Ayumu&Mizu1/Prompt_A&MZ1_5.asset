@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
   _text: "Oh, \xE7a? J'essaie de voler des planches en bois! "
+  _audio: {fileID: 8300000, guid: 1e451f528b966314b801a28d03526bbc, type: 3}

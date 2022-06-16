@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "Y'en a d'autres? J'ai pas que \xE7a a faire! J'imagine que je n'ai pas
     le choix. "
+  _audio: {fileID: 8300000, guid: 5c447818b68d5024dbe290e551eebbf3, type: 3}

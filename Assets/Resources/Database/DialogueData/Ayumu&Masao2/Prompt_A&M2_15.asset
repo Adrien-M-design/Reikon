@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 26b66161d9287b84096fcd8a1cf085d7, type: 2}
   _text: "Aux derni\xE8res nouvelles, il \xE9tait dans la Zone Est du port. "
+  _audio: {fileID: 8300000, guid: 6c9b413f5d2cb614b81172db79e42130, type: 3}

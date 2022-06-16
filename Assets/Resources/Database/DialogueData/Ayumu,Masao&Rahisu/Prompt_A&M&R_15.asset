@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 676f01c19859a91408316e00e0a3addf, type: 2}
   _text: "Tout ce que je sais, c'est qu'il r\xF4de autour de la rizi\xE8re. "
+  _audio: {fileID: 8300000, guid: d8cfa0ba302b0f14e93c0db75d819c25, type: 3}

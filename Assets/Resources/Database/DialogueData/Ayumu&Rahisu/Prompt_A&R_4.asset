@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 676f01c19859a91408316e00e0a3addf, type: 2}
   _text: "Je ne suis pas s\xFBr, mais \xE7a a commenc\xE9 apr\xE8s la visite d'un
     homme un peu \xE9trange... "
+  _audio: {fileID: 8300000, guid: 7589ffbff98c49b48b3013784f1407ac, type: 3}

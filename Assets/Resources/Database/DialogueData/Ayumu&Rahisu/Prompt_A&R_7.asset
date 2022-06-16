@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 676f01c19859a91408316e00e0a3addf, type: 2}
   _text: "Il est parti au temple d\xE8s qu'il est arriv\xE9 et est reparti sans un
     mot quelque jours apr\xE8s."
+  _audio: {fileID: 8300000, guid: e3a02ff159792934fae52ba2c45ef40d, type: 3}

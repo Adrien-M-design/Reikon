@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 676f01c19859a91408316e00e0a3addf, type: 2}
   _text: "Essayez de demander aux gens autour, ils l'auront s\xFBrement vu."
+  _audio: {fileID: 8300000, guid: 0d21b4370a7a86746af378ee826176c9, type: 3}

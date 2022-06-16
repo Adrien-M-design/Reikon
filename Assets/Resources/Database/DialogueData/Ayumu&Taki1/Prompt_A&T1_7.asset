@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: cb2f4d4f38a1db84e892a30b5a327081, type: 2}
   _text: 'C''est notre ami! Et il veut fabriquer un truc super grand! Mais c''est
     un secret! '
+  _audio: {fileID: 8300000, guid: 92afeb40e51403046a6176c8983726d0, type: 3}

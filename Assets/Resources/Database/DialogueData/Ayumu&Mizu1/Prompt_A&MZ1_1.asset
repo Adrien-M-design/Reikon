@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Prompt_A&MZ1_1
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
-  _text: 'Oh! b''jour monsieur! '
+  _text: 'Oh! Bonjour m''sieur! '
+  _audio: {fileID: 8300000, guid: 5f026fea18e11d34ca33b8d536517fdc, type: 3}

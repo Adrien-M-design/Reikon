@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 26b66161d9287b84096fcd8a1cf085d7, type: 2}
   _text: "D\xE9j\xE0? Vous avez toute ma gratitude. Je ne savais pas comment aborder
     la situation. "
+  _audio: {fileID: 8300000, guid: d6786fe588c9791439841b50c5395dd7, type: 3}

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
   _text: "Je pensais pas que \xE7a allait blesser des gens... "
+  _audio: {fileID: 8300000, guid: cba2544b6998a0541b10215cb34893f4, type: 3}

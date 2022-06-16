@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: Zone Est. Compris.
+  _audio: {fileID: 8300000, guid: 6c76de19bce73f04eacd9d25e7fffd52, type: 3}

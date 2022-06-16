@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Prompt_A&MZ1_8
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
-  _text: "H\xE9 monsieur, vous pouvez faire comme si vous aviez rien entendu? "
+  _text: "H\xE9 m'sieur, vous pouvez faire comme si vous aviez rien entendu? "
+  _audio: {fileID: 8300000, guid: 80c2a344457a6a3478e90fe00da6037b, type: 3}

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: 'Hm? Qu''est-ce qu''on me veut? '
+  _audio: {fileID: 8300000, guid: f31877b27321522418a706d5aaffd8b0, type: 3}

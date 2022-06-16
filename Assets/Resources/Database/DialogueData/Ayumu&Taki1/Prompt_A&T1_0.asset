@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "Je te tiens! Tu m'as assez fait tourner en rond comme \xE7a. "
+  _audio: {fileID: 8300000, guid: 7920d721a0017a8459ef79b1ca530b9e, type: 3}

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "Un probl\xE8me avec des Yokai?"
+  _audio: {fileID: 8300000, guid: d5eff15e9d3932a4d994644e2c7a5ea4, type: 3}

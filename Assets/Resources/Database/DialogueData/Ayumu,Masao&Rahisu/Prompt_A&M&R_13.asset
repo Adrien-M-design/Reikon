@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 676f01c19859a91408316e00e0a3addf, type: 2}
   _text: "Pas vraiment. Il r\xE9p\xE8te quelque chose au sujet d'un \"super plan\",
     mais personne ne sait ce que c'est. "
+  _audio: {fileID: 8300000, guid: bfb4b469353838c4e9e5290beac4bf4f, type: 3}

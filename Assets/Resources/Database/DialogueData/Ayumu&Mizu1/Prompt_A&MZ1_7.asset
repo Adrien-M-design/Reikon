@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
   _text: "Mince, j'\xE9tais pas cens\xE9 dire \xE7a! "
+  _audio: {fileID: 8300000, guid: 78f221ee2ed6a6d4999fa50852cdd054, type: 3}

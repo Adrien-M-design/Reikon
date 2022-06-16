@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: Je m'en occupe. Ne bougez pas.
+  _audio: {fileID: 8300000, guid: 5ae9df40ebc399d40b6cc3dedb693619, type: 3}

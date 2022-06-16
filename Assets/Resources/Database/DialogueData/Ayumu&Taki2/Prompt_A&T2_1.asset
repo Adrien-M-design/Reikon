@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "\xC7a reste \xE0 voir. Et toi, t'as des excuses \xE0 faire. "
+  _audio: {fileID: 8300000, guid: fd0475baae5df9147ab7269822b8d05a, type: 3}

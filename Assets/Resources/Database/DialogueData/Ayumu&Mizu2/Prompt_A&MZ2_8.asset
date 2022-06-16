@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
   _text: 'D''accord... '
+  _audio: {fileID: 8300000, guid: ba5986d2ad2ff564fbab5705f19005a8, type: 3}
