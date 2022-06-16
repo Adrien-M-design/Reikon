@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Prompt_A&T1_4
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
-  _text: 'Un...secret? '
+  _text: 'Un . . . secret? '
   _audio: {fileID: 8300000, guid: a6ef224dd3182924a8ff50c9c0d7ff7e, type: 3}

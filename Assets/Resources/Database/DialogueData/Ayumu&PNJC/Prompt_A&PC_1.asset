@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Prompt_A&PC_1
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 30f661c850251b846b9f8c8dd051f383, type: 2}
-  _text: 'Non- enfin oui- enfin, je crois... '
+  _text: 'Non- enfin oui- enfin, je crois . . . '
+  _audio: {fileID: 0}
