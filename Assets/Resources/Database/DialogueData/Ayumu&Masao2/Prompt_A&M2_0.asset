@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speaker: {fileID: 11400000, guid: 26b66161d9287b84096fcd8a1cf085d7, type: 2}
   _text: "Les Kamis soient lou\xE9s, je pensais que vous alliez m'ignorer. "
+  _audio: {fileID: 8300000, guid: 9e138eac5e108cd4587577cc15213ebf, type: 3}
