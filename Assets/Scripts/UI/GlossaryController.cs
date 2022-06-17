@@ -30,6 +30,7 @@ public class GlossaryController : MonoBehaviour
             if(_pageIndex < _spToChangeTo.Length-1) 
             {
                 GetNextPage(1);
+                BFMODManager.Instance.PlayPageSound();
                 Debug.Log("Page array position : " + _pageIndex);
                 //Debug.Log("Right page array position : " + _rightPageIndex);
             }
@@ -41,6 +42,7 @@ public class GlossaryController : MonoBehaviour
             if(_pageIndex > 0)
             {
                 GetPreviousPage(-1);
+                BFMODManager.Instance.PlayPageSound();
                 Debug.Log("Page array position : " + _pageIndex);
                 //Debug.Log("Right page array position : " + _rightPageIndex);
             }
