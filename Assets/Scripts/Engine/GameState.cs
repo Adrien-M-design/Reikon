@@ -13,7 +13,7 @@ public class GameState : AGameState
     #region Methods
     public override void EnterState()
     {
-
+        BFMODManager.Instance.PlayDocksSound();
     }
 
     public override void UpdateState()

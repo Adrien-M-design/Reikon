@@ -7,6 +7,7 @@ public class NPCController : MonoBehaviour
     [SerializeField] private string _dialogueID = "DIAL";
     [SerializeField] private DialogueController _dialogueController = null;
     [SerializeField] private GameObject _interact = null;
+    [SerializeField] private bool _isInstant = false;
 
     private bool _isInBox = false;
     private Animator _ayumuAnimator = null;
@@ -21,13 +22,7 @@ public class NPCController : MonoBehaviour
     {
         if (Input.GetButtonDown("Interact") && _isInBox == true)
         {
-            _ayumuAnimator.SetBool("Run", false);
-            _ayumuAnimator.SetBool("Idle", false);
-            _ayumuAnimator.SetBool("Stand", false);
-            _ayumuAnimator.SetBool("Talk", true);
-            _interact.SetActive(false);
-            _dialogueController.Initialize(_dialogueID, gameObject);
-            _isInBox = false;
+            Interaction();
         }
     }
 
@@ -36,8 +31,16 @@ public class NPCController : MonoBehaviour
         if(other.tag == "Player")
         {
             _ayumuAnimator = other.GetComponentInChildren<Animator>();
-            _interact.SetActive(true);
             _isInBox = true;
+            if(_isInstant == true)
+            {
+                Interaction();
+            }
+            else
+            {
+                _interact.SetActive(true);
+            }
+
         }
     }
 
@@ -48,5 +51,16 @@ public class NPCController : MonoBehaviour
             _interact.SetActive(false);
             _isInBox = false;
         }
+    }
+
+    public void Interaction()
+    {
+        _ayumuAnimator.SetBool("Run", false);
+        _ayumuAnimator.SetBool("Idle", false);
+        _ayumuAnimator.SetBool("Stand", false);
+        _ayumuAnimator.SetBool("Talk", true);
+        _interact.SetActive(false);
+        _dialogueController.Initialize(_dialogueID, gameObject);
+        _isInBox = false;
     }
 }

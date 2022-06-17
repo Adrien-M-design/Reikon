@@ -51,6 +51,7 @@ public class InGameMenuController : MonoBehaviour
 
         if (_UICanvas.enabled == true && Input.GetButtonDown("Escape"))
         {
+            BFMODManager.Instance.PlayPageSound();
             _UICanvas.enabled = false;
             _uIType.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
@@ -60,12 +61,14 @@ public class InGameMenuController : MonoBehaviour
 
     private void OpenMenu(GameObject uIType)
     {
+        BFMODManager.Instance.PlayPageSound();
         _uIType = uIType;
         _uIType.SetActive(true);
     }
 
     private void SwitchMenu(GameObject uISwitch)
     {
+        BFMODManager.Instance.PlayPageSound();
         _uIType.SetActive(false);
         _uIType = uISwitch;
         _uIType.SetActive(true);
