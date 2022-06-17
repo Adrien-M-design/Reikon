@@ -19,8 +19,8 @@ MonoBehaviour:
   _onSelf: 0
   _effectCooldown: 0
   _effectDamage: 0
-  _combatEffect: 4
-  _elementalCombatEffect: 4
+  _combatEffect: 5
+  _elementalCombatEffect: 5
   _combo: 010000000100000000000000
   _fxObject: {fileID: 1479643913427073722, guid: 05bedab4df4683d428f2d1495e6f688a,
     type: 3}
