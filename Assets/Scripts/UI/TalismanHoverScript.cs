@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
-public class TalismanHoverScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class TalismanHoverScript : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, ISelectHandler
 {
     [SerializeField] private TextMeshProUGUI _effectDesc = null;
     [SerializeField] private Image _weightImage = null;
@@ -38,4 +38,13 @@ public class TalismanHoverScript : MonoBehaviour, IPointerEnterHandler, IPointer
         _effectDesc.enabled = false;
         _weightImage.enabled = false;
     }
+
+    public void OnSelect(BaseEventData eventData)
+    {
+        Debug.Log("You see this shit?");
+        _effectDesc.enabled = true;
+        _weightImage.enabled = true;
+        _effectDesc.text = _talismanDesc;
+        _weightImage.sprite = _weightSprite;
+    }    
 }
