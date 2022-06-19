@@ -26,6 +26,7 @@ public class TalismanHoverScript : MonoBehaviour, IPointerEnterHandler, IPointer
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        Debug.Log("You see this shit?");
         _effectDesc.enabled = true;
         _weightImage.enabled = true;
         _effectDesc.text = _talismanDesc;
