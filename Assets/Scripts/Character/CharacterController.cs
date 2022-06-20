@@ -99,7 +99,7 @@ public class CharacterController : MonoBehaviour
             //Verifie que la position est valide
             Vector3 newPosition = transform.position + inputValue * Time.deltaTime * agentSpeed;
             NavMeshHit hit;
-            bool isValid = NavMesh.SamplePosition(newPosition, out hit, 1.1f, NavMesh.AllAreas);
+            bool isValid = NavMesh.SamplePosition(newPosition, out hit, 1.5f, NavMesh.AllAreas);
             Debug.Log(isValid);
             if (isValid)
             {
