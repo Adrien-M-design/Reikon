@@ -148,6 +148,7 @@ public class EnnemyTimelineController : MonoBehaviour
         _kappaAnimator.SetBool("Attack", true);
         GameObject fxObj = Instantiate(_currentAttack.FxObject, _kappaPos.position, _kappaPos.rotation, _contener.transform);
         //_animator.SetTrigger("New Trigger");
+        BFMODManager.Instance.PlayKappaAttackSound();
         _inAnimation = true;
     }
 

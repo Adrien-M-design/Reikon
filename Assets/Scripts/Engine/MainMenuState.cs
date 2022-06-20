@@ -13,7 +13,7 @@ public class MainMenuState : AGameState
     #region Methods
     public override void EnterState()
     {
-
+        BFMODManager.Instance.PlayMenuMusic();
     }
 
     public override void UpdateState()

@@ -10,15 +10,24 @@ public class BFMODManager : Singleton<BFMODManager>
     
     // Events Wrapper
     private FMODEventWrapper _music = null;
+
     private FMODEventWrapper _stepSound = null;
     private FMODEventWrapper _endBattleSound = null;
     private FMODEventWrapper _takeDamage = null;
+    private FMODEventWrapper _kappaDamage = null;
+    private FMODEventWrapper _kappaAttack = null;
+
     private FMODEventWrapper _elements = null;
     private FMODEventWrapper _battle = null;
     private FMODEventWrapper _page = null;
+    private FMODEventWrapper _button = null;
 
     private FMODEventWrapper _docks = null;
     private FMODEventWrapper _ricefield = null;
+
+    private FMODEventWrapper _menuMusic = null;
+    private FMODEventWrapper _battleMusic = null;
+    private FMODEventWrapper _harborMusic = null;
 
 
 
@@ -53,13 +62,22 @@ public class BFMODManager : Singleton<BFMODManager>
         _stepSound = new FMODEventWrapper("Character/Player footsteps");
 
         _endBattleSound = new FMODEventWrapper("Victoire Defaite");
+
         _takeDamage = new FMODEventWrapper("Character/Playet get hit");
         _elements = new FMODEventWrapper("Character/Choix element");
         _battle = new FMODEventWrapper("Character/Player combat");
-        _page = new FMODEventWrapper("Pages");
+        _kappaAttack = new FMODEventWrapper("Enemy/Kappa combat");
+        _kappaDamage = new FMODEventWrapper("Enemy/Kappa get hit");
+
+        _page = new FMODEventWrapper("UI/Pages");
+        _button = new FMODEventWrapper("UI/Boutons");
 
         _docks = new FMODEventWrapper("Ambiance/Ambiance port");
         _ricefield = new FMODEventWrapper("Ambiance/Ambiance riziere");
+
+        _battleMusic = new FMODEventWrapper("Musique/Musique combat");
+        _menuMusic = new FMODEventWrapper("Musique/Musique menu");
+        _harborMusic = new FMODEventWrapper("Musique/Musique pécheurs");
 
 
         //SetMusicParameterByName("event_Name", 1);
@@ -94,12 +112,22 @@ public class BFMODManager : Singleton<BFMODManager>
         FMODUnity.RuntimeManager.PlayOneShot(_takeDamage.PrefixedName);
     }
 
+    public void PlayKappaDamageSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(_kappaDamage.PrefixedName);
+    }
+
+    public void PlayKappaAttackSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(_kappaAttack.PrefixedName);
+    }
+
     public void PlayElementSound(string value)
     {
         FMODUnity.RuntimeManager.PlayOneShot(_elements.PrefixedName, "Elements", value);
     }
 
-    public void PlayBattelSound(string value)
+    public void PlayBattleSound(string value)
     {
         FMODUnity.RuntimeManager.PlayOneShot(_battle.PrefixedName, "Parameter 1", value);
     }
@@ -107,6 +135,11 @@ public class BFMODManager : Singleton<BFMODManager>
     public void PlayPageSound()
     {
         FMODUnity.RuntimeManager.PlayOneShot(_page.PrefixedName);
+    }
+
+    public void PlayButtonSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(_button.PrefixedName);
     }
 
     public void PlayDocksSound()
@@ -121,6 +154,21 @@ public class BFMODManager : Singleton<BFMODManager>
         _ricefield.SetParameterByName("parameter:/Pluie", 0.2f);
         _ricefield.SetParameterByName("parameter:/Quai", 0.4f);
         FMODUnity.RuntimeManager.PlayOneShot(_ricefield.PrefixedName);
+    }
+
+    public void PlayMenuMusic()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(_menuMusic.PrefixedName);
+    }
+
+    public void PlayHarborMusic()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(_harborMusic.PrefixedName);
+    }
+
+    public void PlayBattleMusic()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(_battleMusic.PrefixedName);
     }
     #endregion Methods
 }

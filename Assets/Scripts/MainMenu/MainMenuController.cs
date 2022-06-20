@@ -27,6 +27,7 @@ public class MainMenuController : MonoBehaviour
 
     public void Play()
     {
+        BFMODManager.Instance.PlayButtonSound();
         GameStateManager.Instance.LaunchTransition(EGameState.GAME);
     }
 
