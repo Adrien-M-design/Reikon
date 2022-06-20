@@ -13,6 +13,7 @@ public class BattleState : AGameState
     #region Methods
     public override void EnterState()
     {
+        BFMODManager.Instance.PlayBattleMusic();
         CharacterManager.Instance.IsVictorious = false;
     }
 

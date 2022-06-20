@@ -144,6 +144,7 @@ public class CombatController : MonoBehaviour
         _animatorKappa.SetBool("Stand", false);
         _animatorKappa.SetBool("Attack", false);
         ShowDamage(attData.Damage.ToString(), _ennemyTransform);
+        BFMODManager.Instance.PlayKappaDamageSound();
         MobHp -= attData.Damage;
         _ennemySlider.value = MobHp;
         Debug.Log(MobHp);

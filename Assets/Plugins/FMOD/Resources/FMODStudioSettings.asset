@@ -170,7 +170,10 @@ MonoBehaviour:
   - Master
   Banks:
   - Ambiances
+  - Bank A
   - Character
+  - Kappa
+  - Musique
   - UI
   BanksToLoad: []
   LiveUpdatePort: 9264
@@ -184,7 +187,7 @@ MonoBehaviour:
   SharedLibraryTimeSinceStart: 0
   CurrentVersion: 131588
   HideSetupWizard: 1
-  LastEventReferenceScanVersion: 0
+  LastEventReferenceScanVersion: 131588
   Platforms:
   - {fileID: -8974689756450445821}
   - {fileID: -4370734761213887884}

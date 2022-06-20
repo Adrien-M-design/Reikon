@@ -234,14 +234,14 @@ public class PlayerTimelineController : MonoBehaviour
                 _ayumuAnimator.SetBool("Attack", false);
                 _ayumuAnimator.SetBool("DAttack", true);
                 _ayumuAnimator.SetBool("Idle", false);
-                BFMODManager.Instance.PlayBattelSound("Sort de soin");
+                BFMODManager.Instance.PlayBattleSound("Sort de soin");
             }
             else
             {
                 _ayumuAnimator.SetBool("Attack", false);
                 _ayumuAnimator.SetBool("DAttack", true);
                 _ayumuAnimator.SetBool("Idle", false);
-                BFMODManager.Instance.PlayBattelSound("Défense");
+                BFMODManager.Instance.PlayBattleSound("Défense");
             }
         }
         else
@@ -249,7 +249,7 @@ public class PlayerTimelineController : MonoBehaviour
             _ayumuAnimator.SetBool("Attack", true);
             _ayumuAnimator.SetBool("DAttack", false);
             _ayumuAnimator.SetBool("Idle", false);
-            BFMODManager.Instance.PlayBattelSound("Attaque");
+            BFMODManager.Instance.PlayBattleSound("Attaque");
         }
         _attData = attdat;
         _inStopTime = true;

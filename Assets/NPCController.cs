@@ -59,6 +59,7 @@ public class NPCController : MonoBehaviour
         _ayumuAnimator.SetBool("Idle", false);
         _ayumuAnimator.SetBool("Stand", false);
         _ayumuAnimator.SetBool("Talk", true);
+        BFMODManager.Instance.PlayButtonSound();
         _interact.SetActive(false);
         _dialogueController.Initialize(_dialogueID, gameObject);
         _isInBox = false;
