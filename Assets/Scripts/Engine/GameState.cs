@@ -13,7 +13,7 @@ public class GameState : AGameState
     #region Methods
     public override void EnterState()
     {
-        //BFMODManager.Instance.PlayHarborMusic();
+        BFMODManager.Instance.PlayHarborMusic();
         BFMODManager.Instance.PlayDocksSound();
     }
 
@@ -24,7 +24,7 @@ public class GameState : AGameState
 
     public override void ExitState()
     {
-
+        BFMODManager.Instance.StopHarborMusic();
     }
     #endregion Methods
 }

@@ -158,17 +158,37 @@ public class BFMODManager : Singleton<BFMODManager>
 
     public void PlayMenuMusic()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(_menuMusic.PrefixedName);
+        _menuMusic.StartEvent();
+        //FMODUnity.RuntimeManager.PlayOneShot(_menuMusic.PrefixedName);
+    }
+
+    public void StopMenuMusic()
+    {
+        _menuMusic.StopEvent();
+        //FMODUnity.RuntimeManager.PlayOneShot(_menuMusic.PrefixedName);
     }
 
     public void PlayHarborMusic()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(_harborMusic.PrefixedName);
+        _harborMusic.StartEvent();
+        //FMODUnity.RuntimeManager.PlayOneShot(_harborMusic.PrefixedName);
+    }
+
+    public void StopHarborMusic()
+    {
+        _harborMusic.StopEvent();
+        //FMODUnity.RuntimeManager.PlayOneShot(_menuMusic.PrefixedName);
     }
 
     public void PlayBattleMusic()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(_battleMusic.PrefixedName);
+        _battleMusic.StartEvent();
+        //FMODUnity.RuntimeManager.PlayOneShot(_battleMusic.PrefixedName);
+    }
+
+    public void StopBattleMusic()
+    {
+        _battleMusic.StopEvent();
     }
     #endregion Methods
 }

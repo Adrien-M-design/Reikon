@@ -23,7 +23,7 @@ public class MainMenuState : AGameState
 
     public override void ExitState()
     {
-
+        BFMODManager.Instance.StopMenuMusic();
     }
     #endregion Methods
 }
