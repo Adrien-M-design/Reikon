@@ -15,6 +15,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private Image _rSpeaker = null;
     [SerializeField] private Image _lSpeaker = null;
     [SerializeField] private AudioSource _source = null;
+    [SerializeField] private GameObject _endScreen = null;
     private AudioClip _audioClip = null;
 
     private DialData _currentDialogue = null;
@@ -97,6 +98,11 @@ public class DialogueController : MonoBehaviour
             if(_currentDialogue.IsDisapearing == true)
             {
                 _npc.SetActive(false);
+            }
+
+            if(_currentDialogue.End == true)
+            {
+                _endScreen.SetActive(true);
             }
         }
     }

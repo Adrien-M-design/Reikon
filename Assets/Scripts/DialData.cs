@@ -10,6 +10,7 @@ public class DialData : ScriptableObject
     [SerializeField] private DialCharacterData[] _speakers = null;
     [SerializeField] private bool _isOpponent = false;
     [SerializeField] private bool _isDisapearing = false;
+    [SerializeField] private bool _end = false;
 
     //private bool _hasDialPlayed = false;
 
@@ -18,6 +19,7 @@ public class DialData : ScriptableObject
     public DialCharacterData[] Speakers => _speakers;
     public bool IsOpponent => _isOpponent;
     public bool IsDisapearing => _isDisapearing;
+    public bool End => _end;
 
     /*public bool HasDialPlayed 
     {
