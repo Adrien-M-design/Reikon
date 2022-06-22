@@ -96,9 +96,9 @@ public class FMODEventWrapper
         }
     }
 
-    public void SetVolume()
+    public void SetVolume(float volval)
     {
-        _eventInstance.setVolume(0.1f);
+        _eventInstance.setVolume(volval);
     }
     #endregion Methods
 

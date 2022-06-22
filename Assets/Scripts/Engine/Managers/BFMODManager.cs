@@ -7,6 +7,9 @@ public class BFMODManager : Singleton<BFMODManager>
 {
     #region Fields
     //[SerializeField] private float _stepSoundDelay = 0.4f;
+
+    [Range(0.0f, 1.0f)]
+    [SerializeField] private float _volume = 0f;
     
     // Events Wrapper
     private FMODEventWrapper _music = null;
@@ -158,6 +161,7 @@ public class BFMODManager : Singleton<BFMODManager>
 
     public void PlayMenuMusic()
     {
+        _menuMusic.SetVolume(_volume);
         _menuMusic.StartEvent();
         //FMODUnity.RuntimeManager.PlayOneShot(_menuMusic.PrefixedName);
     }
@@ -170,6 +174,7 @@ public class BFMODManager : Singleton<BFMODManager>
 
     public void PlayHarborMusic()
     {
+        _harborMusic.SetVolume(_volume);
         _harborMusic.StartEvent();
         //FMODUnity.RuntimeManager.PlayOneShot(_harborMusic.PrefixedName);
     }
@@ -182,6 +187,7 @@ public class BFMODManager : Singleton<BFMODManager>
 
     public void PlayBattleMusic()
     {
+        _battleMusic.SetVolume(_volume);
         _battleMusic.StartEvent();
         //FMODUnity.RuntimeManager.PlayOneShot(_battleMusic.PrefixedName);
     }
