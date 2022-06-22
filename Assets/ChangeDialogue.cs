@@ -17,6 +17,7 @@ public class ChangeDialogue : MonoBehaviour
     {
         if(CharacterManager.Instance.SpawnCount == 1 && CharacterManager.Instance.IsVictorious == true)
         {
+            _npc.IsInstant = true;
             _npc.DialogueID = "DIAL_A&MZ2";
         }
     }

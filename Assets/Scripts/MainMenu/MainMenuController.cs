@@ -18,6 +18,10 @@ public class MainMenuController : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            BFMODManager.Instance.PlayButtonSound();
+        }
         if (_isCreditsPlaying == true && Input.GetButtonDown("Escape"))
         {
             _creditsScreen.SetActive(false);
@@ -33,6 +37,7 @@ public class MainMenuController : MonoBehaviour
 
     public void Credits()
     {
+        BFMODManager.Instance.PlayButtonSound();
         _creditsScreen.SetActive(true);
         _isCreditsPlaying = true;
     }

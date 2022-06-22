@@ -1,5 +1,6 @@
 ﻿
 using FMOD.Studio;
+using FMODUnity;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,8 +10,29 @@ public class BFMODManager : Singleton<BFMODManager>
     //[SerializeField] private float _stepSoundDelay = 0.4f;
 
     [Range(0.0f, 1.0f)]
-    [SerializeField] private float _volume = 0f;
-    
+    [SerializeField] private float _volumeMusic = 0f;
+
+    [Range(0.0f, 1.0f)]
+    [SerializeField] private float _volumeBattleMusic = 0f;
+
+    [Range(0.0f, 1.0f)]
+    [SerializeField] private float _volumeElements = 0f;
+
+    [Range(0.0f, 1.0f)]
+    [SerializeField] private float _volumeBattleSounds = 0f;
+
+    [Range(0.0f, 1.0f)]
+    [SerializeField] private float _volumeDocks = 0f;
+
+    [Range(0.0f, 1.0f)]
+    [SerializeField] private float _volumeEndBattle = 0f;
+
+    [Range(0.0f, 1.0f)]
+    [SerializeField] private float _volumeUI = 0f;
+
+    [Range(0.0f, 1.0f)]
+    [SerializeField] private float _volumeStep = 0f;
+
     // Events Wrapper
     private FMODEventWrapper _music = null;
 
@@ -54,6 +76,12 @@ public class BFMODManager : Singleton<BFMODManager>
         SetupEvents();
     }
 
+    private void Update()
+    {
+        if (_docks != null && Camera.main != null)
+            _docks.EventInstances.set3DAttributes(RuntimeUtils.To3DAttributes(Camera.main.transform.position));
+    }
+
     private void SetupEvents()
     {
         // EXEMPLE 
@@ -93,108 +121,120 @@ public class BFMODManager : Singleton<BFMODManager>
     }
 
     // EXEMPLE DE PLAY ONE SHOT
-    public void PlayJumpSound()
-    {
-        FMODUnity.RuntimeManager.PlayOneShot("" /*_jumpSound.PrefixedName*/);
-    }
 
-    public void PlayStepSound(int surface)
+    public void PlayStepSound(string surface)
     {
         //timer
-        _stepSound.SetParameterByName("parmeter:/Surface", surface);
-        FMODUnity.RuntimeManager.PlayOneShot(_stepSound.PrefixedName);
+        FMODUnity.RuntimeManager.PlayOneShot(_stepSound.PrefixedName, "Surface", surface, _volumeStep, Camera.main.transform.position);
     }
 
     public void PlayEndBattleSound(string value)
     {
-        FMODUnity.RuntimeManager.PlayOneShot(_endBattleSound.PrefixedName, "Parameter 2", value);
+        
+        FMODUnity.RuntimeManager.PlayOneShot(_endBattleSound.PrefixedName,"Parameter 2", value, _volumeEndBattle, Camera.main.transform.position);
     }
 
     public void PlayDamageSound()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(_takeDamage.PrefixedName);
+        
+        FMODUnity.RuntimeManager.PlayOneShot(_takeDamage.PrefixedName, _volumeBattleSounds, Camera.main.transform.position);
     }
 
     public void PlayKappaDamageSound()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(_kappaDamage.PrefixedName);
+        
+        FMODUnity.RuntimeManager.PlayOneShot(_kappaDamage.PrefixedName, _volumeBattleSounds, Camera.main.transform.position);
     }
 
     public void PlayKappaAttackSound()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(_kappaAttack.PrefixedName);
+        
+        FMODUnity.RuntimeManager.PlayOneShot(_kappaAttack.PrefixedName, _volumeBattleSounds, Camera.main.transform.position);
     }
 
     public void PlayElementSound(string value)
     {
-        FMODUnity.RuntimeManager.PlayOneShot(_elements.PrefixedName, "Elements", value);
+        
+        FMODUnity.RuntimeManager.PlayOneShot(_elements.PrefixedName, "Elements", value , _volumeElements, Camera.main.transform.position);
     }
 
     public void PlayBattleSound(string value)
     {
-        FMODUnity.RuntimeManager.PlayOneShot(_battle.PrefixedName, "Parameter 1", value);
+        
+        FMODUnity.RuntimeManager.PlayOneShot(_battle.PrefixedName, "Parameter 1", value, _volumeBattleSounds, Camera.main.transform.position);
     }
 
     public void PlayPageSound()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(_page.PrefixedName);
+        
+        FMODUnity.RuntimeManager.PlayOneShot(_page.PrefixedName, _volumeUI, Camera.main.transform.position);
     }
 
     public void PlayButtonSound()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(_button.PrefixedName);
+        Debug.Log("tamer");
+        FMODUnity.RuntimeManager.PlayOneShot(_button.PrefixedName, 1, Camera.main.transform.position);
     }
 
     public void PlayDocksSound()
     {
-        _docks.SetParameterByName("parameter:/Pluie", 0.2f);
-        _docks.SetParameterByName("parameter:/Quai", 0.5f);
-        FMODUnity.RuntimeManager.PlayOneShot(_docks.PrefixedName);
+        
+        _docks.StartEvent();
+        _docks.EventInstances.set3DAttributes(RuntimeUtils.To3DAttributes(Camera.main.transform.position));
+        _docks.SetVolume(_volumeDocks);
+        _docks.SetParameterByName("Pluie", 0.2f);
+        _docks.SetParameterByName("Quai", 0.5f);
+    }
+
+    public void StopDocksSound()
+    {
+        _menuMusic.StopEvent();
     }
 
     public void PlayRiceFieldSound()
     {
+        
+        _ricefield.StartEvent();
         _ricefield.SetParameterByName("parameter:/Pluie", 0.2f);
         _ricefield.SetParameterByName("parameter:/Quai", 0.4f);
-        FMODUnity.RuntimeManager.PlayOneShot(_ricefield.PrefixedName);
+    }
+
+    public void StopRiceFieldSound()
+    {
+        _ricefield.StopEvent();
     }
 
     public void PlayMenuMusic()
     {
-        _menuMusic.SetVolume(_volume);
+        _menuMusic.SetVolume(_volumeMusic);
         _menuMusic.StartEvent();
-        //FMODUnity.RuntimeManager.PlayOneShot(_menuMusic.PrefixedName);
     }
 
     public void StopMenuMusic()
     {
         _menuMusic.StopEvent();
-        //FMODUnity.RuntimeManager.PlayOneShot(_menuMusic.PrefixedName);
     }
 
     public void PlayHarborMusic()
     {
-        _harborMusic.SetVolume(_volume);
+        _harborMusic.SetVolume(_volumeMusic);
         _harborMusic.StartEvent();
-        //FMODUnity.RuntimeManager.PlayOneShot(_harborMusic.PrefixedName);
     }
 
     public void StopHarborMusic()
     {
         _harborMusic.StopEvent();
-        //FMODUnity.RuntimeManager.PlayOneShot(_menuMusic.PrefixedName);
     }
 
     public void PlayBattleMusic()
     {
-        _battleMusic.SetVolume(_volume);
+        _battleMusic.SetVolume(_volumeBattleMusic);
         _battleMusic.StartEvent();
-        //FMODUnity.RuntimeManager.PlayOneShot(_battleMusic.PrefixedName);
     }
 
     public void StopBattleMusic()
     {
-        _battleMusic.StopEvent();
+       _battleMusic.StopEvent();
     }
     #endregion Methods
 }

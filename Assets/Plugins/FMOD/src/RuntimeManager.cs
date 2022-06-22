@@ -1239,35 +1239,34 @@ retry:
             return newInstance;
         }
 
-        public static void PlayOneShot(EventReference eventReference, Vector3 position = new Vector3())
+        public static void PlayOneShot(string path, float volume = 1, Vector3 position = new Vector3())
         {
             try
             {
-                PlayOneShot(eventReference.Guid, position);
+                PlayOneShot(PathToGUID(path), volume, position);
             }
             catch (EventNotFoundException)
             {
-                RuntimeUtils.DebugLogWarning("[FMOD] Event not found: " + eventReference);
+                Debug.LogWarning("[FMOD] Event not found: " + path);
             }
         }
-
-        public static void PlayOneShot(string path, Vector3 position = new Vector3())
+        
+        public static void PlayOneShot(string path, string parameterName, float parameterValue, float volume = 1, Vector3 position = new Vector3())
         {
             try
             {
-                PlayOneShot(PathToGUID(path), position);
+                PlayOneShot(PathToGUID(path), parameterName, parameterValue, volume, position);
             }
             catch (EventNotFoundException)
             {
-                RuntimeUtils.DebugLogWarning("[FMOD] Event not found: " + path);
+                Debug.LogWarning("[FMOD] Event not found: " + path);
             }
         }
-
-        public static void PlayOneShot(string path, string parameterName, float parameterValue, Vector3 position = new Vector3())
+        public static void PlayOneShot(string path, string parameterName, string parameterValue, float volume = 1, Vector3 position = new Vector3())
         {
             try
             {
-                PlayOneShot(PathToGUID(path), parameterName, parameterValue, position);
+                PlayOneShot(PathToGUID(path), parameterName, parameterValue, volume, position);
             }
             catch (EventNotFoundException)
             {
@@ -1275,43 +1274,35 @@ retry:
             }
         }
 
-        public static void PlayOneShot(FMOD.GUID guid, string parameterName, float parameterValue, Vector3 position = new Vector3())
+        public static void PlayOneShot(FMOD.GUID guid, float volume = 1, Vector3 position = new Vector3())
+        {
+            var instance = CreateInstance(guid);
+            instance.set3DAttributes(RuntimeUtils.To3DAttributes(position));
+            instance.setVolume(volume);
+            instance.start();
+            instance.release();
+        }
+        
+        public static void PlayOneShot(FMOD.GUID guid, string parameterName, float parameterValue, float volume = 1, Vector3 position = new Vector3())
         {
             var instance = CreateInstance(guid);
             instance.set3DAttributes(RuntimeUtils.To3DAttributes(position));
             instance.setParameterByName(parameterName, parameterValue);
+            instance.setVolume(volume);
             instance.start();
             instance.release();
         }
-
-        public static void PlayOneShot(string path, string parameterName, string parameterValue, Vector3 position = new Vector3())
-        {
-            try
-            {
-                PlayOneShot(PathToGUID(path), parameterName, parameterValue, position);
-            }
-            catch (EventNotFoundException)
-            {
-                Debug.LogWarning("[FMOD] Event not found: " + path);
-            }
-        }
-
-        public static void PlayOneShot(FMOD.GUID guid, string parameterName, string parameterValue, Vector3 position = new Vector3())
+       
+        public static void PlayOneShot(FMOD.GUID guid, string parameterName, string parameterValue, float volume = 1, Vector3 position = new Vector3())
         {
             var instance = CreateInstance(guid);
             instance.set3DAttributes(RuntimeUtils.To3DAttributes(position));
             instance.setParameterByNameWithLabel(parameterName, parameterValue);
+            instance.setVolume(volume);
             instance.start();
             instance.release();
         }
 
-        public static void PlayOneShot(FMOD.GUID guid, Vector3 position = new Vector3())
-        {
-            var instance = CreateInstance(guid);
-            instance.set3DAttributes(RuntimeUtils.To3DAttributes(position));
-            instance.start();
-            instance.release();
-        }
 
         public static void PlayOneShotAttached(string path, GameObject gameObject)
         {

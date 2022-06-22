@@ -23,6 +23,7 @@ public class FMODEventWrapper
 
     #region Properties
     public string PrefixedName => FMODSoundHelper.EVENT_PREFIX + _eventName;
+    public EventInstance EventInstances => _eventInstance;
     #endregion Properties
 
     #region Ctor

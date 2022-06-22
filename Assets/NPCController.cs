@@ -18,6 +18,12 @@ public class NPCController : MonoBehaviour
         set => _dialogueID = value;
     }
 
+    public bool IsInstant
+    {
+        get => _isInstant;
+        set => _isInstant = value;
+    }
+
     void Update()
     {
         if (Input.GetButtonDown("Interact") && _isInBox == true)

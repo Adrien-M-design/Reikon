@@ -25,6 +25,11 @@ public class GameState : AGameState
     public override void ExitState()
     {
         BFMODManager.Instance.StopHarborMusic();
+        BFMODManager.Instance.StopDocksSound();
+        if (CharacterManager.Instance.SpawnCount == 1 && CharacterManager.Instance.IsVictorious == false)
+        {
+            CharacterManager.Instance.SpawnCount--;
+        }
     }
     #endregion Methods
 }

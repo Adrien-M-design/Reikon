@@ -17,6 +17,9 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private float _turnSmoothTime = 0.1f;
     private float _turnSmoothVelocity = 0.1f;
 
+    [SerializeField] private float _stepDelay = 0f;
+    private float _stepTimestamp = 0f;
+
     [SerializeField] private float agentSpeed = 0;
     [SerializeField] private Transform _focusPoint = null;
 
@@ -84,8 +87,16 @@ public class CharacterController : MonoBehaviour
     private void Step()
     {
         inputSqrMagnitude = inputValue.sqrMagnitude;
-        if(inputSqrMagnitude >= .01f)
+        if(inputSqrMagnitude >= 0.1f)
         {
+
+            _stepTimestamp += Time.deltaTime;
+            if(_stepTimestamp >= _stepDelay)
+            {
+                Debug.Log("PlayStepSound");
+                BFMODManager.Instance.PlayStepSound("Bois");
+                _stepTimestamp = 0;
+            }
             _ayumuAnimator.SetBool("Run", true);            
             _ayumuAnimator.SetBool("Stand", false);       
             _ayumuAnimator.SetBool("Talk", false);       
