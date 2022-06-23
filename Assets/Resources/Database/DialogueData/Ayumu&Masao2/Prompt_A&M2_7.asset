@@ -17,3 +17,4 @@ MonoBehaviour:
     blagues, mais certains habitants ont \xE9t\xE9 bless\xE9s ou vol\xE9 \xE0 cause
     de ces petits. "
   _audio: {fileID: 8300000, guid: 7204d66d007be7048ba9c3a1c54130ce, type: 3}
+  _audioVolume: 1

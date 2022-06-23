@@ -16,3 +16,4 @@ MonoBehaviour:
   _text: "Pour \xEAtre honn\xEAte, on aurait bien besoin de l'aide de quelqu'un .
     . . comme vous."
   _audio: {fileID: 8300000, guid: 77943782dfe485342a5ce50a62e4d347, type: 3}
+  _audioVolume: 1

@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 26b66161d9287b84096fcd8a1cf085d7, type: 2}
   _text: "\xC0 ce sujet . . . "
   _audio: {fileID: 8300000, guid: 6e3c0c0be06e10a4ca1581ca24f80d68, type: 3}
+  _audioVolume: 1

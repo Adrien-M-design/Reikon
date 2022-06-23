@@ -73,6 +73,7 @@ public class DialogueController : MonoBehaviour
             _source.Stop();
             _dialBox.text = _currentDialogue.PromptData[_index].Text;
             _audioClip = _currentDialogue.PromptData[_index].Audio;
+            _source.volume = _currentDialogue.PromptData[_index].AudioVolume;
             _source.PlayOneShot(_audioClip);
             SetUpSpeaker(_index);
         }

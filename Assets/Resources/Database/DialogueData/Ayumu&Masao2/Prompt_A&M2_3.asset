@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 26b66161d9287b84096fcd8a1cf085d7, type: 2}
   _text: "H-h\xE9 bien, non, pas seulement. "
   _audio: {fileID: 8300000, guid: d73d80be81baced4ab43a694624fd16d, type: 3}
+  _audioVolume: 1

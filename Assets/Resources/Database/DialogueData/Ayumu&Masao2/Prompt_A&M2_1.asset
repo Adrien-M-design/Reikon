@@ -16,3 +16,4 @@ MonoBehaviour:
   _text: "Bonjour et bienvenue \xE0 Tsu-ame! Comme vous pouvez le voir, nous sommes
     une \xEEle d'humbles p\xEAcheurs et- "
   _audio: {fileID: 8300000, guid: d4c49be6070f7434181ef6e95ee5b503, type: 3}
+  _audioVolume: 1
