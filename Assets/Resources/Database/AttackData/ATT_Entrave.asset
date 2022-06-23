@@ -15,7 +15,7 @@ MonoBehaviour:
   _attackID: ENTRAVE
   _attackName: Entrave
   _damage: 5
-  _actionTime: 0.5
+  _actionTime: 0.1
   _onSelf: 0
   _effectCooldown: 0
   _effectDamage: 0
