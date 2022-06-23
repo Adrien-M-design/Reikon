@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "Autre chose \xE0 signaler? "
   _audio: {fileID: 8300000, guid: 8f6752ef4e523d84b85ea34c431c41ae, type: 3}
+  _audioVolume: 0.5

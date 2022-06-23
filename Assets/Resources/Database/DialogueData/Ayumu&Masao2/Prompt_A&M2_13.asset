@@ -15,4 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "Dites-moi juste o\xF9 il est."
   _audio: {fileID: 8300000, guid: ad469ec8fbc1a5f4aa40636d84e7b65f, type: 3}
-  _audioVolume: 1
+  _audioVolume: 0.5

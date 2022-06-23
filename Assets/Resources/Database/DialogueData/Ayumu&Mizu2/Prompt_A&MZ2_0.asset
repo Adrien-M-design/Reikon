@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 01d0f26d297828f4c956a8d07ddc1dd7, type: 2}
   _text: "Mince! Vous \xEAtes fort, monsieur! "
   _audio: {fileID: 8300000, guid: be9d7208e844b5c44bf5e31c42d7b018, type: 3}
+  _audioVolume: 1

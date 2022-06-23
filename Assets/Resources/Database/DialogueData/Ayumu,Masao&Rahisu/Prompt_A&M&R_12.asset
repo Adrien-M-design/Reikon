@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: On sait ce qu'il cherche?
   _audio: {fileID: 8300000, guid: 0bf52632f10248a43bd3665dc82c2ee6, type: 3}
+  _audioVolume: 0.5

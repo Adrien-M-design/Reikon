@@ -15,4 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "Vous ne pouviez pas le dire plus t\xF4t?! "
   _audio: {fileID: 8300000, guid: 596758d8878111b4ea0bdc6f0fbc4ad9, type: 3}
-  _audioVolume: 1
+  _audioVolume: 0.4

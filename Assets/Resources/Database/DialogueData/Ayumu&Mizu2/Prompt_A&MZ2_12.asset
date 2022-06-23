@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "Je verrai \xE7a moi-m\xEAme. "
   _audio: {fileID: 8300000, guid: cfb295102cb922044abb68a2ecff6c26, type: 3}
+  _audioVolume: 0.5

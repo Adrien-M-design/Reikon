@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "Rentre chez toi et tiens-toi \xE0 carreaux. "
   _audio: {fileID: 8300000, guid: a3ab9af2820e22d4782787b14990320a, type: 3}
+  _audioVolume: 0.5

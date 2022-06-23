@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: J'te laisse une chance pour cette fois.
   _audio: {fileID: 8300000, guid: e08619782c6f1fa46ae061a6d2975b69, type: 3}
+  _audioVolume: 0.5

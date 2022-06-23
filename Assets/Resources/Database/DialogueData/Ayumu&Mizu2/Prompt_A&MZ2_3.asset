@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: "T'as caus\xE9 de gros probl\xE8mes au village. "
   _audio: {fileID: 8300000, guid: 82e36b2dfea22da4daf022bd5d22265b, type: 3}
+  _audioVolume: 0.5

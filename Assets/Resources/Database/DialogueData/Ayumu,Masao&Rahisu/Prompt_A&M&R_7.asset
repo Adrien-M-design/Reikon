@@ -15,3 +15,4 @@ MonoBehaviour:
   _speaker: {fileID: 11400000, guid: 89679c674665f7b489a2baf5d92039bb, type: 2}
   _text: 'Le Tsukuyomi. C''est moi. '
   _audio: {fileID: 8300000, guid: 86d8c84114ee96b40bd545f928f9d8eb, type: 3}
+  _audioVolume: 0.5
