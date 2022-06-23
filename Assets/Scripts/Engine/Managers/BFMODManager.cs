@@ -55,7 +55,11 @@ public class BFMODManager : Singleton<BFMODManager>
     private FMODEventWrapper _harborMusic = null;
 
 
-
+    public float VolumeMusic
+    {
+        get => _volumeMusic;
+        set => _volumeMusic = value;
+    }
 
 
 
@@ -173,7 +177,7 @@ public class BFMODManager : Singleton<BFMODManager>
     public void PlayButtonSound()
     {
         Debug.Log("tamer");
-        FMODUnity.RuntimeManager.PlayOneShot(_button.PrefixedName, 1, Camera.main.transform.position);
+        FMODUnity.RuntimeManager.PlayOneShot(_button.PrefixedName, _volumeUI, Camera.main.transform.position);
     }
 
     public void PlayDocksSound()
