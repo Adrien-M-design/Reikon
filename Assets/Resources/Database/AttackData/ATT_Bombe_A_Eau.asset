@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ATT_Bombe_A_Eau
   m_EditorClassIdentifier: 
   _attackID: BOMBE_A_EAU
-  _attackName: Bombe a Eau
+  _attackName: "Bombe \xE0 Eau"
   _damage: 10
   _actionTime: 1.5
   _onSelf: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ATT_Epine
   m_EditorClassIdentifier: 
   _attackID: EPINE
-  _attackName: Epine
+  _attackName: "\xC9pine"
   _damage: 0
   _actionTime: 1
   _onSelf: 1

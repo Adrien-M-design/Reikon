@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ATT_Poing_Brulant
   m_EditorClassIdentifier: 
   _attackID: POING_BRULANT
-  _attackName: Poing Brulant
+  _attackName: "Poing Br\xFBlant"
   _damage: 10
   _actionTime: 1.5
   _onSelf: 0
